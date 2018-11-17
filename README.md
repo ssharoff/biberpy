@@ -24,7 +24,7 @@ While this approach is more than 30-years old by now, his attention to careful d
   * Average sentence length
   * Type/token ratio
 
-In our Intellitext project (2011-2012) we have implemented these features in a [Web interface to corpora](http://corpus.leeds.ac.uk/it/) in Oerk, see:
+In our Intellitext project (2011-2012) we have implemented these features in a [Web interface to corpora](http://corpus.leeds.ac.uk/it/) in Perl, see:
 ```
 @inproceedings{wilson10paclic,
   title={Advanced corpus solutions for humanities researchers},
@@ -38,7 +38,7 @@ In our Intellitext project (2011-2012) we have implemented these features in a [
 }
 ```
 
-Since then, for my research on text classification I ported the feature extractor to Python.  Also I have ported the available word lists to French and Russian, so that experiments can be run across languages.
+Since then, for my research on text classification I ported the feature extractor from Perl to Python.  Also I have ported the available word lists to French and Russian, so that experiments can be run across languages.
 
 The arguments for the script are self-explanatory (run `python3 biber-dim.py -h`).  A typical invocation would be:
 

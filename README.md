@@ -50,12 +50,12 @@ privateVerbs = anticipate, assume, believe, conclude, decide, demonstrate,
 ```
 
 The POS tags and lemmas are coming from a frequency list:
-```
+
 num | word | lemma | pos | morph
---|--|--|--|--
-1625260 | years | year | NOUN | Number=Plur  
+----|------|-------|-----|------
+1625260 | years | year | NOUN | Number=Plur
 399401  | went  | go   | VERB | Tense=Past
-```
+
 
 This can be obtained, for example, from an available CONLLU file with the annotations in the format of the [Universal Dependencies](http://universaldependencies.org) by
 

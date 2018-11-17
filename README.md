@@ -8,21 +8,21 @@ An article-length description is available from [http://www.aclweb.org/anthology
 While this approach is more than 30-years old by now, his attention to careful design of features is influential to understanding how features of genres vary in texts of different kinds.  The features cover
 
 * Lexical features, such as:
- * publicVerbs = *acknowledge, admit, agree, assert, claim, complain, declare, deny...*
- * timeAdverbials  = *afterwards, again, earlier, early, eventually, formerly, immediately,...*
- * amplifiers = *absolutely, altogether, completely, enormously, entirely,...*
+  * publicVerbs = *acknowledge, admit, agree, assert, claim, complain, declare, deny...*
+  * timeAdverbials  = *afterwards, again, earlier, early, eventually, formerly, immediately,...*
+  * amplifiers = *absolutely, altogether, completely, enormously, entirely,...*
 * Part-of-speech features, such as:
- * Nominalisations (nouns ending in *-tion, -ness, -ment*)
- * Prepositions
- * Past tense verbs
+  * Nominalisations (nouns ending in *-tion, -ness, -ment*)
+  * Prepositions
+  * Past tense verbs
 * Syntactic features, such as:
- * *be* as the main verb
- * *that* deletions
- * pied piping (as in *Which house did she buy ...?* where *house* moved from its expected position after *buy*)
+  * *be* as the main verb
+  * *that* deletions
+  * pied piping (as in *Which house did she buy ...?* where *house* moved from its expected position after *buy*)
 * Text-level features, such as:
- * Average word length
- * Average sentence length
- * Type/token ratio
+  * Average word length
+  * Average sentence length
+  * Type/token ratio
 
 In our Intellitext project (2011-2012) we have implemented these features in a [Web interface to corpora](http://corpus.leeds.ac.uk/it/) in Oerk, see:
 ```

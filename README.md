@@ -34,7 +34,7 @@ In our Intellitext project (2011-2012) we have implemented these features in a [
   month={November},
   address={Tohoku University},
   year={2010},
-  pdf={http://www.aclweb.org/anthology-new/Y/Y10/Y10-1089.pdf}
+  pdf={http://www.aclweb.org/anthology/Y10-1089}
 }
 ```
 
@@ -46,8 +46,10 @@ The arguments for the script are self-explanatory (run `python3 biber-dim.py -h`
 
 The format for the source file is one line per document.  The script assumes that the folder contains a file with language-specific features with the name features-LANGUAGE.txt and a frequency list with the name LANGUAGE.tag.num.  The format of the feature lists is:
 ```
-privateVerbs = anticipate, assume, believe, conclude, decide, demonstrate,
+privateVerbs = anticipate,assume,believe,conclude,decide,demonstrate,
 ```
+
+The names are fixed (the label `privateVerbs` is used for all languages), while the lists are language-specific.
 
 The POS tags and lemmas are coming from a frequency list:
 

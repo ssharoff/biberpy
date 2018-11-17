@@ -25,18 +25,21 @@ dimlist=(
 'generalEmphatics',
 'firstPersonPronouns',
 "itWord",
+"BE as main verb",
 "becauseWord",
 'indefinitePronouns',
 'amplifiers',
 'whQuestions',
 'possibilityModals',
 'whMarkers',
+"strandedPrepositions",
 "ADV",
 "NOUN",
 "placeAdverbials",
 "Tense=Past",
 'thirdPersonPronouns',
 'publicVerbs',
+"nominalizations",
 'timeAdverbials',
 'predictionModals',
 'suasiveVerbs',
@@ -134,6 +137,8 @@ finepos3=3
 
 def typeAt(w):
     return taglist[w][pos2]
+def lemmaAt(w):
+    return taglist[w][lemma1]
 def isWordSet(w, type):
     return w in wordlists[type]
 def isDemonstrativePronoun(doc, l):
@@ -161,20 +166,16 @@ def posWithLemmaFilter(doc, pos, type):
     count, _ = findLemmaInSentence(doc, pos, type)
     return count
 
-def simpleLemmas(doc, lemma):
+def simplePartsOfSpeech(doc, pos, finepos='', getloc=False):
     count=0
-    for w in doc:
-        if w in taglist and taglist[w][lemma1]==lemma:
-            count+=1
-    return count
-
-def simplePartsOfSpeech(doc, pos, finepos=''):
-    count=0
-    for w in doc:
+    out=[]
+    for i,w in enumerate(doc):
         if w in taglist and taglist[w][pos2]==pos:
             if not finepos or (taglist[w][finepos3].find(finepos)>=0):
                 count+=1
-    return count
+                if getloc:
+                    out.append(i)
+    return count, out
 
 def thatDeletion(doc):
     count, positions = findLemmaInSentence(doc, 'VERB', 'specialVerbs',True)
@@ -227,6 +228,70 @@ def demonstrativePronouns(doc):
             count+=-1
     return count
 
+def doAsProVerb(doc):
+    # As usual we operate using BFI. First check if there are any DOs in the
+    # sentence.
+    doCount, doPositions = findLemmaInSentence(doc, '', 'doVerb', True);
+
+    for doPosition in doPositions:
+        try:
+	    # If the DO is followed by and adverb then a verb
+	    # or directly by a verb then it is NOT one we count
+            # Also this condition should take into account the sentence
+            # boundaries
+            if typeAt(doc[doPosition+1])=='VERB' or (typeAt(doc[doPosition+1]) in ['ADV','PART'] and typeAt(doc[doPosition+2])=='VERB'):
+                doCount+=-1
+            else:
+	        # Biber's other specification seems wrong, he says:
+	        # 'punctuation WHP DO' implies a question but his WHP
+	        # only includes who, whose and which. I think it should be
+                # those four PLUS the whQuestions. Need to put in the prior
+                # punctuation
+                previousWord = doc[doPosition-1]
+                if isWordSet(previousWord, 'whQuestions') or isWordSet(previousWord, 'whMarkers'):
+                    doCount+=-1
+        except:
+            doCount+=-1
+    return doCount
+
+def beAsMainVerb(doc):
+    # As usual we operate using BFI. First check if there are any BEs in the
+    # sentence.
+    beCount, bePositions = findLemmaInSentence(doc, '', 'beVerb', True);
+    for loc in bePositions:
+        # Biber's prescription for this is just that the BE is
+	# followed by determiner, possessive pronoun, preposition,
+        # title or adjective. We have to leave out title for now.
+	# We also discount case where the BE is at the end of the sentence
+	# (the SENT is at $end so the last word is at $end - 1).
+        try:
+            pos = typeAt(doc[loc+1])
+            if not pos in ["DET","ADJ","PRON","ADP"]:
+                beCount+=-1
+        except:
+            beCount+=-1
+    return beCount
+
+def strandedPrepositions(doc):
+    prepCount, prepPositions = simplePartsOfSpeech(doc, "ADP", "", True);
+    for loc in prepPositions:
+        try:
+            nextWord = doc[loc + 1]
+            if not isWordSet(nextWord, 'clausePunctuation'):
+                prepCount+=-1
+        except:
+            prepCount+=-1
+    return prepCount;
+
+def nominalizations(doc):
+    nounCount, nounPositions = simplePartsOfSpeech(doc, "NOUN", "", True);
+    nomCount=0
+    for loc in nounPositions:
+        lemma = lemmaAt(doc[loc])
+        if lemma[-4:] in ['tion','ment','ness']:
+            nomCount+=1
+    return nomCount
+
 def getbiberdims(doc):
     '''
     processes document as a list of tokenised words
@@ -234,15 +299,16 @@ def getbiberdims(doc):
     f1=posWithLemmaFilter(doc,'VERB','privateVerbs')/len(doc)
     f2=thatDeletion(doc)/len(doc)
     f3=contractions(doc)/len(doc)
-    f4=simplePartsOfSpeech(doc,"VERB","Tense=Pres")/len(doc)
+    f4,_=simplePartsOfSpeech(doc,"VERB","Tense=Pres")
+    f4=f4/len(doc)
     f5=posWithLemmaFilter(doc, 'PRON', 'secondPersonPronouns')/len(doc)
-    f6=0#doAsProVerb(doc)/len(doc)
+    f6=doAsProVerb(doc)/len(doc)
     f7=posWithLemmaFilter(doc,'', "notWord")/len(doc)
     f8=demonstrativePronouns(doc)/len(doc)
     f9=posWithLemmaFilter(doc,'','generalEmphatics')/len(doc)
     f10=posWithLemmaFilter(doc,'','firstPersonPronouns')/len(doc)
     f11=posWithLemmaFilter(doc,'',"itWord")/len(doc)
-    f12=0 # \&beAsMainVerb
+    f12=beAsMainVerb(doc)/len(doc)
     f13=posWithLemmaFilter(doc,'',"becauseWord")/len(doc)
     f14=0 # ["discourse particles", \&dummyFunction, "s"],
     f15=posWithLemmaFilter(doc,'','indefinitePronouns')/len(doc)
@@ -253,20 +319,25 @@ def getbiberdims(doc):
     f20=posWithLemmaFilter(doc,'', 'possibilityModals')/len(doc)
     f21=0 # ["non-phrasal coordination", \&dummyFunction, "s"],
     f22=posWithLemmaFilter(doc,'', 'whMarkers')/len(doc)
-    f23=0 # \&strandedPrepositions, "s"],
-    F24=simplePartsOfSpeech(doc,"ADV")/len(doc)
+    f23=strandedPrepositions(doc)/len(doc)
+    f24,_=simplePartsOfSpeech(doc,"ADV")
+    f24=f24/len(doc)
     f25=0 # ["conditional subordination", \&dummyFunction, "s"],
-    f26=simplePartsOfSpeech(doc, "NOUN")/len(doc)
+    f26,_=simplePartsOfSpeech(doc, "NOUN")
+    f26=f26/len(doc)
     f27=0 # wordLength(doc)
-    f28=simplePartsOfSpeech(doc, "PREP")/len(doc)
+    f28,_=simplePartsOfSpeech(doc, "ADP")
+    f28=f28/len(doc)
     f29=0 # typeTokenRatio(doc)
     f30=0 # attributiveAdjectives, "s"],
     f31=posWithLemmaFilter(doc,'', "placeAdverbials")/len(doc)
     f32=0 # ["agentless passives", \&dummyFunction, "s"],
     f33=0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
     f34=0 # ["present participial WHIZ deletions", \&dummyFunction, "s"],
-    f35=simplePartsOfSpeech(doc, "VERB", "Tense=Past")/len(doc)
-    f36=posWithLemmaFilter(doc,'', 'thirdPersonPronouns')/len(doc)
+    f35,_=simplePartsOfSpeech(doc, "VERB", "Tense=Past")
+    f35=f35/len(doc)
+    f36=posWithLemmaFilter(doc,'', 'thirdPersonPronouns')
+    f36=f36/len(doc)
     f37=0 # ["perfect aspect verbs", \&perfectAspect, "s"],
     f38=posWithLemmaFilter(doc,'', 'publicVerbs')/len(doc)
     f39=0 # \&syntheticNegation
@@ -277,7 +348,7 @@ def getbiberdims(doc):
     f44 = 0 # ["pied piping constructions", \&dummyFunction, "s"],
     f45 = 0 # ["WH relative clauses on subject positions", \&dummyFunction, "s"],
     f46 = 0 # ["phrasal coordination", \&dummyFunction, "s"],
-    f47=0 # \&nominalizations
+    f47=nominalizations(doc)/len(doc)
     f48=posWithLemmaFilter(doc,'', 'timeAdverbials')/len(doc)
     f49 = 0 # ["place adverbials", \&dummyFunction, "w"],
     f50=0 # \&infinitives
@@ -306,7 +377,8 @@ def getbiberdims(doc):
     f73=posWithLemmaFilter(doc,'', 'downtopers')/len(doc)
     F74 = 0 # ["concessive subordination", \&dummyFunction, "s"]);
 
-    return [f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f13,f15,f17,f19,f20,f22,F24,f26,f28,f31,f35,f36,f38,f48,f51,F52,f54,f56,f72,f73]
+    # return [f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f15,f17,f19,f20,f22,f23,f24,f26,f28,f31,f35,f36,f38,f47,f48,f51,F52,f54,f56,f72,f73]
+    return [f6,f12,f23,f47]
 
 def readwordlists(f):
     '''

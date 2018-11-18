@@ -8,48 +8,88 @@ A script for collecting Biber-like features from one-line text collections and a
 Expanded from experiments in Intellitext
 
 '''
-import sys, re
-import numpy as np
+import sys
+import time
 import argparse
 import smallutils as ut
 
-dimlist=(
-"private verbs",
-"THAT deletion",
-"contractions",
-"present tense verbs",
-"second person pronouns",
-"D0 as pro-verb",
-"analytic negation",
-"demonstrative pronouns",
-'generalEmphatics',
-'firstPersonPronouns',
-"itWord",
-"BE as main verb",
-"becauseWord",
-'indefinitePronouns',
-'amplifiers',
-'whQuestions',
-'possibilityModals',
-'whMarkers',
-"strandedPrepositions",
-"ADV",
-"NOUN",
-"placeAdverbials",
-"Tense=Past",
-'thirdPersonPronouns',
-'publicVerbs',
-"nominalizations",
-'timeAdverbials',
-'predictionModals',
-'suasiveVerbs',
-'necessityModals',
-'possibilityModals',
-'seemappear',
-'downtopers'
-)
-
 language='en'
+dimnames={
+    'f01' : 'privateVerbs',
+    'f02' : 'thatDeletion',
+    'f03' : 'contractions',
+    'f04' : 'PresVerbs',
+    'f05' : 'secondPersonPronouns',
+    'f06' : 'doAsProVerb',
+    'f07' : "negation",
+    'f08' : 'demonstrativePronouns',
+    'f09' : 'generalEmphatics',
+    'f10' : 'firstPersonPronouns',
+    'f11' : "itPronoun",
+    'f12' : 'beAsMainVerb',
+    'f13' : "causation",
+#   'f14' : 0 # ["discourse particles", \&dummyFunction, "s"],
+    'f15' : 'indefinitePronouns',
+#   'f16' : 0 # ["general hedges", \&dummyFunction, "s"],
+    'f17' : 'amplifiers',
+#   'f18' : 0 # ["sentence relatives", \&dummyFunction, "s"],
+    'f19' : 'whQuestions',
+    'f20' : 'possibilityModals',
+#   'f21' : 0 # ["non-phrasal coordination", \&dummyFunction, "s"],
+    'f22' : 'whMarkers',
+    'f23' : 'strandedPrepositions',
+    'f24' : 'ADV',
+#   'f25' : 0 # ["conditional subordination", \&dummyFunction, "s"],
+    'f26' : "NOUN",
+    'f27' : 'wordLength',
+    'f28' : "ADP",
+    'f29' : 'typeTokenRatio',
+#   'f30' : 0 # attributiveAdjectives, "s"],
+    'f31' : "placeAdverbials",
+#   'f32' : 0 # ["agentless passives", \&dummyFunction, "s"],
+#   'f33' : 0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
+#   'f34' : 0 # ["present participial WHIZ deletions", \&dummyFunction, "s"],
+    'f35' : 'PastVerbs',
+    'f36' : 'thirdPersonPronouns',
+#   'f37' : 0 # ["perfect aspect verbs", \&perfectAspect, "s"],
+    'f38' : 'publicVerbs',
+#   'f39' : 0 # \&syntheticNegation
+#   'f40' : 0 # \&presentParticipialClauses
+#   'f41' :  0 # ["present tense verbs", \&dummyFunction, "w"],
+#   'f42' :  0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
+#   'f43' :  0 # ["WH relative clauses on object positions", \&dummyFunction, "s"],
+#   'f44' :  0 # ["pied piping constructions", \&dummyFunction, "s"],
+#   'f45' :  0 # ["WH relative clauses on subject positions", \&dummyFunction, "s"],
+#   'f46' :  0 # ["phrasal coordination", \&dummyFunction, "s"],
+    'f47' : 'nominalizations',
+    'f48' : 'timeAdverbials',
+#   'f49' :  0 # ["place adverbials", \&dummyFunction, "w"],
+#   'f50' : 0 # \&infinitives
+    'f51' : 'predictionModals',
+    'f52' : 'suasiveVerbs',
+#   'f53' : 0# ["conditional subordination", \&dummyFunction, "s"],
+    'f54' : 'necessityModals',
+#   'f55' :  0 # ["split auxiliaries", \&dummyFunction, "s"],
+    'f56' : 'possibilityModals',
+#   'f57' :  0 # ["conjuncts", \&dummyFunction, "w"],
+#   'f58' :  0 # ["past participial clauses", \&dummyFunction, "s"],
+#   'f59' :  0 # ["BY-passives", \&dummyFunction, "s"],
+#   'f60' :  0 # ["other adverbial subordinators", \&dummyFunction, "s"],
+#   'f61' : 0 #\&predicativeAdjectives
+#   'f62' :  0 # ["type/token ratio", \&dummyFunction, "d"],
+#   'f63' :  0 # ["THAT clauses as verb complements", \&dummyFunction, "s"],
+#   'f64' : 0 #\&demonstrativePronouns
+#   'f65' :  0 # ["THAT relative clauses on object positions", \&dummyFunction, "s"],
+#   'f66' :  0 # ["THAT clauses as adjective complements", \&dummyFunction, "s"],
+#   'f67' :  0 # ["final prepositions", \&dummyFunction, "s"],
+#   'f68' :  0 # ["existential THERE", \&simplePartsOfSpeech, "w", "EX"],
+#   'f69' :  0 # ["demonstrative pronouns", \&demonstrativePronouns, "s"],
+#   'f70' :  0 # ["WH relative clauses on object positions", \&dummyFunction, "s"],
+#   'f71' :  0 # ["phrasal coordination", \&dummyFunction, "s"],
+    'f72' : 'seemappear',
+    'f73' : 'downtopers'
+#   'f74' :  0, # ["concessive subordination", \&dummyFunction, "s"]);
+}
 wordlists={}
 taglist={}
 
@@ -58,96 +98,25 @@ lemma1=1
 pos2=2
 finepos3=3
 
-#Full list from Perl:
-# F1 => ["private verbs", \&posWithLemmaFilter, "w", "V.*", $privateVerbs],
-# F2 => ["THAT deletion", \&thatDeletion, "s"],
-# F3 => ["contractions", \&contractions, "w"],
-# F4 => ["present tense verbs", \&simplePartsOfSpeech, "w", "VV,VVZ"],
-# F5 => ["second person pronouns", \&simpleWords, "w", $secondPersonPronouns],
-# F6 => ["D0 as pro-verb", \&doAsProVerb, "s"],
-# F7 => ["analytic negation", \&simpleLemmas, "w", "not"],
-# F8 => ["demonstrative pronouns", \&demonstrativePronouns, "s"],
-# F9 => ["general emphatics", \&simpleWords, "w", $generalEmphatics],
-# F10 => ["first person pronouns", \&simpleWords, "w", $firstPersonPronouns],
-# F11 => ["pronoun IT", \&simpleWords, "w", "it"],
-# F12 => ["BE as main verb", \&beAsMainVerb, "s"],
-# F13 => ["Causative subordination", \&simpleWords, "w", "because"],
-# F14 => ["discourse particles", \&dummyFunction, "s"],
-# F15 => ["indefinite pronouns", \&simpleWords, "w", $indefinitePronouns],
-# F16 => ["general hedges", \&dummyFunction, "s"],
-# F17 => ["amplifiers", \&simpleWords, "w", $amplifiers],
-# F18 => ["sentence relatives", \&dummyFunction, "s"],
-# F19 => ["WH questions", \&simpleWords, "w", $whQuestions],
-# F20 => ["possibility modals", \&simpleWords, "w", $possibilityModals],
-# F21 => ["non-phrasal coordination", \&dummyFunction, "s"],
-# F22 => ["WH clauses", \&simpleWords, "w", $whMarkers],
-# F23 => ["final prepositions", \&strandedPrepositions, "s"],
-# F24 => ["adverbs", \&simplePartsOfSpeech, "w", "RB,RBR,RBS"],
-# F25 => ["conditional subordination", \&dummyFunction, "s"],
-# F26 => ["nouns", \&simplePartsOfSpeech, "w", "N.*"],
-# F27 => ["word length", \&wordLength, "d"],
-# F28 => ["prepositions", \&simplePartsOfSpeech, "w", "IN"],
-# F29 => ["type/token ratio", \&typeTokenRatio, "d"],
-# F30 => ["attributive adjectives", \&attributiveAdjectives, "s"],
-# F31 => ["place adverbials", \&simpleWords, "w", $placeAdverbials],
-# F32 => ["agentless passives", \&dummyFunction, "s"],
-# F33 => ["past participial WHIZ deletions", \&dummyFunction, "s"],
-# F34 => ["present participial WHIZ deletions", \&dummyFunction, "s"],
-# F35 => ["past tense verbs", \&simplePartsOfSpeech, "w", "VVD"],
-# F36 => ["third person pronouns", \&simpleWords, "w", $thirdPersonPronouns],
-# F37 => ["perfect aspect verbs", \&perfectAspect, "s"],
-# F38 => ["public verbs", \&posWithLemmaFilter, "w", "V.*", $publicVerbs],
-# F39 => ["synthetic negation", \&syntheticNegation, "s"],
-# F40 => ["present participial clauses", \&presentParticipialClauses, "s"],
-# F41 => ["present tense verbs", \&dummyFunction, "w"],
-# F42 => ["past participial WHIZ deletions", \&dummyFunction, "s"],
-# F43 => ["WH relative clauses on object positions", \&dummyFunction, "s"],
-# F44 => ["pied piping constructions", \&dummyFunction, "s"],
-# F45 => ["WH relative clauses on subject positions", \&dummyFunction, "s"],
-# F46 => ["phrasal coordination", \&dummyFunction, "s"],
-# F47 => ["nominalizations", \&nominalizations, "w", "NN.*"],
-# F48 => ["time adverbials", \&simpleWords, "w", $timeAdverbials],
-# F49 => ["place adverbials", \&dummyFunction, "w"],
-# F50 => ["infinitives", \&infinitives, "s"],
-# F51 => ["prediction modals", \&dummyFunction, "w"],
-# F52 => ["suasive verbs", \&dummyFunction, "w"],
-# F53 => ["conditional subordination", \&dummyFunction, "s"],
-# F54 => ["necessity modals", \&simpleWords, "w", $necessityModals],
-# F55 => ["split auxiliaries", \&dummyFunction, "s"],
-# F56 => ["possibility modals", \&simpleWords, "w", $possibilityModals],
-# F57 => ["conjuncts", \&dummyFunction, "w"],
-# F58 => ["past participial clauses", \&dummyFunction, "s"],
-# F59 => ["BY-passives", \&dummyFunction, "s"],
-# F60 => ["other adverbial subordinators", \&dummyFunction, "s"],
-# F61 => ["predicative adjectives", \&predicativeAdjectives, "s"],
-# F62 => ["type/token ratio", \&dummyFunction, "d"],
-# F63 => ["THAT clauses as verb complements", \&dummyFunction, "s"],
-# F64 => ["demonstratives", \&demonstrativePronouns, "s"],
-# F65 => ["THAT relative clauses on object positions", \&dummyFunction, "s"],
-# F66 => ["THAT clauses as adjective complements", \&dummyFunction, "s"],
-# F67 => ["final prepositions", \&dummyFunction, "s"],
-# F68 => ["existential THERE", \&simplePartsOfSpeech, "w", "EX"],
-# F38 => ["public verbs", \&posWithLemmaFilter, "w", "V.*", $publicVerbs],
-# F69 => ["demonstrative pronouns", \&demonstrativePronouns, "s"],
-# F70 => ["WH relative clauses on object positions", \&dummyFunction, "s"],
-# F71 => ["phrasal coordination", \&dummyFunction, "s"],
-# F72 => ["SEEM/APPEAR", \&posWithLemmaFilter, "w", "V.*", $seemappear],
-# F73 => ["downtopers", \&posWithLemmaFilter, "w", "RB", $downtopers],
-# F74 => ["concessive subordination", \&dummyFunction, "s"]);
-
-def typeAt(w):
-    return taglist[w][pos2]
+def wordAt(w):
+    #no fancy word structure at the moment
+    #ideally we need a record containing the word form and its analysis 
+    return w
 def lemmaAt(w):
     return taglist[w][lemma1]
+def posAt(w):
+    return taglist[w][pos2]
+def fineposAt(w):
+    return taglist[w][finepos3]
 def isWordSet(w, type):
     return w in wordlists[type]
 def isDemonstrativePronoun(doc, l):
     try:
-        nextType = typeAt(doc[l+1])
-        nextWord = doc[l+1]
+        nextPos = posAt(doc[l+1])
+        nextWord = wordAt(doc[l+1])
     except:
-        nextType = nextWord = ''
-    if isWordSet(nextWord,'modalVerbs' ) or nextType=='PRON' or isWordSet(nextWord, 'clausePunctuation') or nextWord=='and':
+        nextPos = nextWord = ''
+    if isWordSet(nextWord,'modalVerbs' ) or nextPos=='PRON' or isWordSet(nextWord, 'clausePunctuation') or nextWord=='and':
         return False
     else:
         return True
@@ -182,29 +151,29 @@ def thatDeletion(doc):
     thatcount = 0
     for l in positions:
         try:
-            nextWord = doc[l+1]
+            nextWord = wordAt(doc[l+1])
             # First Biber prescription 
             if isDemonstrativePronoun(doc,l+1) or isWordSet(nextWord, 'subjectPronouns'):
                 thatcount+=1
             else:
-                nextType = typeAt(doc[l+1])
-                typeAfter = typeAt(doc[l+2])
+                nextPos = posAt(doc[l+1])
+                posAfter = posAt(doc[l+2])
                 lCounter=2
                 # Second Biber prescription
-                if nextType=="PRON" or nextType=="NOUN" and isWordSet(doc[l+lCounter], "modalVerbs"):
+                if nextPos=="PRON" or nextPos=="NOUN" and isWordSet(wordAt(doc[l+lCounter]), "modalVerbs"):
                     thatcount+=1
                 else:
                     # Third and most complicated Biber prescription
-                    if nextType in ["ADJ","ADV","DET","PRON"]:
+                    if nextPos in ["ADJ","ADV","DET","PRON"]:
                         # This is the optional adjective
-                        if typeAfter=="ADJ":
+                        if posAfter=="ADJ":
                             lCounter+=1
-                            typeAfter = typeAt(doc[l+lCounter])
+                            posAfter = posAt(doc[l+lCounter])
                         # Then a noun
-                        if typeAfter=="NOUN":
+                        if posAfter=="NOUN":
                             lCounter += 1
                             # Then if there's an auxiliary we accept this one
-                            if isWordSet(doc[l+lCounter], "modalVerbs"):
+                            if isWordSet(wordAt(doc[l+lCounter]), "modalVerbs"):
                                 thatcount+=1
         except:
             # the index is out of the doc length
@@ -239,7 +208,7 @@ def doAsProVerb(doc):
 	    # or directly by a verb then it is NOT one we count
             # Also this condition should take into account the sentence
             # boundaries
-            if typeAt(doc[doPosition+1])=='VERB' or (typeAt(doc[doPosition+1]) in ['ADV','PART'] and typeAt(doc[doPosition+2])=='VERB'):
+            if posAt(doc[doPosition+1])=='VERB' or (posAt(doc[doPosition+1]) in ['ADV','PART'] and posAt(doc[doPosition+2])=='VERB'):
                 doCount+=-1
             else:
 	        # Biber's other specification seems wrong, he says:
@@ -247,7 +216,7 @@ def doAsProVerb(doc):
 	        # only includes who, whose and which. I think it should be
                 # those four PLUS the whQuestions. Need to put in the prior
                 # punctuation
-                previousWord = doc[doPosition-1]
+                previousWord = wordAt(doc[doPosition-1])
                 if isWordSet(previousWord, 'whQuestions') or isWordSet(previousWord, 'whMarkers'):
                     doCount+=-1
         except:
@@ -265,7 +234,7 @@ def beAsMainVerb(doc):
 	# We also discount case where the BE is at the end of the sentence
 	# (the SENT is at $end so the last word is at $end - 1).
         try:
-            pos = typeAt(doc[loc+1])
+            pos = posAt(doc[loc+1])
             if not pos in ["DET","ADJ","PRON","ADP"]:
                 beCount+=-1
         except:
@@ -276,7 +245,7 @@ def strandedPrepositions(doc):
     prepCount, prepPositions = simplePartsOfSpeech(doc, "ADP", "", True);
     for loc in prepPositions:
         try:
-            nextWord = doc[loc + 1]
+            nextWord = wordAt(doc[loc + 1])
             if not isWordSet(nextWord, 'clausePunctuation'):
                 prepCount+=-1
         except:
@@ -292,93 +261,114 @@ def nominalizations(doc):
             nomCount+=1
     return nomCount
 
+def wordLength(doc):
+    totLength = 0
+    wordCount = 0
+    for w in doc:
+        if not isWordSet(wordAt(w), 'clausePunctuation'):
+            totLength += len(w)
+            wordCount+=1
+    return totLength / wordCount
+
+def typeTokenRatio(doc):
+    # Biber only looks at the first 400 words of each document 'to avoid 
+    # skewing the results to give larger values for smaller documents'.
+    biberLength = min(400,len(doc))
+    seenBefore = {}
+    tokenCounter = 0
+    for w in doc[:biberLength]:
+        if not isWordSet(wordAt(w), 'clausePunctuation'):
+            tokenCounter+=1
+            if not w in seenBefore:
+                seenBefore[w] = 1
+    return len(seenBefore)/tokenCounter
+
 def getbiberdims(doc):
     '''
     processes document as a list of tokenised words
     '''
-    f1=posWithLemmaFilter(doc,'VERB','privateVerbs')/len(doc)
-    f2=thatDeletion(doc)/len(doc)
-    f3=contractions(doc)/len(doc)
-    f4,_=simplePartsOfSpeech(doc,"VERB","Tense=Pres")
-    f4=f4/len(doc)
-    f5=posWithLemmaFilter(doc, 'PRON', 'secondPersonPronouns')/len(doc)
-    f6=doAsProVerb(doc)/len(doc)
-    f7=posWithLemmaFilter(doc,'', "notWord")/len(doc)
-    f8=demonstrativePronouns(doc)/len(doc)
-    f9=posWithLemmaFilter(doc,'','generalEmphatics')/len(doc)
-    f10=posWithLemmaFilter(doc,'','firstPersonPronouns')/len(doc)
-    f11=posWithLemmaFilter(doc,'',"itWord")/len(doc)
-    f12=beAsMainVerb(doc)/len(doc)
-    f13=posWithLemmaFilter(doc,'',"becauseWord")/len(doc)
-    f14=0 # ["discourse particles", \&dummyFunction, "s"],
-    f15=posWithLemmaFilter(doc,'','indefinitePronouns')/len(doc)
-    f16=0 # => ["general hedges", \&dummyFunction, "s"],
-    f17=posWithLemmaFilter(doc,'', 'amplifiers')/len(doc)
-    f18=0 # ["sentence relatives", \&dummyFunction, "s"],
-    f19=posWithLemmaFilter(doc,'','whQuestions')/len(doc)
-    f20=posWithLemmaFilter(doc,'', 'possibilityModals')/len(doc)
-    f21=0 # ["non-phrasal coordination", \&dummyFunction, "s"],
-    f22=posWithLemmaFilter(doc,'', 'whMarkers')/len(doc)
-    f23=strandedPrepositions(doc)/len(doc)
+    dimlist={}
+    dimlist['f01']=posWithLemmaFilter(doc,'VERB','privateVerbs')/len(doc)
+    dimlist['f02']=thatDeletion(doc)/len(doc)
+    dimlist['f03']=contractions(doc)/len(doc)
+    f4,_=simplePartsOfSpeech(doc,"VERB","Tense=Pres")  # we'll have to delete the list first for division
+    dimlist['f04']=f4/len(doc)
+    dimlist['f05']=posWithLemmaFilter(doc,'PRON','secondPersonPronouns')/len(doc)
+    dimlist['f06']=doAsProVerb(doc)/len(doc)
+    dimlist['f07']=posWithLemmaFilter(doc,'', "notWord")/len(doc)
+    dimlist['f08']=demonstrativePronouns(doc)/len(doc)
+    dimlist['f09']=posWithLemmaFilter(doc,'','generalEmphatics')/len(doc)
+    dimlist['f10']=posWithLemmaFilter(doc,'','firstPersonPronouns')/len(doc)
+    dimlist['f11']=posWithLemmaFilter(doc,'',"itWord")/len(doc)
+    dimlist['f12']=beAsMainVerb(doc)/len(doc)
+    dimlist['f13']=posWithLemmaFilter(doc,'',"becauseWord")/len(doc)
+    #dimlist['f14']=0 # ["discourse particles", \&dummyFunction, "s"],
+    dimlist['f15']=posWithLemmaFilter(doc,'','indefinitePronouns')/len(doc)
+    #dimlist['f16']=0 # ["general hedges", \&dummyFunction, "s"],
+    dimlist['f17']=posWithLemmaFilter(doc,'','amplifiers')/len(doc)
+    #dimlist['f18']=0 # ["sentence relatives", \&dummyFunction, "s"],
+    dimlist['f19']=posWithLemmaFilter(doc,'','whQuestions')/len(doc)
+    dimlist['f20']=posWithLemmaFilter(doc,'','possibilityModals')/len(doc)
+    #dimlist['f21']=0 # ["non-phrasal coordination", \&dummyFunction, "s"],
+    dimlist['f22']=posWithLemmaFilter(doc,'','whMarkers')/len(doc)
+    dimlist['f23']=strandedPrepositions(doc)/len(doc)
     f24,_=simplePartsOfSpeech(doc,"ADV")
-    f24=f24/len(doc)
-    f25=0 # ["conditional subordination", \&dummyFunction, "s"],
+    dimlist['f24']=f24/len(doc)
+    #dimlist['f25']=(0 # ["conditional subordination", \&dummyFunction, "s"],
     f26,_=simplePartsOfSpeech(doc, "NOUN")
-    f26=f26/len(doc)
-    f27=0 # wordLength(doc)
+    dimlist['f26']=f26/len(doc)
+    dimlist['f27']=wordLength(doc)
     f28,_=simplePartsOfSpeech(doc, "ADP")
-    f28=f28/len(doc)
-    f29=0 # typeTokenRatio(doc)
-    f30=0 # attributiveAdjectives, "s"],
-    f31=posWithLemmaFilter(doc,'', "placeAdverbials")/len(doc)
-    f32=0 # ["agentless passives", \&dummyFunction, "s"],
-    f33=0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
-    f34=0 # ["present participial WHIZ deletions", \&dummyFunction, "s"],
+    dimlist['f28']=f28/len(doc)
+    dimlist['f29']=typeTokenRatio(doc)
+    #dimlist['f30']=(0 # attributiveAdjectives, "s"],
+    dimlist['f31']=posWithLemmaFilter(doc,'', "placeAdverbials")/len(doc)
+    #dimlist['f32']=0 # ["agentless passives", \&dummyFunction, "s"],
+    #dimlist['f33']=0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
+    #dimlist['f34']=0 # ["present participial WHIZ deletions", \&dummyFunction, "s"],
     f35,_=simplePartsOfSpeech(doc, "VERB", "Tense=Past")
-    f35=f35/len(doc)
-    f36=posWithLemmaFilter(doc,'', 'thirdPersonPronouns')
-    f36=f36/len(doc)
-    f37=0 # ["perfect aspect verbs", \&perfectAspect, "s"],
-    f38=posWithLemmaFilter(doc,'', 'publicVerbs')/len(doc)
-    f39=0 # \&syntheticNegation
-    f40=0 # \&presentParticipialClauses
-    f41 = 0 # ["present tense verbs", \&dummyFunction, "w"],
-    f42 = 0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
-    f43 = 0 # ["WH relative clauses on object positions", \&dummyFunction, "s"],
-    f44 = 0 # ["pied piping constructions", \&dummyFunction, "s"],
-    f45 = 0 # ["WH relative clauses on subject positions", \&dummyFunction, "s"],
-    f46 = 0 # ["phrasal coordination", \&dummyFunction, "s"],
-    f47=nominalizations(doc)/len(doc)
-    f48=posWithLemmaFilter(doc,'', 'timeAdverbials')/len(doc)
-    f49 = 0 # ["place adverbials", \&dummyFunction, "w"],
-    f50=0 # \&infinitives
-    f51=posWithLemmaFilter(doc,'', 'predictionModals')/len(doc)
-    F52=posWithLemmaFilter(doc,'', 'suasiveVerbs')/len(doc)
-    f53=0# ["conditional subordination", \&dummyFunction, "s"],
-    f54=posWithLemmaFilter(doc,'', 'necessityModals')/len(doc)
-    f55= 0 # ["split auxiliaries", \&dummyFunction, "s"],
-    f56=posWithLemmaFilter(doc,'', 'possibilityModals')/len(doc)
-    F57 = 0 # ["conjuncts", \&dummyFunction, "w"],
-    F58 = 0 # ["past participial clauses", \&dummyFunction, "s"],
-    F59 = 0 # ["BY-passives", \&dummyFunction, "s"],
-    F60 = 0 # ["other adverbial subordinators", \&dummyFunction, "s"],
-    f61=0 #\&predicativeAdjectives
-    F62 = 0 # ["type/token ratio", \&dummyFunction, "d"],
-    F63 = 0 # ["THAT clauses as verb complements", \&dummyFunction, "s"],
-    f64=0 #\&demonstrativePronouns
-    F65 = 0 # ["THAT relative clauses on object positions", \&dummyFunction, "s"],
-    F66 = 0 # ["THAT clauses as adjective complements", \&dummyFunction, "s"],
-    F67 = 0 # ["final prepositions", \&dummyFunction, "s"],
-    F68 = 0 # ["existential THERE", \&simplePartsOfSpeech, "w", "EX"],
-    F69 = 0 # ["demonstrative pronouns", \&demonstrativePronouns, "s"],
-    F70 = 0 # ["WH relative clauses on object positions", \&dummyFunction, "s"],
-    F71 = 0 # ["phrasal coordination", \&dummyFunction, "s"],
-    f72=posWithLemmaFilter(doc,'', 'seemappear')/len(doc)
-    f73=posWithLemmaFilter(doc,'', 'downtopers')/len(doc)
-    F74 = 0 # ["concessive subordination", \&dummyFunction, "s"]);
+    dimlist['f35']=f35/len(doc)
+    dimlist['f36']=posWithLemmaFilter(doc,'','thirdPersonPronouns')/len(doc)
+    #dimlist['f37']=(0 # ["perfect aspect verbs", \&perfectAspect, "s"],
+    dimlist['f38']=posWithLemmaFilter(doc,'','publicVerbs')/len(doc)
+    #dimlist['f39']=0 # \&syntheticNegation
+    #dimlist['f40']=0 # \&presentParticipialClauses
+    #dimlist['f41']= 0 # ["present tense verbs", \&dummyFunction, "w"],
+    #dimlist['f42']= 0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
+    #dimlist['f43']= 0 # ["WH relative clauses on object positions", \&dummyFunction, "s"],
+    #dimlist['f44']= 0 # ["pied piping constructions", \&dummyFunction, "s"],
+    #dimlist['f45']= 0 # ["WH relative clauses on subject positions", \&dummyFunction, "s"],
+    #dimlist['f46']= 0 # ["phrasal coordination", \&dummyFunction, "s"],
+    dimlist['f47']=nominalizations(doc)/len(doc)
+    dimlist['f48']=posWithLemmaFilter(doc,'','timeAdverbials')/len(doc)
+    #dimlist['f49']= 0 # ["place adverbials", \&dummyFunction, "w"],
+    #dimlist['f50']=0 # \&infinitives
+    dimlist['f51']=posWithLemmaFilter(doc,'','predictionModals')/len(doc)
+    dimlist['f52']=posWithLemmaFilter(doc,'','suasiveVerbs')/len(doc)
+    #dimlist['f53']=0# ["conditional subordination", \&dummyFunction, "s"],
+    dimlist['f54']=posWithLemmaFilter(doc,'','necessityModals')/len(doc)
+    #dimlist['f55']= 0 # ["split auxiliaries", \&dummyFunction, "s"],
+    dimlist['f56']=posWithLemmaFilter(doc,'','possibilityModals')/len(doc)
+    #dimlist['f57']= 0 # ["conjuncts", \&dummyFunction, "w"],
+    #dimlist['f58']= 0 # ["past participial clauses", \&dummyFunction, "s"],
+    #dimlist['f59']= 0 # ["BY-passives", \&dummyFunction, "s"],
+    #dimlist['f60']= 0 # ["other adverbial subordinators", \&dummyFunction, "s"],
+    #dimlist['f61']=0 #\&predicativeAdjectives
+    #dimlist['f62']= 0 # ["type/token ratio", \&dummyFunction, "d"],
+    #dimlist['f63']= 0 # ["THAT clauses as verb complements", \&dummyFunction, "s"],
+    #dimlist['f64']=0 #\&demonstrativePronouns
+    #dimlist['f65']= 0 # ["THAT relative clauses on object positions", \&dummyFunction, "s"],
+    #dimlist['f66']= 0 # ["THAT clauses as adjective complements", \&dummyFunction, "s"],
+    #dimlist['f67']= 0 # ["final prepositions", \&dummyFunction, "s"],
+    #dimlist['f68']= 0 # ["existential THERE", \&simplePartsOfSpeech, "w", "EX"],
+    #dimlist['f69']= 0 # ["demonstrative pronouns", \&demonstrativePronouns, "s"],
+    #dimlist['f70']= 0 # ["WH relative clauses on object positions", \&dummyFunction, "s"],
+    #dimlist['f71']= 0 # ["phrasal coordination", \&dummyFunction, "s"],
+    dimlist['f72']=posWithLemmaFilter(doc,'','seemappear')/len(doc)
+    dimlist['f73']=posWithLemmaFilter(doc,'','downtopers')/len(doc)
+    #dimlist['f74']= 0, # ["concessive subordination", \&dummyFunction, "s"]);
 
-    # return [f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f15,f17,f19,f20,f22,f23,f24,f26,f28,f31,f35,f36,f38,f47,f48,f51,F52,f54,f56,f72,f73]
-    return [f6,f12,f23,f47]
+    return dimlist
 
 def readwordlists(f):
     '''
@@ -386,11 +376,18 @@ def readwordlists(f):
     firstPersonPronouns = I,we,me,us,my,our,myself,ourselves
     '''
     out={}
-    for line in f:
+    for i,line in enumerate(f):
         x=line.strip().split(' = ')
         if len(x)==2:
-            out[x[0]]=set(x[1].split(','))
+            out[x[0]]=set([w.strip() for w in x[1].split(',')])
+        else:
+            if ut.verbosity>0 and len(line)>1:
+                print('Error in line %i, %s' % (i,line), file=sys.stderr)
+    if ut.verbosity>1:
+        print('Read total %d classes' % len(out), file=sys.stderr)
+        print(sorted(out.keys()), file=sys.stderr)
     out['specialVerbs']=set.union(out['publicVerbs'],out['privateVerbs'],out['suasiveVerbs'])
+    out['modalVerbs']=set.union(out['possibilityModals'],out['necessityModals'],out['predictionModals'])
     return out
 
 def readnumlist(f):
@@ -407,36 +404,36 @@ def readnumlist(f):
     return out
 
 parser = argparse.ArgumentParser(description="A Keras Model for Genre Classification")
-parser.add_argument('-1', '--embeddings', type=str, help='source embeddings')
+parser.add_argument('-1', '--embeddings', type=str, help='embeddings, not added yet')
 parser.add_argument('-t', '--testfile', type=str, help='one-doc-per-line corpus')
 parser.add_argument('-o', '--outfile', type=str, default='-', help='output file')
-parser.add_argument('-l', '--language', type=str, help='language id for getting the annotation files')
+parser.add_argument('-l', '--language', type=str, default='en', help='language id for getting the annotation files')
 
 parser.add_argument('-v', '--verbosity', type=int, default=1)
 
-outname=re.sub(' ','=','_'.join(sys.argv))
-outname=re.sub('/','@',outname)
-
 args = parser.parse_args()
 ut.verbosity=args.verbosity
+language=args.language
 
 f=sys.stdin if args.testfile=='-' else ut.myopen(args.testfile)
-fout=sys.stdout if args.testfile=='-' else open(args.outfile,"w")
+fout=sys.stdout if args.outfile=='-' else open(args.outfile,"w")
 
-wordlists=readwordlists(open(args.language+'.properties'))
-numfile=args.language+'.tag.num'
-taglist=readnumlist(open(args.language+'.tag.num'))
+wordlists = readwordlists(open(language+'.properties'))
+taglist= readnumlist(open(language+'.tag.num'))
+if args.verbosity>0:
+    print('Loaded %d words from %s' % (len(taglist), language+'.tag.num'), file=sys.stderr)
 
 if args.embeddings:
     embeddings,w2i=ut.read_embeddings(args.embeddings)
 
-print('\t'.join(['"'+d+'"' for d in dimlist]),file=fout)
+print('\t'.join([d+'.'+dimnames[d] for d in sorted(dimnames)]),file=fout)
 if args.verbosity>1:
-    print('total %d dims in the header' % len(dimlist),file=sys.stderr)
+    print('total %d dims in output' % len(dimnames),file=sys.stderr)
 
-for line in f:
+starttime=time.time()
+for i,line in enumerate(f):
     doc=line.strip().lower().split()
     dims=getbiberdims(doc)
-    print('\t'.join(['%.5f' % d for d in dims]),file=fout)
-if args.verbosity>2:
-    print('total %d dims in output' % len(dims),file=sys.stderr)
+    print('\t'.join(['%.5f' % dims[d] for d in sorted(dimnames)]),file=fout)
+if args.verbosity>1:
+    print('Processed %d files in %d sec' % (i, time.time()-starttime),file=sys.stderr)

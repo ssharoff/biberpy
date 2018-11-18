@@ -5,7 +5,7 @@ Back in 1988 Doug Biber developed an approach to analysing the composition of a 
 
 An article-length description is available from [http://www.aclweb.org/anthology/J93-2001]
 
-While this approach is more than 30-years old by now, his attention to careful design of features is influential to understanding how features of genres vary in texts of different kinds.  The features cover
+While this approach is more than 30-years old by now, his attention to designing extractable features is still important for understanding how linguistic features vary in texts of different kinds.  The features proposed by Biber include:
 
 * Lexical features, such as:
   * publicVerbs = *acknowledge, admit, agree, assert, claim, complain, declare, deny...*
@@ -38,7 +38,7 @@ In our Intellitext project (2011-2012) we have implemented these features in a [
 }
 ```
 
-Since then, for my research on text classification I ported the feature extractor from Perl to Python.  Also I have ported the available word lists to French and Russian, so that experiments can be run across languages.
+Since then, for my research on text classification I ported the feature extractor from Perl to Python.  Also I have ported the available word lists to Russian, so that experiments can be run across languages.
 
 The arguments for the script are self-explanatory (run `python3 biber-dim.py -h`).  A typical invocation would be:
 
@@ -49,7 +49,7 @@ The format for the source file is one line per document.  The script assumes tha
 privateVerbs = anticipate,assume,believe,conclude,decide,demonstrate,
 ```
 
-The names are fixed (the label `privateVerbs` is used for all languages), while the lists are language-specific.
+The names are fixed (the label `privateVerbs` is used for all languages), while the word lists are language-specific.
 
 The POS tags and lemmas are coming from a frequency list:
 

@@ -269,7 +269,8 @@ def nominalizations(doc):
     nomCount=0
     for loc in nounPositions:
         lemma = lemmaAt(doc[loc])
-        if lemma[-4:] in ['tion','ment','ness']:
+        if (language=='en' and lemma[-4:] in ['tion','ment','ness']) or\
+           (language=='ru' and lemma[-3:] in ['ция','сть','ние','тие']):
             nomCount+=1
     return nomCount
 
@@ -304,7 +305,7 @@ def predicativeAdjectives(doc):
         try:
             previousLemma = lemmaAt(doc[l-1])
             nextPos = posAt(doc[l+1])
-            if not (previousLemma=='be' and nextPos in ["ADJ","NOUN"]): 
+            if not (isWordSet(previousLemma,'beVerb') and nextPos in ["ADJ","NOUN"]): 
                 adjCount+=-1
         except:
             adjCount+=-1

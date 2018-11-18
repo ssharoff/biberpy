@@ -54,7 +54,7 @@ dimnames={
 #   'f37' : 0 # ["perfect aspect verbs", \&perfectAspect, "s"],
     'f38' : 'publicVerbs',
     'f39' : 'syntheticNegation',
-    'f40' :  'presentParticipialClauses',
+#    'f40' : 'presentParticipialClauses',
 #   'f41' :  0 # ["present tense verbs", \&dummyFunction, "w"],
 #   'f42' :  0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
 #   'f43' :  0 # ["WH relative clauses on object positions", \&dummyFunction, "s"],
@@ -103,11 +103,23 @@ def wordAt(w):
     #ideally we need a record containing the word form and its analysis 
     return w
 def lemmaAt(w):
-    return taglist[w][lemma1]
+    try:
+        out=taglist[w][lemma1]
+    except:
+        out=w
+    return out
 def posAt(w):
-    return taglist[w][pos2]
+    try:
+        out=taglist[w][pos2]
+    except:
+        out='PROPN'
+    return out
 def fineposAt(w):
-    return taglist[w][finepos3]
+    try:
+        out=taglist[w][finepos3]
+    except:
+        out='_'
+    return out
 def isWordSet(w, type):
     return w in wordlists[type]
 def isDemonstrativePronoun(doc, l):
@@ -366,7 +378,7 @@ def getbiberdims(doc):
     #dimlist['f37']=(0 # ["perfect aspect verbs", \&perfectAspect, "s"],
     dimlist['f38']=posWithLemmaFilter(doc,'','publicVerbs')/len(doc)
     dimlist['f39']=syntheticNegation(doc)/len(doc)
-    dimlist['f40']=presentParticipialClauses(doc)/len(doc)
+    #dimlist['f40']=presentParticipialClauses(doc)/len(doc)
     #dimlist['f41']= 0 # ["present tense verbs", \&dummyFunction, "w"],
     #dimlist['f42']= 0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
     #dimlist['f43']= 0 # ["WH relative clauses on object positions", \&dummyFunction, "s"],
@@ -469,5 +481,5 @@ for i,line in enumerate(f):
     doc=line.strip().lower().split()
     dims=getbiberdims(doc)
     print('\t'.join(['%.5f' % dims[d] for d in sorted(dimnames)]),file=fout)
-if args.verbosity>1:
+if args.verbosity>0:
     print('Processed %d files in %d sec' % (i, time.time()-starttime),file=sys.stderr)

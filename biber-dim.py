@@ -276,9 +276,12 @@ def nominalizations(doc):
 def syntheticNegation(doc):
     noCount, noPositions = findLemmaInSentence(doc, '', 'notWord', True)
     for l in noPositions:
-        pos = posAt(doc[l+1])
-        nextWord = wordAt(doc[l+1])
-        if not (pos in ['ADJ','NOUN'] and isWordSet(nextWord, 'quantifiers')):
+        try:
+            pos = posAt(doc[l+1])
+            nextWord = wordAt(doc[l+1])
+            if not (pos in ['ADJ','NOUN'] and isWordSet(nextWord, 'quantifiers')):
+                noCount+=-1
+        except:
             noCount+=-1
     nNCount, _ = findLemmaInSentence(doc, '', "neitherWord")
     noCount += nNCount

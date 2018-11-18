@@ -53,8 +53,8 @@ dimnames={
     'f36' : 'thirdPersonPronouns',
 #   'f37' : 0 # ["perfect aspect verbs", \&perfectAspect, "s"],
     'f38' : 'publicVerbs',
-#   'f39' : 0 # \&syntheticNegation
-#   'f40' : 0 # \&presentParticipialClauses
+    'f39' : 'syntheticNegation',
+    'f40' :  'presentParticipialClauses',
 #   'f41' :  0 # ["present tense verbs", \&dummyFunction, "w"],
 #   'f42' :  0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
 #   'f43' :  0 # ["WH relative clauses on object positions", \&dummyFunction, "s"],
@@ -75,7 +75,7 @@ dimnames={
 #   'f58' :  0 # ["past participial clauses", \&dummyFunction, "s"],
 #   'f59' :  0 # ["BY-passives", \&dummyFunction, "s"],
 #   'f60' :  0 # ["other adverbial subordinators", \&dummyFunction, "s"],
-#   'f61' : 0 #\&predicativeAdjectives
+    'f61' :  'predicativeAdjectives',
 #   'f62' :  0 # ["type/token ratio", \&dummyFunction, "d"],
 #   'f63' :  0 # ["THAT clauses as verb complements", \&dummyFunction, "s"],
 #   'f64' : 0 #\&demonstrativePronouns
@@ -242,7 +242,7 @@ def beAsMainVerb(doc):
     return beCount
 
 def strandedPrepositions(doc):
-    prepCount, prepPositions = simplePartsOfSpeech(doc, "ADP", "", True);
+    prepCount, prepPositions = simplePartsOfSpeech(doc, "ADP", "", True)
     for loc in prepPositions:
         try:
             nextWord = wordAt(doc[loc + 1])
@@ -253,13 +253,47 @@ def strandedPrepositions(doc):
     return prepCount;
 
 def nominalizations(doc):
-    nounCount, nounPositions = simplePartsOfSpeech(doc, "NOUN", "", True);
+    nounCount, nounPositions = simplePartsOfSpeech(doc, "NOUN", "", True)
     nomCount=0
     for loc in nounPositions:
         lemma = lemmaAt(doc[loc])
         if lemma[-4:] in ['tion','ment','ness']:
             nomCount+=1
     return nomCount
+
+def syntheticNegation(doc):
+    noCount, noPositions = findLemmaInSentence(doc, '', 'notWord', True)
+    for l in noPositions:
+        pos = posAt(doc[l+1])
+        nextWord = wordAt(doc[l+1])
+        if not (pos in ['ADJ','NOUN'] and isWordSet(nextWord, 'quantifiers')):
+            noCount+=-1
+    nNCount, _ = findLemmaInSentence(doc, '', "neitherWord")
+    noCount += nNCount
+    return noCount;
+
+def presentParticipialClauses(doc):
+    ppCount, ppPositions = simplePartsOfSpeech(doc, "", "VerbForm=Ger", True)
+    for l in ppPositions:
+        try:
+            w0 = wordAt(doc[l-1])
+            if isWordSet(w0, 'clausePunctuation'):
+                ppCount+=-1
+        except:
+            ppCount+=-1
+    return ppCount
+
+def predicativeAdjectives(doc):
+    adjCount, adjPositions = simplePartsOfSpeech(doc, "ADJ", "", True)
+    for l in adjPositions:
+        try:
+            previousLemma = lemmaAt(doc[l-1])
+            nextPos = posAt(doc[l+1])
+            if not (previousLemma=='be' and nextPos in ["ADJ","NOUN"]): 
+                adjCount+=-1
+        except:
+            adjCount+=-1
+    return adjCount
 
 def wordLength(doc):
     totLength = 0
@@ -331,8 +365,8 @@ def getbiberdims(doc):
     dimlist['f36']=posWithLemmaFilter(doc,'','thirdPersonPronouns')/len(doc)
     #dimlist['f37']=(0 # ["perfect aspect verbs", \&perfectAspect, "s"],
     dimlist['f38']=posWithLemmaFilter(doc,'','publicVerbs')/len(doc)
-    #dimlist['f39']=0 # \&syntheticNegation
-    #dimlist['f40']=0 # \&presentParticipialClauses
+    dimlist['f39']=syntheticNegation(doc)/len(doc)
+    dimlist['f40']=presentParticipialClauses(doc)/len(doc)
     #dimlist['f41']= 0 # ["present tense verbs", \&dummyFunction, "w"],
     #dimlist['f42']= 0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
     #dimlist['f43']= 0 # ["WH relative clauses on object positions", \&dummyFunction, "s"],
@@ -353,7 +387,7 @@ def getbiberdims(doc):
     #dimlist['f58']= 0 # ["past participial clauses", \&dummyFunction, "s"],
     #dimlist['f59']= 0 # ["BY-passives", \&dummyFunction, "s"],
     #dimlist['f60']= 0 # ["other adverbial subordinators", \&dummyFunction, "s"],
-    #dimlist['f61']=0 #\&predicativeAdjectives
+    dimlist['f61']=predicativeAdjectives(doc)/len(doc)
     #dimlist['f62']= 0 # ["type/token ratio", \&dummyFunction, "d"],
     #dimlist['f63']= 0 # ["THAT clauses as verb complements", \&dummyFunction, "s"],
     #dimlist['f64']=0 #\&demonstrativePronouns

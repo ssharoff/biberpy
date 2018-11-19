@@ -70,7 +70,7 @@ dimnames={
 #   'f53' : 0# ["conditional subordination", \&dummyFunction, "s"],
     'f54' : 'necessityModals',
 #   'f55' :  0 # ["split auxiliaries", \&dummyFunction, "s"],
-    'f56' : 'possibilityModals',
+#   'f56' : 'possibilityModals',
 #   'f57' :  0 # ["conjuncts", \&dummyFunction, "w"],
 #   'f58' :  0 # ["past participial clauses", \&dummyFunction, "s"],
 #   'f59' :  0 # ["BY-passives", \&dummyFunction, "s"],
@@ -338,72 +338,73 @@ def getbiberdims(doc):
     processes document as a list of tokenised words
     '''
     dimlist={}
-    dimlist['f01']=posWithLemmaFilter(doc,'VERB','privateVerbs')/len(doc)
-    dimlist['f02']=thatDeletion(doc)/len(doc)
-    dimlist['f03']=contractions(doc)/len(doc)
+    normalise=len(doc)
+    dimlist['f01']=posWithLemmaFilter(doc,'VERB','privateVerbs')/normalise
+    dimlist['f02']=thatDeletion(doc)/normalise
+    dimlist['f03']=contractions(doc)/normalise
     f4,_=simplePartsOfSpeech(doc,"VERB","Tense=Pres")  # we'll have to delete the list first for division
-    dimlist['f04']=f4/len(doc)
-    dimlist['f05']=posWithLemmaFilter(doc,'PRON','secondPersonPronouns')/len(doc)
-    dimlist['f06']=doAsProVerb(doc)/len(doc)
-    dimlist['f07']=posWithLemmaFilter(doc,'', "notWord")/len(doc)
-    dimlist['f08']=demonstrativePronouns(doc)/len(doc)
-    dimlist['f09']=posWithLemmaFilter(doc,'','generalEmphatics')/len(doc)
-    dimlist['f10']=posWithLemmaFilter(doc,'','firstPersonPronouns')/len(doc)
-    dimlist['f11']=posWithLemmaFilter(doc,'',"itWord")/len(doc)
-    dimlist['f12']=beAsMainVerb(doc)/len(doc)
-    dimlist['f13']=posWithLemmaFilter(doc,'',"becauseWord")/len(doc)
+    dimlist['f04']=f4/normalise
+    dimlist['f05']=posWithLemmaFilter(doc,'PRON','secondPersonPronouns')/normalise
+    dimlist['f06']=doAsProVerb(doc)/normalise
+    dimlist['f07']=posWithLemmaFilter(doc,'', "notWord")/normalise
+    dimlist['f08']=demonstrativePronouns(doc)/normalise
+    dimlist['f09']=posWithLemmaFilter(doc,'','generalEmphatics')/normalise
+    dimlist['f10']=posWithLemmaFilter(doc,'','firstPersonPronouns')/normalise
+    dimlist['f11']=posWithLemmaFilter(doc,'',"itWord")/normalise
+    dimlist['f12']=beAsMainVerb(doc)/normalise
+    dimlist['f13']=posWithLemmaFilter(doc,'',"becauseWord")/normalise
     #dimlist['f14']=0 # ["discourse particles", \&dummyFunction, "s"],
-    dimlist['f15']=posWithLemmaFilter(doc,'','indefinitePronouns')/len(doc)
+    dimlist['f15']=posWithLemmaFilter(doc,'','indefinitePronouns')/normalise
     #dimlist['f16']=0 # ["general hedges", \&dummyFunction, "s"],
-    dimlist['f17']=posWithLemmaFilter(doc,'','amplifiers')/len(doc)
+    dimlist['f17']=posWithLemmaFilter(doc,'','amplifiers')/normalise
     #dimlist['f18']=0 # ["sentence relatives", \&dummyFunction, "s"],
-    dimlist['f19']=posWithLemmaFilter(doc,'','whQuestions')/len(doc)
-    dimlist['f20']=posWithLemmaFilter(doc,'','possibilityModals')/len(doc)
+    dimlist['f19']=posWithLemmaFilter(doc,'','whQuestions')/normalise
+    dimlist['f20']=posWithLemmaFilter(doc,'','possibilityModals')/normalise
     #dimlist['f21']=0 # ["non-phrasal coordination", \&dummyFunction, "s"],
-    dimlist['f22']=posWithLemmaFilter(doc,'','whMarkers')/len(doc)
-    dimlist['f23']=strandedPrepositions(doc)/len(doc)
+    dimlist['f22']=posWithLemmaFilter(doc,'','whMarkers')/normalise
+    dimlist['f23']=strandedPrepositions(doc)/normalise
     f24,_=simplePartsOfSpeech(doc,"ADV")
-    dimlist['f24']=f24/len(doc)
+    dimlist['f24']=f24/normalise
     #dimlist['f25']=(0 # ["conditional subordination", \&dummyFunction, "s"],
     f26,_=simplePartsOfSpeech(doc, "NOUN")
-    dimlist['f26']=f26/len(doc)
+    dimlist['f26']=f26/normalise
     dimlist['f27']=wordLength(doc)
     f28,_=simplePartsOfSpeech(doc, "ADP")
-    dimlist['f28']=f28/len(doc)
+    dimlist['f28']=f28/normalise
     dimlist['f29']=typeTokenRatio(doc)
     #dimlist['f30']=(0 # attributiveAdjectives, "s"],
-    dimlist['f31']=posWithLemmaFilter(doc,'', "placeAdverbials")/len(doc)
+    dimlist['f31']=posWithLemmaFilter(doc,'', "placeAdverbials")/normalise
     #dimlist['f32']=0 # ["agentless passives", \&dummyFunction, "s"],
     #dimlist['f33']=0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
     #dimlist['f34']=0 # ["present participial WHIZ deletions", \&dummyFunction, "s"],
     f35,_=simplePartsOfSpeech(doc, "VERB", "Tense=Past")
-    dimlist['f35']=f35/len(doc)
-    dimlist['f36']=posWithLemmaFilter(doc,'','thirdPersonPronouns')/len(doc)
+    dimlist['f35']=f35/normalise
+    dimlist['f36']=posWithLemmaFilter(doc,'','thirdPersonPronouns')/normalise
     #dimlist['f37']=(0 # ["perfect aspect verbs", \&perfectAspect, "s"],
-    dimlist['f38']=posWithLemmaFilter(doc,'','publicVerbs')/len(doc)
-    dimlist['f39']=syntheticNegation(doc)/len(doc)
-    #dimlist['f40']=presentParticipialClauses(doc)/len(doc)
+    dimlist['f38']=posWithLemmaFilter(doc,'','publicVerbs')/normalise
+    dimlist['f39']=syntheticNegation(doc)/normalise
+    #dimlist['f40']=presentParticipialClauses(doc)/normalise
     #dimlist['f41']= 0 # ["present tense verbs", \&dummyFunction, "w"],
     #dimlist['f42']= 0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
     #dimlist['f43']= 0 # ["WH relative clauses on object positions", \&dummyFunction, "s"],
     #dimlist['f44']= 0 # ["pied piping constructions", \&dummyFunction, "s"],
     #dimlist['f45']= 0 # ["WH relative clauses on subject positions", \&dummyFunction, "s"],
     #dimlist['f46']= 0 # ["phrasal coordination", \&dummyFunction, "s"],
-    dimlist['f47']=nominalizations(doc)/len(doc)
-    dimlist['f48']=posWithLemmaFilter(doc,'','timeAdverbials')/len(doc)
+    dimlist['f47']=nominalizations(doc)/normalise
+    dimlist['f48']=posWithLemmaFilter(doc,'','timeAdverbials')/normalise
     #dimlist['f49']= 0 # ["place adverbials", \&dummyFunction, "w"],
     #dimlist['f50']=0 # \&infinitives
-    dimlist['f51']=posWithLemmaFilter(doc,'','predictionModals')/len(doc)
-    dimlist['f52']=posWithLemmaFilter(doc,'','suasiveVerbs')/len(doc)
+    dimlist['f51']=posWithLemmaFilter(doc,'','predictionModals')/normalise
+    dimlist['f52']=posWithLemmaFilter(doc,'','suasiveVerbs')/normalise
     #dimlist['f53']=0# ["conditional subordination", \&dummyFunction, "s"],
-    dimlist['f54']=posWithLemmaFilter(doc,'','necessityModals')/len(doc)
+    dimlist['f54']=posWithLemmaFilter(doc,'','necessityModals')/normalise
     #dimlist['f55']= 0 # ["split auxiliaries", \&dummyFunction, "s"],
-    dimlist['f56']=posWithLemmaFilter(doc,'','possibilityModals')/len(doc)
+    #dimlist['f56']=posWithLemmaFilter(doc,'','possibilityModals')/normalise
     #dimlist['f57']= 0 # ["conjuncts", \&dummyFunction, "w"],
     #dimlist['f58']= 0 # ["past participial clauses", \&dummyFunction, "s"],
     #dimlist['f59']= 0 # ["BY-passives", \&dummyFunction, "s"],
     #dimlist['f60']= 0 # ["other adverbial subordinators", \&dummyFunction, "s"],
-    dimlist['f61']=predicativeAdjectives(doc)/len(doc)
+    dimlist['f61']=predicativeAdjectives(doc)/normalise
     #dimlist['f62']= 0 # ["type/token ratio", \&dummyFunction, "d"],
     #dimlist['f63']= 0 # ["THAT clauses as verb complements", \&dummyFunction, "s"],
     #dimlist['f64']=0 #\&demonstrativePronouns
@@ -414,8 +415,8 @@ def getbiberdims(doc):
     #dimlist['f69']= 0 # ["demonstrative pronouns", \&demonstrativePronouns, "s"],
     #dimlist['f70']= 0 # ["WH relative clauses on object positions", \&dummyFunction, "s"],
     #dimlist['f71']= 0 # ["phrasal coordination", \&dummyFunction, "s"],
-    dimlist['f72']=posWithLemmaFilter(doc,'','seemappear')/len(doc)
-    dimlist['f73']=posWithLemmaFilter(doc,'','downtopers')/len(doc)
+    dimlist['f72']=posWithLemmaFilter(doc,'','seemappear')/normalise
+    dimlist['f73']=posWithLemmaFilter(doc,'','downtopers')/normalise
     #dimlist['f74']= 0, # ["concessive subordination", \&dummyFunction, "s"]);
 
     return dimlist

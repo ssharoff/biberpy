@@ -2,7 +2,7 @@
 # a simple script for providing a summary of a dataset
 args=commandArgs(trailingOnly=T);
 header = 0;
-if (args[2]=='1') {
+if (length(args)>1) {
     header = 1;
 }
 x=read.table(args[1],header=header);

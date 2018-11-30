@@ -5,6 +5,7 @@ library(ggfortify)
 library(stats)
 
 args=commandArgs(trailingOnly=T);
+print(paste('Loading the source table',args[1]));
 bd=read.table(args[1],header=1); # args=c('brown-biber.dat','brown-annot.dat');
 d = dim(bd);
 kfactors=5; # number of factors
@@ -13,7 +14,8 @@ desc=bd; # no descriptions
 flabels=sprintf("%d",seq(1,d[1]));
 textclass=rep('unk',d[1])
 colourcat=NULL;
-if (length(args)>2) {
+if (length(args)>1) {
+    print(paste('Loading the annotation table',args[2]));
     desc=read.table(args[2],header=1,row.names=3); 
     flabels=row.names(desc);
     textclass=desc[,1];
@@ -30,6 +32,10 @@ autoplot(d.factanal, data = desc, x=3, y=4, colour = colourcat);
 autoplot(d.factanal, data = desc, x=4, y=5, colour = colourcat);
 dev.off();
 
+bdout=data.frame(d.factanal$scores, textclass)
+rownames(bdout) <- flabels;
+write.table(bdout,file=paste('out',args[1],sep='-'))
+
 for (i in c(1:kfactors)) { #   i=1;
     print(i)
     dimension = d.factanal$loadings[,i]
@@ -40,8 +46,4 @@ for (i in c(1:kfactors)) { #   i=1;
     }
     cat('\n', file=ROUTFILE, append=TRUE);
 }
-
-bdout=data.frame(d.factanal$scores, textclass)
-rownames(bdout) <- flabels;
-write.table(bdout,file=paste('out',args[1],sep='-'))
 

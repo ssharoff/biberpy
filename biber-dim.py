@@ -32,7 +32,7 @@ dimnames={
     'f15' : 'indefinitePronouns',
 #    'f16' : "generalHedges",
     'f17' : 'amplifiers',
-#   'f18' : 0 # ["sentence relatives", \&dummyFunction, "s"],
+    'f18' : "sentenceRelatives",
     'f19' : 'whQuestions',
     'f20' : 'possibilityModals',
 #   'f21' : 0 # ["non-phrasal coordination", \&dummyFunction, "s"],
@@ -49,7 +49,7 @@ dimnames={
 #   'f32' : 0 # ["agentless passives", \&dummyFunction, "s"],
 #   'f33' : 0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
 #   'f34' : 0 # ["present participial WHIZ deletions", \&dummyFunction, "s"],
-    'f35' : 'PastVerbs',
+    'f35' : 'pastVerbs',
     'f36' : 'thirdPersonPronouns',
 #   'f37' : 0 # ["perfect aspect verbs", \&perfectAspect, "s"],
     'f38' : 'publicVerbs',
@@ -421,7 +421,7 @@ def getbiberdims(doc):
     dimlist['f15']=posWithLemmaFilter(doc,'','indefinitePronouns')/normalise
     #dimlist['f16']=0 # ["general hedges", \&dummyFunction, "s"],
     dimlist['f17']=posWithLemmaFilter(doc,'','amplifiers')/normalise
-    #dimlist['f18']=0 # ["sentence relatives", \&dummyFunction, "s"],
+    dimlist['f18']=posWithLemmaFilter(doc,'',"sentenceRelatives")/normalise
     dimlist['f19']=posWithLemmaFilter(doc,'','whQuestions')/normalise
     dimlist['f20']=posWithLemmaFilter(doc,'','possibilityModals')/normalise
     #dimlist['f21']=0 # ["non-phrasal coordination", \&dummyFunction, "s"],

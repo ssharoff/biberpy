@@ -1,8 +1,10 @@
 #!/usr/bin/Rscript
-# an expanded R script for Biber-like processing from Intellitext
+1# an expanded R script for Biber-like processing from Intellitext
 
 library(ggfortify)
 library(stats)
+library(cluster)
+
 
 args=commandArgs(trailingOnly=T);
 print(paste('Loading the source table',args[1]));
@@ -20,6 +22,9 @@ if (length(args)>1) {
     flabels=row.names(desc);
     textclass=desc[,1];
     colourcat='Top';
+    if (length(args)>2) {
+        colourcat=args[3];
+    }
 }
 ROUTFILE=paste('loadings',args[1],sep='-');
 cat('# Loadings for factors\n', file=ROUTFILE)
@@ -30,6 +35,7 @@ autoplot(d.factanal, data = desc, x=1, y=2, colour = colourcat);
 autoplot(d.factanal, data = desc, x=2, y=3, colour = colourcat);
 autoplot(d.factanal, data = desc, x=3, y=4, colour = colourcat);
 autoplot(d.factanal, data = desc, x=4, y=5, colour = colourcat);
+autoplot(clara(d.factanal$scores,6), data = desc, frame = TRUE, colour = colourcat)  #, frame.type = 'norm'
 dev.off();
 
 bdout=data.frame(d.factanal$scores, textclass)

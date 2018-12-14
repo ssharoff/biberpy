@@ -1,0 +1,500 @@
+A01	The Atlanta Constitution<br>
+A02	The Dallas Morning News, February 17,1961,section 1
+A03	Chicago Daily Tribune
+A04	The Christian Science Monitor, May 11,1961, p.1
+A05	The Providence Journal
+A06	Newark Evening News, March 22, 1961, p.25
+A07	The New York Times, June 19, 1961, p.1
+A08	The Times-Picayune, [New Orleans], January 1, 1961, sec. 2, p.3
+A09	The Philadelphia Inquirer, May 10, 1961, p.49
+A10	The Oregonian, [Portland]
+A11	The Sun, [Baltimore], March 18, 1961
+A12	The Dallas Morning News, October 10, 1961, sec. 2
+A13	Rocky Mountains News, [Denver, Colorado], May 2, 1961
+A14	The New York Times, January 24, 1961, p. 23
+A15	St. Louis Post-Dispatch, May 2, 1961, p.4C
+A16	Chicago Daily Tribune	
+A17	Rocky Mountain News, [Denver, Colorado]
+A18	The Philadelphia Inquirer, March 26, 1961, p.16
+A19	The Sun, [Baltimore]
+A20	Chicago Daily Tribune, February 10, 1961
+A21	The Detroit News
+A22	The Atlanta Constitution
+A23	The Oregonian, [Portland], August 26, 1961, p.7
+A24	The Providence Journal, November 29, 1961
+A25	San Francisco Chronicle, March 27, 1961, p.32
+A26	The Dallas Morning News, April 9, 1961, sec. 4, p.1
+A27	Los Angeles Times, June 21, 1961, sec. 4, p.6
+A28	The Wall Street Journal
+A29	The Dallas Morning News, September 10, 1961, sec. 6
+A30	Los Angeles Times
+A31	The Miami Herald
+A32	San Francisco Chronicle
+A33	The Washington Post
+A34	The New York Times, May 21, 1961, sec. 4, p.1
+A35	James J. Maguire, "A Family Affair"
+A36	William Gomberg, "Unions and the Anti-Trust Laws"
+A37	"National Affairs"
+A38	Alfred Wright, "A Duel Golfers Will Never Forget"
+A39	"Sports"
+A40	Time, 77: 3 (January 13, 1961)
+A41	Robert Wallace, "This Is the Way It Came About"
+A42	"National Affairs"
+A43	U.S. News and World Report, May 22, 1961
+A44	Saturday Review, 44: 15 (April 15, 1961)
+B01	The Atlanta Constitution, March 6, 1961, p.4, The Washington Post, June 1, 1961, p.A24
+B02	The Christian Science Monitor
+B03	The Detroit News, November 17, 1961, p.8B
+B04	The Miami Herald, September 19, 1961, p. 6A
+B05. Newark Evening News<p>News
+B06	St. Louis Post-Dispatch, October 27, 1961, p.20
+B07	The New York Times, October 17, 1961, p.38
+B08	The Atlanta Constitution
+B09	The Christian Science Monitor
+B10	The Sun, [Baltimore]
+B11	Los Angeles Times
+B12	Newark Evening News
+B13	The Times-Picayune, [New Orleans]
+B14	The Atlanta Constitution
+B15	The Providence Journal, E. February 5, 1961, p.N21	"A defense of the VA.."	1360-1750
+B16	Chicago Daily Tribune
+B17	Newark Evening News
+B18	The New York Times, October 17, 1961, p.38
+B19	The Philadelphia Inquirer, November 5, 1961, p. B 8
+B20	"Editorials"
+B21	The New Republic, 145: 19 (November 6, 1961)
+B22	"Week by Week"
+B23	National Review, xi: 26 (December 30, 1961)
+B24	"Reviews"
+B25	The Nation, 193: 16 (November 11, 1961), 370-373
+B26	National Review
+B27	Saturday Review
+C01	Chicago Daily Tribune
+C02	The Christian Science Monitor, November 28, 1961
+C03	The New York Times
+C04	The Providence Journal
+C05	The Christian Science Monitor, April 20, 1961
+C06	The Wall Street Journal, May 22, 1961, p.12
+C07	The New York Times
+C08	The Providence Journal
+C09	The New York Times
+C10	The Providence Journal
+C11	The New York Times
+C12	The Christian Science Monitor, October 17, 1961, p.4
+C13	The Wall Street Journal, March 8, 1961, p. 16
+C14	The New York Times
+C15	Life
+C16	Saturday Review, 44:15 (April 15, 1961)
+C17	Time magazine, 77:3 (January 13, 1961), 48-50 "Reviews"	0010-1920
+D01	William G. Pollard, Physicist and Christian. 
+D02	Schubert Ogden, Christ Without Myth. New York: Harper and Brothers, 1961.
+D03	Edward E. Kelly, S.J., "Christian Unity in England"
+D04	Jaroslav Pelikan, The Shape of Death: life, death and immortality in the
+D05	Perry Miller "Theodore Parker: Apostasy within Liberalism"
+D06	Tracts published by American Tract Society, 513 West 166th St.,
+D07	Peter Eldersveld, "Faith Amid Fear"
+D08	Schuyler Cammann, "The Magic Square of Three in Old Chinese Phliosophy and
+D09	Eugene E. Golay, Organizing the Local Church for Effective Lay Visitation
+D10	Huston Smith, "Interfaith Communication: The Contemporary Scene,"
+D11	Paul Ramsey, War and the Christian Conscience. Durham, North Carolina:
+D12	Kenneth Underwood and Elden Jacobsen, "Probing the Ethics of Realtors," 
+D13	Science of Mind, 34:11 (November, 1961)
+D14	Kenneth Scott Latourette, Christianity in a Revolutionary Age
+D15	Ernest Becker, Zen: A Rational Critique. New York: W.W. Norton 
+D16	Herald Press Tracts, Scottdale, Pa. No Copyright.
+D17	Guideposts
+E01	Mr. America, 4:6 (November, 1961)
+E02	Organic Gardening and Farming, January, 1961
+E03	Lt. Col. D.F. Martin, "Will Aircraft or Missiles Win Wars?"
+E04	High Fidelity, 11:10 (October,1961)
+E05	Dog World, 46:4 (April, 1961)
+E06	Joseph E. Choate, "The American Boating Scene"
+E07	Paul Larson and Gordon Odegard, "How to design your Interlocking Frame,"
+E08	Don Francisco, "Formulas and Math Every Hot Rodder Should Know"
+E09	The Horseman and Fair World, 84:46 (February 8, 1961)
+E10	Larry Koller, "The New Guns of '61"
+E11	Idwal Jones, "Santa Cruz Run"
+E12	Julia Newman, "Travel and Camera USA"
+E13	Robert Deardorff, "Step by Step Through Istanbul"
+E14	Ann Carnahan, Nick Manero's Cook-out Barbeque Book
+E15	McCall's Needlework and Crafts, Spring-Summer, 1961
+E16	Hal Kelly, "Build Hotei"
+E17	The Family Handyman, 11:5 (October, 1961)
+E18	Covered Bridge Topics, XIX:2 (July, 1961)
+E19	Booth Hemingway and Stuart H. Brown,
+E20	[Anonymous,] "What You Should Know About Air Conditioning for New
+E21	Richard I. McCosh, "Recreation Site Selection"
+E22	Musical America, LXXXI:5 (May, 1961)
+E23	Norman Kent, "The Watercolor Art of Roy M. Mason"
+E24	Bonnie Prudden, "The Dancer and the Gymnast"
+E25	Walter H. Buchsbaum, "Advances in Medical Electronics"
+E26	Bern Dibner, "Oerstad and the Discovery of Electromagnetism"
+E27	Successful Farming, 59:12 (December, 1961)
+E28	John R. Sargent, "Where To Aim Your Planning for Bigger Profits in
+E29	Edward Austin Walton, "On Education for the Interior Designer"
+E30	[Anonymous,] "The Attack on Employee Services"
+E31	Sports Age, 24:9 (September, 1961)
+E32	E.J.Tangerman, "Which Way Up...Technical or Management?"
+E33	Fueloil and Oil Heat, 20:7 (July, 1961)
+E34	[Anonymous,] "The New Look in Signs,"
+E35	[Anonymous,] "The Industrial revolution in Housing"
+E36	Ethel Norling, "Renting a Car in Europe,"
+F01	Rosemary Balckmon, "How Much Do You Tell When You Talk?", Vogue, 138:1 (July, 1961), 40-41,100
+F02	Glenn Infield, "America's Secret Poison Gas Tragedy", True, 42:290 (July, 1961), 27-28,98-99
+F03	Nathan Rapport, ""I've Been Here before!", Fate, 14:4 (April, 1961), 65-70
+F04	Ruth F. Rosevear, "North Country School Cares for the Whole Child,", Prevention, 13:9 (September, 1961), 82-83,85,88
+F05	Richard Sanders Allen, "When Fogg Flew the Mail", Vermont Life, XVI: 1 (Autumn, 1961), 18-22
+F06	Modern Maturity, 4:6 (December, 1961-January, 1962)
+F07	Sexology, 28:1 (August, 1961)
+F08	Philip Reaves, "Who Rules the Marriage Bed?", Pageant, 17:5 (November, 1961), 46-51
+F09	Confidential, 9:1 (January, 1961)
+F10	Jack Kaplan, "The Health Machine Menace: Therapy by Witchcraft", Today's Health, 39:2 (February, 1961), 28-31,81-82
+F11	Lilian Pompian, "Tooth-Straightening Today"
+F12	Marian Nester, "New Methods of Parapsychology"<p>, Tomorrow, 9:4 (Autumn, 1961), 45-50
+F13	Orlin J. Scoville, Part-Time Farming
+F14	Harold Rosenberg, "The Trial and Eichmann"
+F15	The Rev. John A. O'Brien, "Let's Take Birth Control Out of Politics,"
+F16	James Boylan, "Mutinity"
+F17	John Harnsberger and Robert P. Wilkins,
+F18	Bell I. Wiley, "Home Letters of Johnny Reb and Billy Yank,"
+F19	Tristram P. Coffin, "Folklore in the American Twentieth Century,"
+F20	Kenneth Allsop, The Bootleggers and Their Era
+F21	L. Don Leet and Florence J. Leet, editors, The World of Geology.
+F22	Booton Herndon, "From Custer to Korea, The 7th Cavalry"
+F23	Barry Goldwater, "A Foreign Policy for America"
+F24	Peter J. White, "Report on Laos"
+F25	David Boroff, "Jewish Teen-Age Culture"
+F26	Amy Lathrop, "Pioneer Remedies from Western Kansas"
+F27	Creighton Churchill, A Notebook for the Wines of France
+F28	Frank Otto Gatell, "Doctor Palfrey Frees His Slaves"
+F29	Douglass Cater, "The Kennedy Look in the Arts"
+F30	Fredric A. Birmingham, The Ivy league Today
+F31	Edward D. Radin, Lizzie Borden: The Untold Story
+F32	Florence Matilda Read, The Story of Spelman College
+F33	James Bryant Conant, Slums and Suburbs
+F34	Frederic R. Senti and W. Dayton Maclay, "Age-Old of Seeds 
+F35	Ramon F. Adams, The Old-Time Cowhand
+F36	Robert Easton and Mackenzie Brown, Lord of Beasts
+F37	Samuel McCrea Cavert, On the Road to Christian Unity
+F38	Robert Smith, Baseball in America
+F39	Clark E. Vincent, Unmarried Mothers
+F40	William Greenleaf, Monopoly on Wheels
+F41	George W. Oakes, Turn Right at the Fountain
+F42	James Baldwin, Nobody Knows My Name
+F43	Frank Getlein and Harold C. Gardiner, S.J., Movies, Morals, and Art.
+F44	Gibson Winter, The Suburban Captivity of the Churches
+F45	Paul Chrisler Phillips, The Fur Trade
+F46	Russell Baker, An American in Washington
+F47	Clara L. Simerville, Home Visits Abroad.
+F48	Paul Ramsey, Christian Ethics and Sit-In
+G01	Edward P. Lawton, "Northern Liberals and Southern Bourbons"
+G02	Arthur S. Miller, "Toward a Concept of National Responsibility"
+G03	Peter Wyden, "The Chances of Accidental War"
+G04	Eugene Burdick, "The Invisible Aborigine"
+G05	Terence O'Donnell, "Evenings at the Bridge"
+G06	The American-German Review, October-November, 1961
+G07	Richard B. Morris, "Seven Who Set Our Destiny"
+G08	Frank Murphy, "New Southern Fiction: Urban or Agrarian?"
+G09	Selma Jeanne Cohen, "Avant-Garde Choreography"
+G10	Clarence Streit, "How the Civil War Kept You Sovereign"
+G11	Frank Oppenheimer, "Science and Fear-- A Discussion of Some Fruits of
+G12	Tom F. Driver, "Beckett by the Madeleine,"
+G13	Charles Glicksberg, "Sex in Contemporary Literature"
+G14	Helen Hooven Santmyer, "There Were Fences"
+G15	Howard Nemerov, "Themes and Methods: The Early Stories of Thomas
+G16	John F. Hayward, "Mimesis and Symbol in the Arts"
+G17	Randall Stewart, "A Little History, a Little Honesty: A Southern
+G18	Charles Wharton Stork, "Verner von Heidenstam"
+G19	R. F. Shaw, "The 'Private Eye'"
+G20	Dan McLachlan, Jr., "Communication Networks and Monitoring"
+G21	Brainard Cheney, "Christianity and the Tragic Vision-Utopianism
+G22	Kenneth Reiner, "Coping with Runaway Technology"
+G23	William C. Smith, "Why Fear Ideas?"
+G24	Sanchia Thayer, "Personality and Moral Leadership: Operations of
+G25	Stanley Parry, "The Restoration of Tradition"
+G26	Selma Fraiberg, "Two Modern Incest Heroes"
+G27	Matthew Josephson, "Jean H&eacute;lion: The Return from Abstract Art"
+G28	Arlin Turner, "William Faulkner, Southern Novelist"
+G29	[Anonymous,] "References for the Good Society"
+G30	Norwood Russell Hanson, "Copernican and Keplerian Astronomy"
+G31	Irving Fineman, Woman of Valor: The Life of Henrietta Szold
+G32	Finis Farr, Frank Lloyd Wright.
+G33	Virgilia Peterson, A Matter of Life and Death.
+G34	Harry Golden, Carl Sandburg.
+G35	Dwight D. Eisenhower, Peace with Justice.
+G36	DeWitt Copp and Marshall Peck, Betrayal at the UN: the story of
+G37	Gordon Langley Hall, Golden Boats from Burma.
+G38	Bertrand A. Goldgar, The Curse of Party: Swift's Relations with
+G39	Edward Jablonski, Harold Arlen Happy with the Blues.
+G40	Gene Fowler, Skyline: A Reporter's Reminiscences of the 1920s.
+G41	Lillian Rogers Parks and Frances S. Leighton, My Thirty Years
+G42	Harold D. Lasswell, "Epilogue" to Arnold A. Rogow, Editor,
+G43	Robert E. Lane, The Liberties of Wit: Humanism, Criticism, and
+G44	Newton Stallknecht, "Ideas and Literature," in Newton Stallknecht
+G45	W. A. Swanberg, Citizen Hearst: A Biography of William Randolph
+G46	Henry R. Winkler, "George Macaulay Trevelyan," in S. William
+G47	Garry Davis, The World Is My Country.
+G48	Francis F. McKinney, Education in Violence: The Life of George H.
+G49	Paul van Kuykendall Thomson, Francis Thompson, A Critical Biography.
+G50	Curtis Carroll Davis, The King's Chevalier: A Biography of Lewis
+G51	Ilka Chase, The Carthaginian Rose.
+G52	Robert L. Duncan, The Reluctant General.
+G53	Bertram Lippincott, Indians, Privateers, and High Society.
+G54	Mabel Wolfe Wheaton and LeGette Blythe, Thomas Wolfe and His
+G55	Ralph Flanders, Senator from Vermont.
+G56	Keith F. McKean, The Moral Measure of Literature.
+G57	Robin M. Williams, Jr., "Values and Modern Education in the
+G58	North Callahan, Daniel Morgan.
+G59	Esther Rowland Clifford, A Knight of Great Renown.
+G60	Gertrude Berg and Cherney Berg, Molly and Me.
+G61	Donald A. White, Litus Saxonicum
+G62	C. H. Cramer, Newton D. Baker.
+G63	George Steiner, The Death of Tragedy.
+G64	Mark Eccles, Shakespeare in Warwickshire.
+G65	Timothy Paul Donovan, Henry Adams and Brooks Adams.
+G66	Van Wyck Brooks, From the Shadow of the Mountain.
+G67	Mark Schorer, Sinclair Lewis: An American Life.
+G68	Harris Francis Fletcher, The Intellectual Development of John
+G69	Mark R. Hillegas, "Dystopian Science Fiction: New Index to the
+G70	Joseph Wood Krutch, "If You Don't Mind My Saying So"
+G71	Joseph Frank, "Andr&eacute; Malraux: The Image of Man"
+G72	J. W. Fulbright, "For a Concert of Free Nations"
+G73	Carolyn See, "The Jazz Musician as Patchen's Hero"
+G74	John McCormick, "The Confessions of Jean Jacques Krim"
+G75	George Garrett, "A Wreath for Garibaldi"
+H01	Handbook of Federal Aids to Communities. U.S. Department of
+H02	An Act for International Development, A Summary Presentation.
+H03	87th Congress, 1st Session. House Document No. 247. The
+H04	Rhode Island Legislative Council. Research Report Number 1,
+H05	Rhode Island Legislative Council. Research Report Number 4,
+H06	Rhode Island Development Council. Annual Report 1960. Pp. 4-11.
+H07	Rhode Island Legislative Council. Research Report Number 2,
+H08	Rhode Island Governor's Proclamations:
+H09	Statements 87th Congress, 1st Session. Appropriations, Budget
+H10	Medicine in National Defense. Final Report of the Assistant
+H11	1961 Research Highlights of the National Bureau of Standards.
+H12	Legislation on Foreign Relations. Committee on Foreign Relations,
+H13	87th Congress, 1st Session. Congressional Record. Vol. 102,
+H14	Grants-in-Aid and Other Financial Assistance Programs
+H15	The Family Fallout Shelter. Office of Civil and Defence
+H16	U.S. Reports. Volume 366. Cases Adjudged in the Supreme Court
+H17	U.S. Reports. Volume 364. Cases Adjudged in the Supreme Court
+H18	The Department of State: A Fresh Look at the Formulation of
+H19	Peace Corps. Fact Book. April 1, 1961. Pp. 20-25.	0010-1840
+H20	Development Program for the National Forests. U.S. Department
+H21	Public Papers of the Presidents of the U.S. D. D. Eisenhower,
+H22	U.S. Treaties and Other International Agreements. Volume II,
+H23	Federal Communications Commission Reports. Decisions and Reports
+H24	Your Federal Income Tax. 1962 Edition (Revised to October 1961)
+H25	"Report of the Secretary General" in John Simon Guggenheim
+H26	[Anonymous,] A Brief Background of Brown &amp; Sharpe Past Present
+H27	Annual Report for the year ended December 31, 1960. Leesona
+H28	Carleton College Bulletin. Northfield, Minnesota: March, 1961.
+H29	Sprague Log, xxiii: 5 (January, 1961). Sprague Electric Company,
+H30	Fifty-sixth Annual Report for the Year ending June 30, 1961. The
+J01	Cornell H. Mayer, "Radio Emission of the Moon and Planets" in
+J02	Raymond C. Binder et al., editors, Proceedings of the 1961 Heat
+J03	Harry H. Hull, "The Normal Forces and Their Thermodynamic Significance,"
+J04	James A. Ibers et al., "Proton magnetic resonance study of
+J05	Jay C. Harris and John R. Van Wazer, "Detergent building", in J. R.
+J06	Francis J. Johnston and John E. Willard, "The exchange reaction
+J07	J. F. Vedder, "Micrometeorites", in Francis S. Johnson, editor,
+J08	LeRoy Fothergill, "Biological Warfare", in Peter Gray, editor,
+J09	M. Yokoyama et al., "Chemical and serological characteristics
+J10	B. J. D. Meeuse, The Story of Pollination.
+J11	Clifford H. Pope, The Giant Snakes.
+J12	Richard F. McLaughlin, et al., "A study of the subgross pulmonary
+J13	S. Idell Pyle, et al., Onsets, Completions, and Spans of the Osseous
+J14	Jacob Robbins et al., "The thyroid-stimulating hormone and the
+J15	J. W. C. Hagstrom et al., "Debilitating muscular weakness and
+J16	A. N. Nagaraj and L. M. Black, "Localization of wound-tumor
+J17	E. Gellhorn, "Prolegomena to a theory of the emotions"
+J18	Kenneth Hoffman and Ray Kunze, Linear Algebra.
+J19	Frederick Mosteller et al., Probability with Statistical Applications. 
+J20	R. P. Jerrard, "Inscribed squares in plane curves"
+J21	C. R. Wylie, Jr. "Line involutions in S3 whose singular lines
+J22	Max F. Millikan and Donald L. M. Blackmer, editors, The Emerging 
+J23	Joyce O. Hertzler, American Social Institutions; a Sociological
+J24	Howard J. Parad, "Preventive casework: problems and implications"
+J25	Sister Claire Marie Sawyer, Some Aspects of the Fertility of a
+J26	Frank Lorimer, Demographic Information on Tropical Africa.
+J27	Dale L. Womble, "Functional Marriage Course for the Already
+J28	William H. Ittelson and Samuel B. Kutash, editors, Perceptual
+J29	Jesse W. Grimes and Wesley Allinsmith, "Compulsivity, Anxiety
+J30	Raymond J. Corsini et al., Roleplaying in Business and Industry.
+J31	Harold Searles, "Schizophrenic Communication," Psychoanalysis
+J32	Hugh Kelly and Ted Ziehe, "Glossary Lookup Made Easy"
+J33	Ralph B. Long. The Sentence and Its Parts: A Grammar of Contemporary
+J34	H. A. Gleason, "Review of African language studies I, edited by 
+J35	A.L. Kroeber, "Semantic Contribution of Lexicostatistics"
+J36	D. F. Fleming, The Cold War and Its Origins.
+J37	Douglas Ashford, "Elections in Morocco: Progress or Confusion?"
+J38	Committee for Economic Development, Distressed Areas in a Growing
+J39	William O'Connor. Stocks, Wheat and Pharaohs.
+J40	James J. O'Leary, "The Outlook for Interest Rates in 1961"
+J41	Allan J. Braff and Roger F. Miller, "Wage-Price Policies Under
+J42	Morton A. Kaplan and Nicholas de B. Katzenbach, The Political
+J43	Wallace Mendelson, Justices Black and Frankfurter: Conflict in
+J44	J. Mitchell Reese, Jr., Reorganization Transfers and Survival
+J45	Albert N. Schrieber et al., Defence Procurement and Small
+J46	Irving Perluss, "Agricultural Labor Disputes in California - 1960"
+J47	William B. Ragan, Teaching America's Children.
+J48	Paul Cooke, "Desegregated Education in the Middle-South Region:
+J49	Robert J. Havighurst, "Social-Class Influence on American Education,"
+J50	James C. Bonbright, Principles of Public Utility Rates.
+J51	Irving Louis Horowitz, Philosophy, Science and the Sociology of
+J52	Brand Blanshard, "The Emotive Theory," Robert E. Dewey, et al., ed.,
+J53	William S. Haymond, "Is Distance an Original Factor in Vision?"
+J54	Chester G. Starr, The Origins of Greek Civilization 1100-650 B. C.
+J55	Jim Berry Pearson, The Maxwell Land Grant.
+J56	Edwin L. Bigelow and Nancy H. Otis, Manchester, Vermont: A
+J57	J. H. Hexter, "Thomas More: On the Margins of Modernity"
+J58	John Michael Ray, "Rhode Island's Reactions to John Brown's Raid"
+J59	Clement Greenberg, "Collage" in his Art and Culture: Critical
+J60	Robert A. Futterman, The Future of Our Cities.
+J61	Allyn Cox, "Completing and Restoring the Capitol Frescos"
+J62	Jimmy Ernst, "A Letter to Artists of the Soviet Union"
+J63	John H. Schaar, Escape from Authority: The Perspective of Erich
+J64	Katherine Griffith McDonald, "Figures of Rebellion"
+J65	Samuel Hynes, The Pattern of Hardy's Poetry.
+J66	Kenneth Rexroth, "Disengagement: The Art of the Beat Generation" in
+J67	William Whallon, "The Diction of Beowulf"
+J68	Charles R. Forker, "The Language of Hands in Great Expectations"
+J69	IBM Reference Manual - IBM 7070 Series Programming Systems - 
+J70	Ross E. McKinney and Howard Edde, "Aerated Lagoon for Surburban
+J71	Captain Thomas D. McGrath, USN (Ret'd), "Submarine Defense"
+J72	"Independent Research" Mellon Institute Annual Report 1960.
+J73	Directory of Continuing Numeric Data Projects. Washington:
+J74	Harland W. Nelson, "Food Preservation by Ionizing Radiation"
+J75	W. K. Asbeck, "Forces in Coatings Removal by Knife Cutting Methods"
+J76	"Survey of foamed plastics" Modern Plastics Encyclopedia, edited by
+J77	William D. Appel, editor, 1961 Technical Manual of the American
+J78	Paul J. Dolon and Wilfrid F. Niklas, "Gain and Resolution of Fiber Optic
+J79	Rutherford Aris, The Optical Design of Chemical Reactors.
+J80	C. J. Savant et al., Principles of Inertial Navigation.
+K01	Christopher Davis, First Family.
+K02	Clayton C. Barbeau, The Ikon.
+K03	Tristram Coffin, Not to the Swift.
+K04	W. E. B. DuBois, Worlds of Color.
+K05	David Stacton, The Judges of the Secret Court.
+K06	Louis Zara, Dark Rider.
+K07	Francis Pollini, Night.
+K08	Guy Endore, Voltaire! Voltaire!
+K09	Howard Fast, April Morning.
+K10	Glayds H. Barr, The Master of Geneva.
+K11	Robert Penn Warren, Wilderness.
+K12	Gerald Green, The Heartless Light.
+K13	William Maxwell, The Chateau.
+K14	Irving Stone, The Agony and the Ecstasy.
+K15	Ann Hebson, The Lattimer Legend.
+K16	Stephen Longstreet, Eagles Where I Walk.
+K17	Leon Uris, Mila 8.
+K18	John Dos Passos, Midcentury.
+K19	Robert L. Duncan, The Voice of Strangers.
+K20	Guy Bolton, The Olympians.	
+K21	Bruce Palmer, "My Brother's Keeper", Many Are the Hearts.
+K22	John Cheever, "The Brigadier and the Golf Widow,"
+K23	Frieda Arkin, "The Light of the Sea," in The Best American Short
+K24	W. H. Gass, "The Pedersen Kid," in The Best American Short Stories
+K25	Arthur Miller, "The Prophecy," in The Best American Short Stories
+K26	Jane Gilmore Rushing, "Against the Moon," The Virginia Quarterly
+K27	E. Lucas Myers, "The Vindication of Dr. Nestor," The Sewanee
+K28	Sallie Bingham, "Moving Day," The Atlantic Monthly, 208: 5 
+K29	Marvin Schiller, "The Sheep's in the Meadow," The Antioch
+L01	Winfred Van Atta, Shock Treatment.
+L02	A. A. Fair, Bachelors Get Lonely.
+L03	Amber Dean, Encounter with Evil.
+L04	David Alexander, Bloodstain.
+L05	Brett Halliday, The Careless Corpse.
+L06	Thomas B. Dewey, Hunter at Large.
+L07	Genevieve Holden, Deadlier Than the Male.
+L08	Dell Shannon, The Ace of Spades.
+L09	Mignon G. Eberhart, The Cup, the Blade or the Sword.
+L10	Harry Olesker, Impact.
+L11	Hampton Stone, The Man Who Looked Death in the Eye.
+L12	Whit Masterson, Evil Come, Evil Go.
+L13	Dolores Hitchens, Footsteps in the Night.
+L14	Frances and Richard Lockridge, Murder Has Its Points.
+L15	Doris Miles Disney, Mrs. Meeker's Money.
+L16	Alex Gordon, The Cipher.
+L17	Breni James, Nights of the Kill.
+L18	George Harmon Coxe, Error of Judgement.
+L19	Brad Williams, Make a Killing.
+L20	Ed Lacy, "Death by the Numbers,' Manhunt, 9: 4 (August, 1961),
+L21	Helen McCloy, "The Black Disk," Ellery Queen's Mystery Magazine,
+L22	S. L. M. Barlow, "Monologue of Murder," The Saint Mystery
+L23	J. W. Rose, "Try My Sample Murders," Trapped Detective Story
+L24	Fredric Brown, The Murderers.
+M01	Robert Heinlein, Stranger in a Strange Land.
+M02	Philip Jos&eacute; Farmer, The Lovers.
+M03	James Blish, The Star Dwellers.
+M04	Jim Harmon, "The Planet with No Nightmare," If, 11: 3 
+M05	Anne McCaffrey, "The Ship Who Sang," 7th Annual Edition The
+M06	Cordwainer Smith, "A Planet Named Shayol," 7th Annual Edition
+N01	Wayne D. Overholser, The Killer Marshal.
+N02	Clifford Irving, The Valley.
+N03	Cliff Farrell, Trail of the Tattered Star.
+N04	James D. Horan, The Shadow Catcher.
+N05	Richard Ferber, Bitter Valley.
+N06	Thomas Anderson, Here Comes Pete Now.
+N07	Todhunter Ballard, The Night Riders.
+N08	Mary Savage, Just for Tonight.
+N09	Jim Thompson, The Transgressors.
+N10	Joseph Chadwick, No Land Is Free.
+N11	Gene Caesar, Rifle for Rent.
+N12	Edwin Booth, Outlaw Town.
+N13	Martha Ferguson McKeown, Mountains Ahead.
+N14	Peter Field, Rattlesnake Ridge.
+N15	Donald J. Plantz, Sweeney Squadron.
+N16	Ralph J. Salisbury, "On the Old Santa Fe Trail to Siberia,"
+N17	Richard S. Prather, "The Bawdy Beautiful," Cavalier, 11: 94
+N18	Peter Bains, "With Women...Education Pays Off," Monsieur, 4: 2
+N19	David Jackson, "The English Gardens," Partisan Review, 28: 2
+N20	T. C. McClary, "The Flooded Desert," Argosy, 352: 4 (April, 1961)
+N21	C. T. Sommers, "The Beautiful Mankillers of Eromonga,"
+N22	Gordon Johnson, "A Matter of Curiosity," The Yale Review,
+N23	Wheeler Hall, "Always Shoot to Kill," Bluebook for Men,
+N24	T. K. Brown III, "The Fifteenth Station," Playboy, 8: 7
+N25	Wesley Newton, "Aid and Comfort to the Enemy," The
+N26	Paul Brock, "Toughest Lawman in the Old West," Rage
+N27	James Hines and James Morris, "Just Any Girl" Swank, 8: 6
+N28	Ralph Grimshaw, "Mrs. Hacksaw: New Orleans' Society Killer,"
+N29	Harlan Ellison, "Riding the Dark Train Out," Rogue, 6: 5
+P01	Octavia Waldo, A Cup of the Sun.
+P02	Ann Ritner, Seize a Nettle.
+P03	Clark McMeekin, The Fairbrothers.
+P04	B. J. Chute, The Moon and the Thorn.
+P05	Allen R. Bosworth, The Crows of Edwina Hill.
+P06	Richard Tiernan, "Land of the Silver Dollar," The Quixote
+P07	Vina Delmar, The Big Family.
+P08	R. Leslie Gourse, With Gall and Honey.
+P09	Jesse Hill Ford, Mountains of Gilead.
+P10	Jay Williams, The Forger.
+P11	Bessie Breuer, Take Care of My Roses.
+P12	Morley Callaghan, A Passion in Rome.
+P13	Frank Borden Hanes, The Fleet Rabble.
+P14	Livingston Biddle, Jr., Sam Bentley's Island.
+P15	Loretta Burrough, "The Open Door," Good Housekeeping, 152: 5
+P16	Margery Finn Brown, "A Secret Between Friends," Redbook,
+P17	Al Hine, "The Huntress," Saturday Evening Post, February 4,
+P18	[Anonymous,] "No Room in My Heart to Forgive," Modern
+P19	[Anonymous,] "This Cancer Victim May Ruin My Life," Medical
+P20	Spencer Norris, "Dirty Dog Inn," The Dude, 6: 1 (September, 1961)
+P21	Elizabeth Spencer, "The White Azalea," The Texas Quarterly,
+P22	[Anonymous,] "A Husband Stealer from Way Back," True Love,
+P23	Barbara Robinson, "Something Very Much in Common," McCall's,
+P24	Samuel Elkin, "The Ball Player," Nugget, 6: 5 (October, 1961)
+P25	William Butler, "The Pool at Ryusenji," Harper's Bazaar, 94th
+P26	Ervin D. Krause, "The Snake," Prize Stories 1963: The O. Henry
+P27	Lee McGiffin, "Measure of a Man," Ladies' Home Journal, 78: 6
+P28	Carol Hoover, "The Shorts on the Bedroom Floor," Story,
+P29	Robert Carson, My Hero.
+R01	Anita Loos, No Mother to Guide Her.
+R02	Jean Mercier, Whatever You Do, Don't Panic.
+R03	Patrick Dennis, Little Me.
+R04	Edward Streeter, The Chairman of the Bored.
+R05	Evan Esar, Humorous English; a guide to comic usage,
+R06	James Thurber, "The Future, If Any, of Comedy," Harper's 
+R07	John Hazard Wildman, "Take It Off," The Arizona Quarterly, 17: 3,
+R08	Leo Lemon, "Catch Up With" and "Something to Talk About," 
+R09	 S. J. Perelman, The Rising Gorge. New York: Simon and

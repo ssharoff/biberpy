@@ -42,9 +42,9 @@ Since then, for my research on text classification I ported the feature extracto
 
 The arguments for the script are self-explanatory (run `python3 biber-dim.py -h`).  A typical invocation would be:
 
-`python3 biber-dim.py -1 en.vec.gz -i en.ol -a en-reduced.csv -l en -o en-dim.dat`
+`python3 biber-dim.py -l en -t brown.ol >brown.dat`
 
-The format for the source file is one line per document.  The script assumes that the folder contains a file with language-specific features with the name features-LANGUAGE.txt and a frequency list with the name LANGUAGE.tag.num.  The format of the feature lists is:
+The format for the source file is one line per document.  The script assumes that the folder contains a file with language-specific properties with the name LANGUAGE.properties and a frequency list with the name LANGUAGE.tag.num.  The format of the lists of properties is:
 ```
 privateVerbs = anticipate,assume,believe,conclude,decide,demonstrate,
 ```

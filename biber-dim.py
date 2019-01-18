@@ -524,7 +524,7 @@ parser.add_argument('-1', '--embeddings', type=str, help='embeddings, not implem
 parser.add_argument('-t', '--testfile', type=str, help='one-doc-per-line corpus')
 parser.add_argument('-o', '--outfile', type=str, default='-', help='output file')
 parser.add_argument('-l', '--language', type=str, default='en', help='language id for getting the annotation files')
-
+parser.add_argument('-s', '--suppressheader', action='store_true', help='suppresses the default feature header')
 parser.add_argument('-v', '--verbosity', type=int, default=1)
 
 args = parser.parse_args()
@@ -542,7 +542,8 @@ if args.verbosity>0:
 if args.embeddings:
     embeddings,w2i=ut.read_embeddings(args.embeddings)
 
-print('\t'.join([d+'.'+dimnames[d] for d in sorted(dimnames)]),file=fout)
+if not args.suppressheader:
+    print('\t'.join([d+'.'+dimnames[d] for d in sorted(dimnames)]),file=fout)
 if args.verbosity>1:
     print('total %d dims in output' % len(dimnames),file=sys.stderr)
 

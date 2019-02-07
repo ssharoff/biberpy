@@ -66,6 +66,8 @@ This can be obtained, for example, from an available CONLLU file with the annota
 
 My `biber-dim.py` script produces a tab-separated table with values for each dimension.  This can be taken to R for factor analysis and plot making:
 
-`Rscript biber-mda.R en-dim.dat annot.dat`
+`Rscript biber-mda.R brown-biber.dat brown-annot.dat`
 
 The annot.dat file is optional.  It assigns each text in the original ol file to a genre category, so that the texts can be displayed on a plot with meaningful annotations.
+
+![MDA Brown corpus][brown-biber.png]

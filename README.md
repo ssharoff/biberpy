@@ -70,4 +70,4 @@ My `biber-dim.py` script produces a tab-separated table with values for each dim
 
 The annot.dat file is optional.  It assigns each text in the original ol file to a genre category, so that the texts can be displayed on a plot with meaningful annotations.
 
-![MDA Brown corpus][brown-biber.png]
+![MDA Brown corpus](brown-biber.png)

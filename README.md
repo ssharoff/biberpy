@@ -38,18 +38,18 @@ In our Intellitext project (2011-2012) we have implemented these features in a [
 }
 ```
 
-Since then, for my research on text classification I ported the feature extractor from Perl to Python.  Also I have ported the available word lists to Russian, so that experiments can be run across languages.
+Since then, for my research on text classification I ported the feature extractor from Perl to Python.  Also I have ported the available word lists to French and Russian, and Gonzalo Cruz done this for Spanish, so that the Biber dimensions of variation can be extracted across languages.
 
 The arguments for the script are self-explanatory (run `python3 biber-dim.py -h`).  A typical invocation would be:
 
 `python3 biber-dim.py -l en -t brown.ol >brown.dat`
 
-The format for the source file is one line per document.  The script assumes that the folder contains a file with language-specific properties with the name LANGUAGE.properties and a frequency list with the name LANGUAGE.tag.num.  The format of the lists of properties is:
+The format for the text file is one line per document.  The script assumes that the folder contains a file with language-specific properties with the name LANGUAGE.properties and a frequency list with the name LANGUAGE.tag.num.  The format of the lists of properties is:
 ```
-privateVerbs = anticipate,assume,believe,conclude,decide,demonstrate,
+privateVerbs = anticipate,assume,believe,conclude,decide,demonstrate
 ```
 
-The names are fixed (the label `privateVerbs` is used for all languages), while the word lists are language-specific.
+The property ids are fixed (the label `privateVerbs` is used for all languages), while the word lists are language-specific.  If the language is set to ~en~, extra rules apply, e.g., for detecting /by passives/.
 
 The POS tags and lemmas are coming from a frequency list:
 

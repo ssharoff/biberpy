@@ -283,6 +283,8 @@ def nominalizations(doc):
     for loc in nounPositions:
         lemma = lemmaAt(doc[loc])
         if (language=='en' and lemma[-4:] in ['tion','ment','ness']) or\
+           (language=='es' and lemma[-3:] in ['ión','nto','leo', 'cia', 'dad']) or\
+           (language=='fr' and lemma[-3:] in ['ion', 'ent','ité', 'eté','nce', 'loi']) or\
            (language=='ru' and lemma[-3:] in ['ция','сть','ние','тие']):
             nomCount+=1
     return nomCount

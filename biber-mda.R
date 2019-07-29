@@ -1,5 +1,5 @@
 #!/usr/bin/Rscript
-1# an expanded R script for Biber-like processing from Intellitext
+# an expanded R script for Biber-like processing from Intellitext
 
 library(ggfortify)
 library(stats)

@@ -32,7 +32,7 @@
 import sys
 
 f = sys.stdin if len(sys.argv)<2 or sys.argv[1]=='-' else open(sys.argv[1])
-textptn = sys.argv[2] if len(sys.argv)>2 else '# text = __id__'
+textptn = sys.argv[2] if len(sys.argv)>2 else '# text = '
 sentptn = sys.argv[3] if len(sys.argv)>3 else '# sent_id ='
 
 doc=[]
@@ -40,14 +40,21 @@ docid=''
 delayprinting = True
 for l in f:
     if l.startswith(textptn):
-        docid = l[len(textptn):]
-        docidloc = docid.find(' ') 
-        if docidloc>0: # in case it combined with the text below
-            docid = docid[:docidloc]
-            delayprinting = False
+        docidlocstarts = l.find('__id__')
+        if docidlocstarts>0: # we have a docid
+            docid = l[docidlocstarts:]
+            docidlocends = docid.find(' ') 
+            if docidlocends>0: # in case it's joined with the text after it
+                rest = docid[docidlocends:]
+                docid = docid[:docidlocends]
+                delayprinting = False
+                print('# newdoc id = '+ docid)
+                sys.stdout.write('# text ='+ rest)
+            else:
+                delayprinting = True
+                print('# newdoc id = '+ docid)
         else:
-            delayprinting = True
-        print('# newdoc id = '+ docid)
+            sys.stdout.write(l)
     elif delayprinting:
         if l.startswith(sentptn):
             delayprinting = False

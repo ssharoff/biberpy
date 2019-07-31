@@ -286,7 +286,7 @@ def nominalizations(doc):
            (language=='en' and lemma[-3:] in ['ism']) or\
            (language=='es' and lemma[-3:] in ['ión','nto','leo', 'cia', 'dad']) or\
            (language=='fr' and lemma[-3:] in ['ion', 'ent','ité', 'eté','nce', 'loi']) or\
-           (language=='ru' and lemma[-3:] in ['ция','сть','ние','тие']):
+           (language=='ru' and lemma[-3:] in ['ция','сть','ние','тие','тво']):
             nomCount+=1
     return nomCount
 

@@ -1,4 +1,6 @@
-# Python version for Biber's MultiDimensional Analysis (MDA)
+# Multilingual Python version for Biber's Multi-Dimensional Analysis (MDA)
+
+This is a Python version of Biber's tagger for English, French, Russian and Spanish as well as R scripts for Multi-Dimensional Analysis.
 
 Back in 1988 Doug Biber developed an approach to analysing the composition of a corpus by using a set of extractable features and factor analysis, see his first book on the topic:
 [https://books.google.co.uk/books?id=CVTPaSSYEroC]
@@ -38,22 +40,22 @@ In our Intellitext project (2011-2012) we have implemented these features in a [
 }
 ```
 
-Since then, for my research on text classification I ported the feature extractor from Perl to Python.  Also I have ported the available word lists to French and Russian, and Gonzalo Cruz done this for Spanish, so that the Biber dimensions of variation can be extracted across languages.
+Since then, I ported the feature extractor from Perl to Python to help with my research on text classification.  Also I have ported the available word lists to French and Russian, and Gonzalo Cruz done this for Spanish, so that the Biber dimensions of variation can be extracted across languages.
 
 The arguments for the script are self-explanatory (run `python3 biber-dim.py -h`).  A typical invocation would be:
 
 `python3 biber-dim.py -l en -t brown.ol >brown.dat`
 
-The format for the text file is one line per document.  The script assumes that the folder contains a file with language-specific properties with the name LANGUAGE.properties and a frequency list with the name LANGUAGE.tag.num.  The format of the lists of properties is:
+The format for the corpus file is one line per document.  The script assumes that the folder contains a file with language-specific properties with the name LANGUAGE.properties and a frequency list with the name LANGUAGE.tag.num.  The format of the lists of properties is as follows:
 ```
 privateVerbs = anticipate,assume,believe,conclude,decide,demonstrate
 ```
 
-The property ids are fixed (the label `privateVerbs` is used for all languages), while the word lists are language-specific.  If the language is set to ~en~, extra rules apply, e.g., for detecting /by passives/.
+The property ids are fixed (the label `privateVerbs` is used for all languages), while the word lists are language-specific.  If the language is set to `en', extra rules apply, e.g., for detecting /by passives/ (such categories will not be detected for other languages).
 
 The POS tags and lemmas are coming from a frequency list:
 
-num | word | lemma | pos | morph
+num | word | lemma | pos | UD morph
 ----|------|-------|-----|------
 1625260 | years | year | NOUN | Number=Plur
 399401  | went  | go   | VERB | Tense=Past
@@ -68,6 +70,6 @@ My `biber-dim.py` script produces a tab-separated table with values for each dim
 
 `Rscript biber-mda.R brown-biber.dat brown-annot.dat`
 
-The annot.dat file is optional.  It assigns each text in the original ol file to a genre category, so that the texts can be displayed on a plot with meaningful annotations.
+The annot.dat file is optional.  It assigns each text in the original ol file to a genre category, so that the texts can be displayed on a plot with meaningful annotations.  Here is the plot for the Brown Corpus top-level genre categories:
 
 ![MDA Brown corpus](brown-biber.png)

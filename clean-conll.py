@@ -8,21 +8,17 @@
 # # newdoc
 # # newpar
 # # sent_id = 1
-# # text = __id__http://www.wardbrothers.co.uk/products.php?productId=121
-# 1       __id__http://www.wardbrothers.co.uk/products.php?productId=121  __id__http://www.wardbrothers.co.uk/products.php?productId=121  X       LS      _       _       _       _       SpacesAfter=\s\s
+# # text = __id__http://www.wardbrothers.co.uk/products.php?productId=121 __idend__.
+# 1       __id__http://www.wardbrothers.co.uk/products.php?productId=121  __id__http://www.wardbrothers.co.uk/products.php?productId=121  X       LS      _       _       _       _       _
+# 2       __idend__.  __idend__.  SYM    NFP         _       _       _       _       _
 # # sent_id = 2
 # # text = The ' Baronet Supreme ' is upholstered using a needle teased hair pad to provide extra support , making it as comfortable as it is affordable .
 # 1       The     the     DET     DT      Definite=Def|PronType=Art       _       _       _       _
 # 2       '       '       PUNCT   ``      _       _       _       _       _
 # 3       Baronet Baronet PROPN   NNP     Number=Sing     _       _       _       _
-# ...
-# text = </doc> __id__http://www.tripod.lycos.co.uk/directory/music/samples___loops/?PAGE=0&ORDER=pop
-# 1       </      </      SYM     NFP     _       _       _       _       SpaceAfter=No
-# 2       doc     doc     NOUN    NN      Number=Sing     _       _       _       SpaceAfter=No
-# 3       >       >       PUNCT   -RRB-   _       _       _       _       SpacesAfter=\s\n
-# 4       __id__http://www.tripod.lycos.co.uk/directory/music/samples___loops/?PAGE=0&ORDER=pop   __id__http://www.tripod.lycos.co.uk/directory/music/samples___loops/?PAGE=0&ORDER=pop   NOUN    NN      Number=Sing     _       _       _
-#        SpacesAfter=\s\s
 
+
+# it should produce
 # # newdoc id = http://www.wardbrothers.co.uk/products.php?productId=121
 # # newpar
 # # sent_id = 2
@@ -33,31 +29,33 @@ import sys
 
 f = sys.stdin if len(sys.argv)<2 or sys.argv[1]=='-' else open(sys.argv[1])
 textptn = sys.argv[2] if len(sys.argv)>2 else '# text = '
-sentptn = sys.argv[3] if len(sys.argv)>3 else '# sent_id ='
+idBeptn = sys.argv[3] if len(sys.argv)>3 else '__id__'
+idEnptn = sys.argv[4] if len(sys.argv)>4 else '__idend__'
+sentptn = sys.argv[5] if len(sys.argv)>5 else '# sent_id ='
 
 doc=[]
 docid=''
 delayprinting = True
 for l in f:
     if l.startswith(textptn):
-        docidlocstarts = l.find('__id__')
+        docidlocstarts = l.find(idBeptn)
+        docidlocends = l.find(idEnptn,docidlocstarts)
         if docidlocstarts>0: # we have a docid
-            docid = l[docidlocstarts:]
-            docidlocends = docid.find(' ') 
-            if docidlocends>0: # in case it's joined with the text after it
-                rest = docid[docidlocends:]
-                docid = docid[:docidlocends]
+            docid = l[docidlocstarts:docidlocends]
+            docidlocremain = l.find(' ',docidlocends) 
+            if docidlocremain>0: # in case it's joined with the text after it
+                rest = l[docidlocremain+1:]
                 delayprinting = False
                 print('# newdoc id = '+ docid)
-                sys.stdout.write('# text ='+ rest)
+                sys.stdout.write('# text = '+ rest)
             else:
                 delayprinting = True
                 print('# newdoc id = '+ docid)
         else:
             sys.stdout.write(l)
     elif delayprinting:
-        if l.startswith(sentptn):
+        if l.find(idEnptn)>0: # ideally we should correct the linenums
             delayprinting = False
-            sys.stdout.write(l)
     else:
-        sys.stdout.write(l)
+        if l.find(idBeptn)<0 and l.find(idEnptn)<0 and not l.startswith('#'):
+            sys.stdout.write(l)

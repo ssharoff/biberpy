@@ -31,11 +31,13 @@ dimnames={
     'E14' : "nominalizations",
     'E16' : "Nouns",
     'G19' : "beAsMain",
+    'H23' : "WHclauses",
     'H33' : "piedPiping",
-    'H34' : "sentenceRel",
+    'H34' : "sncRelatives",
     'H35' : "causative",
     'H36' : 'concessives',
     'H37' : 'conditional',
+    'H38' : 'otherSubord',
     'I39' : "preposn",
     'I40' : "attrAdj",
     'I41' : "predAdj",
@@ -313,7 +315,6 @@ def syntheticNegation(doc):
     return noCount;
 
 def osubordinators(doc):
-    #the most simple case at the moment
     dCount, _ = findLemmaInSentence(doc, '', "osubordinators")
     return dCount
 
@@ -418,7 +419,7 @@ def getbiberdims(doc):
     
     #dimlist['H21']=that verb complements
     #dimlist['H22']= 0 # ["THAT clauses as adjective complements", \&dummyFunction, "s"], # I'm glad that you like it
-    #dimlist['H23']= 0 # ["WH relative clauses on object positions", \&dummyFunction, "s"], # I believe what he told me
+    dimlist['H23']= posWithLemmaFilter(doc,'','whMarkers')/normalise
     #dimlist['H24']=infinitives(doc)/normalise #simplePartsOfSpeech(doc,"VERB","VerbForm=Inf")[0]/normalise # + to
     #dimlist['H25']=presentParticipialClauses(doc)/normalise # to debug
     #dimlist['H26']= 0 # ["past participial clauses", \&dummyFunction, "s"],
@@ -432,7 +433,7 @@ def getbiberdims(doc):
     dimlist['H35']=posWithLemmaFilter(doc,'',"becauseWord")/normalise
     dimlist['H36']=posWithLemmaFilter(doc,'','concessives')/normalise
     dimlist['H37']=posWithLemmaFilter(doc,'','conditionalSubordination')/normalise
-    #adverbial subordination
+    dimlist['H38']= osubordinators(doc)/normalise
     
     dimlist['I39']=simplePartsOfSpeech(doc, "ADP")[0]/normalise
     dimlist['I41']=predicativeAdjectives(doc)/normalise
@@ -471,9 +472,6 @@ def getbiberdims(doc):
 
     dimlist['P66']=syntheticNegation(doc)/normalise
     dimlist['P67']=posWithLemmaFilter(doc,'', "notWord")/normalise
-    
-    # dimlist['f22']=posWithLemmaFilter(doc,'','whMarkers')/normalise
-    # dimlist['f60']= osubordinators(doc)/normalise
 
     return dimlist
 

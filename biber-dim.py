@@ -369,7 +369,7 @@ def wordLength(doc):
         if not isWordSet(wordAt(w), 'clausePunctuation'):
             totLength += len(w)
             wordCount+=1
-    return totLength / wordCount
+    return totLength / (wordCount+0.000001)
 
 def typeTokenRatio(doc):
     # Biber only looks at the first 400 words of each document 'to avoid 
@@ -382,7 +382,7 @@ def typeTokenRatio(doc):
             tokenCounter+=1
             if not w in seenBefore:
                 seenBefore[w] = 1
-    return len(seenBefore)/tokenCounter
+    return len(seenBefore)/(tokenCounter+0.000001)
 
 def getbiberdims(doc):
     '''

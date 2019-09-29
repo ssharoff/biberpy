@@ -11,6 +11,7 @@ Expanded from experiments in Intellitext
 import sys
 import time
 import argparse
+import json
 import smallutils as ut
 import ahocorasick
 
@@ -77,28 +78,40 @@ lemma1=1
 pos2=2
 finepos3=3
 
+# json record is a list: [wform,lemma,POS,fine-grained]
 def wordAt(w):
-    #no fancy word structure at the moment
-    #ideally we need a record containing the word form and its analysis 
-    return w
+    if isinstance(w,str):
+        return w
+    elif isinstance(w,list):
+        return w[0].lower()
 def lemmaAt(w):
-    try:
-        out=taglist[w][lemma1]
-    except:
-        out=w
+    if isinstance(w,str):
+        try:
+            out=taglist[w][lemma1]
+        except:
+            out=w
+    elif isinstance(w,list):
+        out=w[1]
     return out
 def posAt(w):
-    try:
-        out=taglist[w][pos2]
-    except:
-        out='PROPN'
+    if isinstance(w,str):
+        try:
+            out=taglist[w][pos2]
+        except:
+            out='PROPN'
+    elif isinstance(w,list):
+        out=w[2]
     return out
 def fineposAt(w):
-    try:
-        out=taglist[w][finepos3]
-    except:
-        out='_'
+    if isinstance(w,str):
+        try:
+            out=taglist[w][finepos3]
+        except:
+            out='_'
+    elif isinstance(w,list):
+        out=w[3]
     return out
+
 def isWordSet(w, type):
     return w in wordlists[type]
 
@@ -126,8 +139,8 @@ def simplePartsOfSpeech(doc, pos, finepos='', getloc=False):
     count=0
     out=[]
     for i,w in enumerate(doc):
-        if w in taglist and taglist[w][pos2]==pos:
-            if not finepos or (taglist[w][finepos3].find(finepos)>=0):
+        if posAt(w)==pos:
+            if not finepos or (fineposAt(w).find(finepos)>=0):
                 count+=1
                 if getloc:
                     out.append(i)
@@ -185,7 +198,7 @@ def thatDeletion(doc):
 def contractions(doc):
     count=0
     for w in doc:
-        if w.find("'")>=0:
+        if wordAt(w).find("'")>=0:
             count+=1
     return count
 def demonstrativePronouns(doc):
@@ -381,8 +394,8 @@ def typeTokenRatio(doc):
     for w in doc[:biberLength]:
         if not isWordSet(wordAt(w), 'clausePunctuation'):
             tokenCounter+=1
-            if not w in seenBefore:
-                seenBefore[w] = 1
+            if not lemmaAt(w) in seenBefore:
+                seenBefore[lemmaAt(w)] = 1
     return len(seenBefore)/(tokenCounter+0.000001)
 
 def getbiberdims(doc):
@@ -523,6 +536,7 @@ def readnumlist(f):
 parser = argparse.ArgumentParser(description="Multilingual Biber-like tagger")
 parser.add_argument('-1', '--embeddings', type=str, help='embeddings, not implemented yet')
 parser.add_argument('-t', '--testfile', type=str, help='one-doc-per-line corpus')
+parser.add_argument('-f', '--format', type=str, default='ol', help='either ol (default) or json output by conll2json.py')
 parser.add_argument('-o', '--outfile', type=str, default='-', help='output file')
 parser.add_argument('-l', '--language', type=str, default='en', help='language id for getting the annotation files')
 parser.add_argument('-s', '--suppressheader', action='store_true', help='suppresses the default feature header')
@@ -531,14 +545,16 @@ parser.add_argument('-v', '--verbosity', type=int, default=1)
 args = parser.parse_args()
 ut.verbosity=args.verbosity
 language=args.language
+assert args.format in ['ol','json'], 'Wrong format: '+args.format
 
 f=sys.stdin if args.testfile=='-' else ut.myopen(args.testfile)
 fout=sys.stdout if args.outfile=='-' else open(args.outfile,"w")
 
 wordlists = readwordlists(open(language+'.properties'))
-taglist= readnumlist(open(language+'.tag.num'))
-if args.verbosity>0:
-    print('Loaded %d words from %s' % (len(taglist), language+'.tag.num'), file=sys.stderr)
+if args.format=='ol':
+    taglist= readnumlist(open(language+'.tag.num'))
+    if args.verbosity>0:
+        print('Loaded %d words from %s' % (len(taglist), language+'.tag.num'), file=sys.stderr)
 
 if args.embeddings:
     embeddings,w2i=ut.read_embeddings(args.embeddings)
@@ -550,8 +566,11 @@ if args.verbosity>1:
 
 starttime=time.time()
 for i,line in enumerate(f):
-    docstring=line.strip().lower()
-    doc=docstring.split()
+    if args.format=='ol':
+        docstring=line.strip().lower()
+        doc=docstring.split()
+    elif args.format=='json':
+        doc=json.loads(line)
     dims=getbiberdims(doc)
     print('\t'.join(['%.5f' % dims[d] for d in sorted(dimnames)]),file=fout)
 if args.verbosity>0:

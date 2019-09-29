@@ -40,26 +40,30 @@ In our Intellitext project (2011-2012) we have implemented these features in a [
 }
 ```
 
-Since then, I ported the feature extractor from Perl to Python to help with my research on text classification.  Also I have ported the available word lists to French and Russian, and Gonzalo Cruz done this for Spanish, so that the Biber dimensions of variation can be extracted across languages.
+Since then, I ported the feature extractor from Perl to Python to help with my research on text classification.  Also I have ported the available word lists to French and Russian, and Gonzalo Cruz has done this for Spanish, so that the Biber dimensions of variation can be extracted across languages.
 
 The arguments for the script are self-explanatory (run `python3 biber-dim.py -h`).  A typical invocation would be:
 
 `python3 biber-dim.py -l en -t brown.ol >brown.dat`
 
-The format for the corpus file is one line per document.  The script assumes that the folder contains a file with language-specific properties with the name LANGUAGE.properties and a frequency list with the name LANGUAGE.tag.num.  The format of the lists of properties is as follows:
+The default format for the corpus file is one line per document.  Another possibility is to use a Jason file, which can be produced from a CONLL file with existing tagging data:
+
+`udpipe --tokenize --tag english-ewt.udpipe <brown.ol | ./restoredocids.py | conll2json.py >brown.json`
+`python3 biber-dim.py -f json -l en -t brown.json >brown-json.dat`
+
+The script assumes that the current folder contains a file with language-specific properties with the name LANGUAGE.properties and a frequency list with the name LANGUAGE.tag.num.  The format of the lists of properties is as follows:
 ```
 privateVerbs = anticipate,assume,believe,conclude,decide,demonstrate
 ```
 
 The property ids are fixed (the label `privateVerbs` is used for all languages), while the word lists are language-specific.  If the language is set to `en', extra rules apply, e.g., for detecting /by passives/ (such categories will not be detected for other languages).
 
-The POS tags and lemmas are coming from a frequency list:
+If the source file format is not Jason, the POS tags and lemmas are coming from a frequency list:
 
 num | word | lemma | pos | UD morph
 ----|------|-------|-----|------
 1625260 | years | year | NOUN | Number=Plur
 399401  | went  | go   | VERB | Tense=Past
-
 
 This can be obtained, for example, from an available CONLLU file with the annotations in the format of the [Universal Dependencies](http://universaldependencies.org) by
 

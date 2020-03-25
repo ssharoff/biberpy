@@ -535,20 +535,17 @@ def readnumlist(f):
 
 parser = argparse.ArgumentParser(description="Multilingual Biber-like tagger")
 parser.add_argument('-1', '--embeddings', type=str, help='embeddings, not implemented yet')
-parser.add_argument('-t', '--testfile', type=str, help='one-doc-per-line corpus')
 parser.add_argument('-f', '--format', type=str, default='ol', help='either ol (default) or json output by conll2json.py')
-parser.add_argument('-o', '--outfile', type=str, default='-', help='output file')
 parser.add_argument('-l', '--language', type=str, default='en', help='language id for getting the annotation files')
 parser.add_argument('-s', '--suppressheader', action='store_true', help='suppresses the default feature header')
 parser.add_argument('-v', '--verbosity', type=int, default=1)
+parser.add_argument('-i', '--infile', nargs='?', type=argparse.FileType('r'), default=sys.stdin, help='one-doc-per-line corpus, plain or json')
+parser.add_argument('-o', '--outfile', nargs='?', type=argparse.FileType('w'), default=sys.stdout, help='output file')
 
 args = parser.parse_args()
 ut.verbosity=args.verbosity
 language=args.language
-assert args.format in ['ol','json'], 'Wrong format: '+args.format
-
-f=sys.stdin if args.testfile=='-' else ut.myopen(args.testfile)
-fout=sys.stdout if args.outfile=='-' else open(args.outfile,"w")
+assert args.format in ['ol','json'], 'Wrong format, either ol or json is accepted. Requested: '+args.format
 
 wordlists = readwordlists(open(language+'.properties'))
 if args.format=='ol':
@@ -560,18 +557,18 @@ if args.embeddings:
     embeddings,w2i=ut.read_embeddings(args.embeddings)
 
 if not args.suppressheader:
-    print('\t'.join([d+'.'+dimnames[d] for d in sorted(dimnames)]),file=fout)
+    print('\t'.join([d+'.'+dimnames[d] for d in sorted(dimnames)]),file=args.outfile)
 if args.verbosity>1:
     print('total %d dims in output' % len(dimnames),file=sys.stderr)
 
 starttime=time.time()
-for i,line in enumerate(f):
+for i,line in enumerate(args.infile):
     if args.format=='ol':
         docstring=line.strip().lower()
         doc=docstring.split()
     elif args.format=='json':
         doc=json.loads(line)
     dims=getbiberdims(doc)
-    print('\t'.join(['%.5f' % dims[d] for d in sorted(dimnames)]),file=fout)
+    print('\t'.join(['%.5f' % dims[d] for d in sorted(dimnames)]),file=args.outfile)
 if args.verbosity>0:
     print('Processed %d files in %d sec' % (i+1, time.time()-starttime),file=sys.stderr)

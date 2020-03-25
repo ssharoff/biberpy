@@ -44,12 +44,12 @@ Since then, I ported the feature extractor from Perl to Python to help with my r
 
 The arguments for the script are self-explanatory (run `python3 biber-dim.py -h`).  A typical invocation would be:
 
-`python3 biber-dim.py -l en -t brown.ol >brown.dat`
+`python3 biber-dim.py -l en <brown.ol >brown.dat`
 
 The default format for the corpus file is one line per document.  Another possibility is to use a Jason file, which can be produced from a CONLL file with existing tagging data:
 
 `udpipe --tokenize --tag english-ewt.udpipe <brown.ol | ./restoredocids.py | conll2json.py >brown.json`
-`python3 biber-dim.py -f json -l en -t brown.json >brown-json.dat`
+`python3 biber-dim.py -f json -l en <brown.json >brown-json.dat`
 
 The script assumes that the current folder contains a file with language-specific properties with the name LANGUAGE.properties and a frequency list with the name LANGUAGE.tag.num.  The format of the lists of properties is as follows:
 ```
@@ -58,7 +58,7 @@ privateVerbs = anticipate,assume,believe,conclude,decide,demonstrate
 
 The property ids are fixed (the label `privateVerbs` is used for all languages), while the word lists are language-specific.  If the language is set to `en', extra rules apply, e.g., for detecting /by passives/ (such categories will not be detected for other languages).
 
-If the source file format is not Jason, the POS tags and lemmas are coming from a frequency list:
+If the source file format is not Json, the POS tags and lemmas are coming from a frequency list:
 
 num | word | lemma | pos | UD morph
 ----|------|-------|-----|------

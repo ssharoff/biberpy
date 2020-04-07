@@ -383,8 +383,9 @@ def wordLength(doc):
     totLength = 0
     wordCount = 0
     for w in doc:
-        if not isWordSet(wordAt(w), 'clausePunctuation'):
-            totLength += len(w)
+        word=wordAt(w)
+        if not isWordSet(word, 'clausePunctuation'):
+            totLength += len(word)
             wordCount+=1
     return totLength / (wordCount+0.000001)
 

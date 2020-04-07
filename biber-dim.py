@@ -31,8 +31,10 @@ dimnames={
     'D13' : 'whQuestions',
     'E14' : "nominalizations",
     'E16' : "Nouns",
+    'F18' : "BYpassives",
     'G19' : "beAsMain",
     'H23' : "WHclauses",
+    'H25' : "presPartClaus",
     'H33' : "piedPiping",
     'H34' : "sncRelatives",
     'H35' : "causative",
@@ -139,11 +141,12 @@ def simplePartsOfSpeech(doc, pos, finepos='', getloc=False):
     count=0
     out=[]
     for i,w in enumerate(doc):
-        if posAt(w)==pos:
-            if not finepos or (fineposAt(w).find(finepos)>=0):
-                count+=1
-                if getloc:
-                    out.append(i)
+        mainposTrue=not pos or posAt(w)==pos
+        fineposTrue=not finepos or (fineposAt(w).find(finepos)>=0)
+        if mainposTrue and fineposTrue:
+            count+=1
+            if getloc:
+                out.append(i)
     return count, out
 
 def isDemonstrativePronoun(doc, l):
@@ -292,7 +295,7 @@ def conjuncts(doc):
     
     return singleWords+MWEs+pCount
 
-def BYpassives(doc):
+def BYpassives(doc): # for English and Russian at the moment
     vCount, vPositions = simplePartsOfSpeech(doc, "", "Voice=Pass", True)
     passCount=0
     for loc in vPositions:
@@ -343,7 +346,7 @@ def discourseParticles(doc):
     return dCount;
 
 def presentParticipialClauses(doc):
-    ppCount, ppPositions = simplePartsOfSpeech(doc, "", "VerbForm=Ger", True)
+    ppCount, ppPositions = simplePartsOfSpeech(doc, "VERB", "VerbForm=Ger", True)
     for l in ppPositions:
         try:
             w0 = wordAt(doc[l-1])
@@ -400,7 +403,7 @@ def typeTokenRatio(doc):
 
 def getbiberdims(doc):
     '''
-    processes document as a list of tokenised words
+    processes each document as a list of tokenised words
     '''
     dimlist={}
     normalise=len(doc)+0.000001
@@ -425,7 +428,7 @@ def getbiberdims(doc):
     dimlist['E16']=(simplePartsOfSpeech(doc, "NOUN")[0]/normalise)-dimlist['E14'] # we substract nominalizations
     
     #dimlist['F17']=0 # ["agentless passives", \&dummyFunction, "s"],
-    #dimlist['F18']= BYpassives(doc)/normalise # to debug
+    dimlist['F18']= BYpassives(doc)/normalise # to debug
 
     dimlist['G19']=beAsMainVerb(doc)/normalise
     #dimlist['G20']= 0 # ["existential THERE", \&simplePartsOfSpeech, "w", "EX"],
@@ -434,7 +437,7 @@ def getbiberdims(doc):
     #dimlist['H22']= 0 # ["THAT clauses as adjective complements", \&dummyFunction, "s"], # I'm glad that you like it
     dimlist['H23']= posWithLemmaFilter(doc,'','whMarkers')/normalise
     #dimlist['H24']=infinitives(doc)/normalise #simplePartsOfSpeech(doc,"VERB","VerbForm=Inf")[0]/normalise # + to
-    #dimlist['H25']=presentParticipialClauses(doc)/normalise # to debug
+    dimlist['H25']=presentParticipialClauses(doc)/normalise
     #dimlist['H26']= 0 # ["past participial clauses", \&dummyFunction, "s"],
     #dimlist['H27']=0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
     #dimlist['H28']=0 # ["present participial WHIZ deletions", \&dummyFunction, "s"],

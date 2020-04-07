@@ -8,12 +8,12 @@ A script for collecting Biber-like features from one-line text collections and a
 Expanded from experiments in Intellitext
 
 '''
-import sys
+import sys, os
 import time
 import argparse
 import json
 import smallutils as ut
-import ahocorasick
+import ahocorasick # to apply MWEs to a string
 
 language='en'
 dimnames={
@@ -548,11 +548,12 @@ parser.add_argument('-o', '--outfile', nargs='?', type=argparse.FileType('w'), d
 args = parser.parse_args()
 ut.verbosity=args.verbosity
 language=args.language
+dirname=os.path.dirname(os.path.realpath(__file__))
 assert args.format in ['ol','json'], 'Wrong format, either ol or json is accepted. Requested: '+args.format
 
-wordlists = readwordlists(open(language+'.properties'))
+wordlists = readwordlists(open(dirname+'/'+language+'.properties'))
 if args.format=='ol':
-    taglist= readnumlist(open(language+'.tag.num'))
+    taglist= readnumlist(open(dirname+'/'+language+'.tag.num'))
     if args.verbosity>0:
         print('Loaded %d words from %s' % (len(taglist), language+'.tag.num'), file=sys.stderr)
 

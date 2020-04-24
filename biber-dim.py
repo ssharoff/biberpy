@@ -552,9 +552,9 @@ language=args.language
 dirname=os.path.dirname(os.path.realpath(__file__))
 assert args.format in ['ol','json'], 'Wrong format, either ol or json is accepted. Requested: '+args.format
 
-wordlists = readwordlists(open(dirname+'/'+language+'.properties'))
+wordlists = readwordlists(open(dirname+'/'+language+'.properties', encoding="utf8"))
 if args.format=='ol':
-    taglist= readnumlist(open(dirname+'/'+language+'.tag.num'))
+    taglist= readnumlist(open(dirname+'/'+language+'.tag.num', encoding="utf8"))
     if args.verbosity>0:
         print('Loaded %d words from %s' % (len(taglist), language+'.tag.num'), file=sys.stderr)
 

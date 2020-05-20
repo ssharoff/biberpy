@@ -271,8 +271,7 @@ def nominalizations(doc):
     nomCount=0
     for loc in nounPositions:
         lemma = lemmaAt(doc[loc])
-        if (language=='en' and lemma[-4:] in ['tion','ment','ness', 'ism']) or\
-           (language=='en' and lemma[-3:] in ['ism']) or\
+        if (language=='en' and lemma[-3:] in ['ion','ent','ess', 'ism']) or\
            (language=='es' and lemma[-3:] in ['ión','nto','leo', 'cia', 'dad']) or\
            (language=='fr' and lemma[-3:] in ['ion', 'ent','ité', 'eté','nce', 'loi']) or\
            (language=='ru' and lemma[-3:] in ['ция','сть','ние','тие','тво']):

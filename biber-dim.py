@@ -345,7 +345,8 @@ def discourseParticles(doc):
     return dCount;
 
 def presentParticipialClauses(doc):
-    ppCount, ppPositions = simplePartsOfSpeech(doc, "VERB", "VerbForm=Ger", True)
+    ppQuery="VerbForm=Con" if language=='ru' else "VerbForm=Ger"
+    ppCount, ppPositions = simplePartsOfSpeech(doc, "VERB", ppQuery, True)
     for l in ppPositions:
         try:
             w0 = wordAt(doc[l-1])

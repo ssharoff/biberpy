@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*- 
-# Copyright (C) 2017  Serge Sharoff
+# Copyright (C) 2017-2021  Serge Sharoff
 # This program is free software under GPL 3, see http://www.gnu.org/licenses/
 '''
 A script for collecting Biber-like features from one-line text collections and a dictionary.
@@ -218,7 +218,7 @@ def doAsProVerb(doc):
 
     for doPosition in doPositions:
         try:
-	    # If the DO is followed by and adverb then a verb
+	    # If the DO is followed by an adverb then a verb
 	    # or directly by a verb then it is NOT one we count
             # Also this condition should take into account the sentence
             # boundaries
@@ -294,17 +294,17 @@ def conjuncts(doc):
     
     return singleWords+MWEs+pCount
 
-def BYpassives(doc): # for English and Russian at the moment
+def BYpassives(doc): # very simple at the moment, only the next word counts
     vCount, vPositions = simplePartsOfSpeech(doc, "", "Voice=Pass", True)
     passCount=0
     for loc in vPositions:
         try:
             nextWord = lemmaAt(doc[loc+1])
-            if (language=='en' and nextWord=='by') :
+            if (language=='en' and nextWord=='by') or  (language=='es' and nextWord=='por')  or  (language=='fr' and nextWord=='par'):
                 passCount+=1
-            elif (language=='ru'):
+            elif (language=='ru'): # the instrumental case in a window of 2 words
                 found=False
-                for locIns in range(loc+2,loc-2):
+                for locIns in range(loc-2,loc+2):
                     finepos=fineposAt(doc[locIns])
                     if finepos.find('Case=Ins')>=0:
                         found=True

@@ -1,4 +1,3 @@
-Lemma-orig	cefr_new	POS	Eng Word
 а	A1	con	and
 а именно	B2	adv	namely
 а также	B2	mwe	as well as
@@ -10,7 +9,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 абсолютно	B2	adv	absolutely
 абсолютный	B2	adj	absolute
 абстрактный	B2	adj	abstract
-абсурд	c2	n	absurdity
+абсурд	C2	n	absurdity
 авангард	C2	n	forefront, avant-garde
 аванс	B2	n	advanced payment
 авария	A2	n	accident
@@ -34,7 +33,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 автономный	B2	adj	offline, autonomous
 автоответчик	B1	n	answering machine
 автор	A1	n	author
-авторизоваться	b1	v	authorise
+авторизоваться	B1	v	authorise
 авторитарный	B2	adj	authoritarian
 авторитет	B2	n	authority, criminal leader (slang)
 авторитетный	C1	adj	authoritative, influential
@@ -98,10 +97,10 @@ Lemma-orig	cefr_new	POS	Eng Word
 алкоголик	C1	n	alcoholic
 алкоголь	B1	n	alcohol
 алкогольный	B1	adj	alcoholic
-аллах	b1	n prop	Allah
+аллах	B1	n prop	Allah
 аллергический	B1	adj	allergic
-аллергия	a1	n	allergy
-аллея	b2	n	allee
+аллергия	A1	n	allergy
+аллея	B2	n	allee
 алмаз	B2	n	diamond
 алтарь	C2	n	altar
 алфавит	A1	n	alphabet
@@ -169,8 +168,8 @@ Lemma-orig	cefr_new	POS	Eng Word
 армия	B1	n	army
 аромат	B1	n	fragrance
 арсенал	C2	n	arsenal
-артиллерийский	c1	adj	artillery
-артиллерия	c1	n	artillery
+артиллерийский	C1	adj	artillery
+артиллерия	C1	n	artillery
 артист	A1	n	artist
 археолог	B2	n	archaeologist
 археологический	B2	adj	archaeological
@@ -199,8 +198,8 @@ Lemma-orig	cefr_new	POS	Eng Word
 атомный	B2	adj	atomic
 атрибут	B2	n	attribute
 аттракцион	B2	n	park amusement, attraction
-аудирование	b1	n	listening
-аудитория	a2	n	lecture room, audience
+аудирование	B1	n	listening
+аудитория	A2	n	lecture room, audience
 аукцион	B2	n	auction
 афера	C1	n	fraud
 африка	A1	n prop	Africa
@@ -247,11 +246,11 @@ Lemma-orig	cefr_new	POS	Eng Word
 барон	C2	n	baron
 барьер	B2	n	barrier
 бас	C2	n	bass
-баскетбол	a1	n	basketball
+баскетбол	A1	n	basketball
 бассейн	A1	n	pool
 бастовать	B2	v	be on strike
 батальон	C2	n	battalion
-батарейка	a2	n	battery
+батарейка	A2	n	battery
 батарея	A2	n	radiator, battery
 батюшка	C2	n	father
 башка	C2	n	noddle
@@ -267,7 +266,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 бедняга	C2	n	poor thing
 бедняк	B2	n	poor man
 бедро	B1	n	hip
-бедствие	b2	n	disaster
+бедствие	B2	n	disaster
 бежать	A1	v	run
 беженец	B2	n	refugee
 без	A1	adpos	without
@@ -281,7 +280,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 безопасность	B1	n	safety, security
 безопасный	B1	adj	safe
 безработица	B2	n	unemployment
-безработный	b1	n	unemployed
+безработный	B1	n	unemployed
 безразличный	B2	adj	indifferent
 безумие	C1	n	madness
 безумный	C1	adj	mad
@@ -292,7 +291,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 белоруссия	A1	n prop	byelorussia
 белорусский	A1	adj	byelorussian
 белый	A1	adj	white
-белье	a2	n	linen
+белье	A2	n	linen
 бензин	A2	n	petrol
 бензоколонка	B1	n	petrol pump, petrol station
 берег	B1	n	coast
@@ -300,7 +299,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 береза	B2	n	birch
 беременность	B1	n	pregnancy
 беременный	B1	adj	pregnant
-беречь	b2	v	save, safeguard
+беречь	B2	v	save, safeguard
 бес	C2	n	evil spirit
 беседа	B2	n	conversation
 беседовать	B2	v	talk
@@ -324,7 +323,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 бессмысленный	B2	adj	meaningless
 бессознательный	C2	adj	unconscious
 бессонница	B2	n	sleeplessness
-бесспорный	c1	adj	indisputable
+бесспорный	C1	adj	indisputable
 бестолковый	C2	adj	stupid
 бесчисленный	C1	adj	innumerable
 бесшумный	B2	adj	noiseless
@@ -349,8 +348,8 @@ Lemma-orig	cefr_new	POS	Eng Word
 биться	C2	v	fight
 благо	B2	n	good
 благодарить	A2	v	thank
-благодарность	b2	n	thank
-благодарный	b1	adj	grateful
+благодарность	B2	n	thank
+благодарный	B1	adj	grateful
 благодаря	B1	adpos	thanks to
 благополучно	C1	adv	safely
 благоприятный	C1	adj	favourable
@@ -359,7 +358,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 благословение	C2	n	blessing
 благосостояние	B2	N	welfare
 благотворительный	B2	adj	charitable
-благоустройство	c1	n	organisation of public services and amenities, improvement
+благоустройство	C1	n	organisation of public services and amenities, improvement
 блаженство	C2	n	bliss
 бланк	A2	n	form
 бледный	B1	adj	pale
@@ -370,7 +369,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 ближний	C1	n	fellow creature
 близкий	A1	adj	close
 близко	A1	adv	close, near
-близнец	a2	n	twin
+близнец	A2	n	twin
 близость	B1	n	closeness
 блин	A2	n	pancake,damn
 блог	B1	n	blog
@@ -402,8 +401,8 @@ Lemma-orig	cefr_new	POS	Eng Word
 бок	A1	n	side
 бокал	B1	n	goblet
 боковой	B2	adj	side
-бокс	b1	n	boxing
-боксер	b1	n	boxer
+бокс	B1	n	boxing
+боксер	B1	n	boxer
 более	B2	adv	more
 более или менее	B2	mwe	more or less
 более чем	B2	mwe	more than
@@ -413,8 +412,8 @@ Lemma-orig	cefr_new	POS	Eng Word
 болеть	A1	v	be ill, support
 болото	B2	n	swamp
 болтать	B2	v	dangle, chat
-боль	a1	n	pain
-больница	a1	n	hospital
+боль	A1	n	pain
+больница	A1	n	hospital
 больничный	B2	n	medical sick leave certificate
 больно	A1	adv	painful
 больной	A1	adj	sick, painful
@@ -424,9 +423,9 @@ Lemma-orig	cefr_new	POS	Eng Word
 большинство	B1	n	majority
 большой	A1	adj	big
 бомба	B1	n	bomb
-бомбардировать	b2	v	bomb
+бомбардировать	B2	v	bomb
 бомбардировка	C1	n	bombing
-бомбардировщик	c2	n	bomber
+бомбардировщик	C2	n	bomber
 бомж	B2	n	tramp
 бонус	C1	n	bonus
 бор	C2	n	pine forest, dental drill
@@ -439,14 +438,14 @@ Lemma-orig	cefr_new	POS	Eng Word
 борьба	B1	n	struggle
 босой	B2	adj	barefoot
 босс	C1	n	boss
-ботинок	a1	n	shoe
+ботинок	A1	n	shoe
 боулинг	B1	n	bowling
 бочка	C1	n	barrel
 боязнь	B2	n	fear
 бояться	B1	v	fear
 брак	B1	n	marriage
 брат	A1	n	brother
-братец	c2	n	brother (diminutiv)
+братец	C2	n	brother (diminutiv)
 братство	C1	n	brotherhood
 брать	A1	v	take
 брать в аренду	A2	mwe	rent
@@ -475,14 +474,14 @@ Lemma-orig	cefr_new	POS	Eng Word
 бросок	B2	n	throw
 брошюра	A2	n	brochure
 брызгать	B2	v	sprinkle
-брюки	a1	n	trousers
-будда	b1	n prop	Buddha
-буддизм	b1	n	Buddhism
+брюки	A1	n	trousers
+будда	B1	n prop	Buddha
+буддизм	B1	n	Buddhism
 будить	A2	v	wake
 будка	C2	n	box, dogs house
-будто	b2	particle	as if
+будто	B2	particle	as if
 будущее	A2	n	future
-будущий	b1	adj	future
+будущий	B1	adj	future
 будьте здоровы	A2	excl	bless you
 буква	A1	n	letter
 буквальный	C1	ADJ	literal
@@ -504,15 +503,15 @@ Lemma-orig	cefr_new	POS	Eng Word
 буханка	B2	n	loaf
 бухгалтер	B2	n	accountant
 бухгалтерский	B2	adj	accounting
-бухта	c2	n	bay
+бухта	C2	n	bay
 бушевать	C2	v	rage
 бы	A2	v mod	would
 бывало	C2	adv	used to
-бывать	b1	v	be, visit, happen
+бывать	B1	v	be, visit, happen
 бывший	A2	adj	ex-,former
-бык	b1	n	bull
+бык	B1	n	bull
 быстро	A1	adv	quickly
-быстрота	b1	n	speed
+быстрота	B1	n	speed
 быстрый	A1	adj	fast
 быт	B2	n	household routines
 бытие	C2	n	existence
@@ -539,7 +538,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 в конце концов	B2	mwe	eventually
 в любое время	B2	mwe	at any time
 в любом случае	B2	mwe	in any case
-в мгновение ока	c2	mwe	in the twinkling of an eye
+в мгновение ока	C2	mwe	in the twinkling of an eye
 в настоящее время	B2	mwe	presently
 в общей сложности	B2	mwe	altogether
 в общем	B2	mwe	in general
@@ -599,28 +598,28 @@ Lemma-orig	cefr_new	POS	Eng Word
 вблизи	C1	adv	nearby
 введение	B2	n	introduction
 вверх	A2	adv	up
-вверху	a2	adv	above
+вверху	A2	adv	above
 ввиду	C1	adpos	considering
 ввод	B2	n	input, entry
 вводить	C1	v	introduce, enter, inject
 вводить в действие	B2	mwe	put into operation
 вводить в заблуждение	C2	mwe	mislead
-ввозить	b2	v	import, carry inwards
+ввозить	B2	v	import, carry inwards
 ввп	B2	ABBR	GDP
 вглубь	C1	adv	deeply
 вдалеке	C1	adv	at a distance
 вдали	C1	adv	far away
-вдвое	b2	adv	double
+вдвое	B2	adv	double
 вдвоем	A2	adv	together, two
-вдвойне	c1	adv	twice
-вдобавок	c2	adv	in addition
+вдвойне	C1	adv	twice
+вдобавок	C2	adv	in addition
 вдова	A1	n	widow
-вдовец	a1	n	widower
-вдоль	c1	adpos	along, lengthwise
+вдовец	A1	n	widower
+вдоль	C1	adpos	along, lengthwise
 вдох	B1	n	inhale
 вдохновение	B2	n	inspiration
 вдохновлять	C1	v	inspire
-вдребезги	c2	adv	into smithereens
+вдребезги	C2	adv	into smithereens
 вдруг	B1	adv	suddenly
 вдыхать	B1	v	inhale
 веб	B1	n	Web
@@ -631,29 +630,29 @@ Lemma-orig	cefr_new	POS	Eng Word
 ведение	C1	n	area of responsibility, doing sth
 ведомость	B2	n	list
 ведомство	C1	n	executive department
-ведро	b1	n	bucket
+ведро	B1	n	bucket
 ведущий	C1	n	presenter
 ведь	C1	particle	because you know, but
 ведьма	B2	n	witch
-вежливо	a1	adv	politely
-вежливый	a1	adj	polite
+вежливо	A1	adv	politely
+вежливый	A1	adj	polite
 везде	A2	adv	everywhere
 везти	C1	v	wheel, be in luck
 век	B1	n	century
 веко	B1	n	eyelid
 вектор	C1	n	vector
-велеть	c2	v	order
+велеть	C2	v	order
 велик	C2	adj	bike (slang)
 великан	B2	n	giant
 великий	B1	adj	great
-великолепие	c2	n	splendours
+великолепие	C2	n	splendours
 великолепный	C1	adj	magnificent
-величайший	b1	adj	greatest
+величайший	B1	adj	greatest
 величественный	C2	adj	majestic
 величество	C1	n	majesty
 величие	C2	n	majesty
 величина	B2	n	value, size
-велосипед	a1	n	bicycle
+велосипед	A1	n	bicycle
 вена	B2	n	vein
 венера	B1	n prop	Venus
 венерический	B2	adj	sexually transmitted
@@ -668,7 +667,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 верно	A1	adv	right
 верность	B2	n	loyalty
 верный	A2	adj	correct,true, faithful
-вероятно	b2	adv	probably
+вероятно	B2	adv	probably
 вероятность	B2	n	probability
 вероятный	B2	adj	probable
 версия	C1	n	version
@@ -684,7 +683,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 верхушка	C1	n	top
 вершина	B1	n	peak
 вес	A2	n	weight
-весело	a2	adv	merrily
+весело	A2	adv	merrily
 веселый	A2	adj	merry
 веселье	B2	n	fun
 весенний	A2	adj	spring
@@ -698,7 +697,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 вестибюль	C1	n	lobby, vestibule
 вестись	C1	v	be under way
 вестник	C2	n	messenger
-весть	c1	n	news
+весть	C1	n	news
 весы	B1	n	scale, balance
 весь	A2	pron	all
 весьма	C1	adv	quite
@@ -743,13 +742,13 @@ Lemma-orig	cefr_new	POS	Eng Word
 взрыв	B2	n	explosion
 взрывать	B1	v	explode
 взрываться	B1	v	explode
-взрывной	b2	adj	explosive
+взрывной	B2	adj	explosive
 взрывчатка	B2	n	explosive
-взятие	c1	n	taking
+взятие	C1	n	taking
 взятка	B2	n	bribe
-взять	a2	v	take
+взять	A2	v	take
 взять такси	A2	mwe	take a taxi
-взяться	c2	v	begin
+взяться	C2	v	begin
 вид	A2	n	look
 вид спорта	A1	mwe	sport
 видать	C2	adv	see
@@ -758,15 +757,15 @@ Lemma-orig	cefr_new	POS	Eng Word
 видеокамера	B1	n	camcorder
 видеоклип	B1	n	video clip
 видеть	A1	v	see
-видеть во сне	b2	mwe	see in a dream
+видеть во сне	B2	mwe	see in a dream
 видеть сон	A2	mwe	have a dream
 видеться	B2	v	see
-видимо	c2	adv	apparently
+видимо	C2	adv	apparently
 видимость	B2	n	visibility
 видимый	B2	adj	visible
 виднеться	C2	v	be seen
 видно	A2	adv	visible, obviously
-видный	b2	adj	prominent
+видный	B2	adj	prominent
 виза	A1	n	visa
 визг	C1	n	squeal, shriek
 визировать	C1	v	endorse
@@ -782,7 +781,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 виновник	B2	n	guilty person, hero
 виноград	A1	n	grape, vine
 винт	B2	n	screw
-винтовка	c2	n	rifle
+винтовка	C2	n	rifle
 виртуальный	B2	adj	virtual
 вирус	B1	n	virus
 висеть	A2	v	hang
@@ -790,7 +789,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 висок	B2	n	temple
 витамин	A2	n	vitamin
 витрина	B1	n	showcase
-вихрь	c2	n	vortex
+вихрь	C2	n	vortex
 вице-президент	B2	n	vice-president
 вич	B2	n	human immunodeficiency virus, HIV
 вклад	B1	n	contribution, deposit
@@ -814,7 +813,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 влево	A2	adv	to the left
 влезать	B2	v	climb, get on
 влечение	C1	n	drive, lust
-влечь	c2	v	attract
+влечь	C2	v	attract
 влияние	B1	n	influence
 влиятельный	C1	adj	influential
 влиять	B2	v	influence
@@ -830,7 +829,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 вмещать	B2	v	contain
 вначале	B1	adv	in the beginning
 вне	B2	adpos	outside of, beyond
-внедорожник	c1	n	off-roadster
+внедорожник	C1	n	off-roadster
 внедрение	B2	n	implementation
 внедрять	C1	v	implant
 внезапный	B2	adj	sudden
@@ -841,9 +840,9 @@ Lemma-orig	cefr_new	POS	Eng Word
 вниз	A2	adv	down
 вниз	A2	prep	down
 внизу	A2	adv	below
-внимание	a1	n	attention
-внимательный	b2	adj	attentive
-вничью	b1	adv	in a draw
+внимание	A1	n	attention
+внимательный	B2	adj	attentive
+вничью	B1	adv	in a draw
 вновь	C2	adv	again
 вносить	B1	v	bring in
 внук	A1	n	grandson
@@ -856,14 +855,14 @@ Lemma-orig	cefr_new	POS	Eng Word
 во время	B1	prep	during
 во всяком случае	B2	mwe	in any case
 во главе	B2	mwe	headed
-во имя	c2	mwe	in the name of
+во имя	C2	mwe	in the name of
 во что бы то ни стало	C2	mwe	at any rate
-вовлекать	c2	v	involve
+вовлекать	C2	v	involve
 вовремя	A2	adv	in time
 вовсе	C2	adv	at all
 вовсю	C2	adv	utmost
 вода	A1	n	water
-водитель	a1	n	driver
+водитель	A1	n	driver
 водительские права	A1	mwe	driver license
 водить	A2	v	drive
 водить автомобиль	A2	mwe	drive
@@ -886,19 +885,19 @@ Lemma-orig	cefr_new	POS	Eng Word
 возврат	B2	n	return
 возвращать	B1	v	return
 возвращаться	B1	v	return
-возвращение	b1	n	return
+возвращение	B1	n	return
 возглавлять	B2	v	lead
 воздействие	B2	n	impact
 воздействовать	B2	v	influence
-возделывать	c2	v	cultivate
+возделывать	C2	v	cultivate
 воздержание	C1	n	abstinence
-воздерживаться	b2	v	abstain
+воздерживаться	B2	v	abstain
 воздух	A2	n	air
 воздушный	B2	adj	air
 воззвание	C2	n	appeal
 возить	A2	v	drive, transport
-возиться	c2	v	romp
-возле	b2	adpos	by, near
+возиться	C2	v	romp
+возле	B2	adpos	by, near
 возлюбленный	C2	n	beloved
 возмездие	C2	n	requital
 возмещение	B2	n	compensation
@@ -910,9 +909,9 @@ Lemma-orig	cefr_new	POS	Eng Word
 вознаграждение	B2	n	reward
 возникать	B2	v	occur
 возникновение	B2	n	genesis
-возобновлять	b2	v	renew
+возобновлять	B2	v	renew
 возражать	B1	v	object
-возражение	b1	n	objection
+возражение	B1	n	objection
 возраст	A1	n	age
 возрастать	B2	v	grow
 возрождение	C1	n	revival, Renaissance
@@ -924,7 +923,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 войско	B2	n	army
 вокзал	A2	n	station
 вокруг	B1	adv	around
-волейбол	a1	n	volleyball
+волейбол	A1	n	volleyball
 волк	B2	n	wolf
 волна	B2	n	wave
 волнение	B2	n	excitement
@@ -937,24 +936,24 @@ Lemma-orig	cefr_new	POS	Eng Word
 волшебный	B2	adj	magic
 вольный	B2	adj	free
 воля	B2	n	will
-вон	b2	particle	out
+вон	B2	particle	out
 вонять	B2	v	stink
 воображать	B2	v	imagine
 воображение	B2	n	imagination
 вообще	B2	adv	generally
 воодушевлять	C1	v	inspire
-вооружение	c1	n	arms
+вооружение	C1	n	arms
 вооруженный	B1	adj	armed
 во-первых	B1	adv	firstly
-вопить	c2	v	scream
+вопить	C2	v	scream
 воплощение	C2	n	incarnation
-вопль	c2	n	yell
+вопль	C2	n	yell
 вопреки	C1	adpos	despite
 вопрос	A1	n	question,issue
 вопросительный	A1	adj	question
 вор	B1	n	thief
 воробей	C1	n	sparrow
-воровать	a1	v	steal
+воровать	A1	v	steal
 воровство	B2	n	theft
 ворона	C1	n	crow
 ворота	B2	n	gate
@@ -968,14 +967,14 @@ Lemma-orig	cefr_new	POS	Eng Word
 восклицать	B1	v	exclaim
 воскресение	B2	n	Resurrection
 воскресенье	A1	n prop	sunday
-воспаление	b1	n	inflammation
+воспаление	B1	n	inflammation
 воспаляться	B1	v	inflame
 воспитание	B1	n	education
 воспитатель	B1	n	kindergartener
 воспитывать	A2	v	educate,bring up
 воспользоваться	B2	v	take advantage
 воспоминание	B1	n	remembrance
-воспринимать	b2	v	perceive
+воспринимать	B2	v	perceive
 восприниматься	B2	v	be perceived
 восприятие	B2	n	perception
 воспроизведение	B2	n	playback
@@ -983,7 +982,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 восстанавливать	B2	v	restore
 восстание	C1	n	uprising
 восстановление	B2	n	recovery
-восток	a1	n prop	East
+восток	A1	n prop	East
 восторг	B2	n	delight
 восточный	B1	adj	eastern
 восхвалять	C2	v	praise
@@ -998,7 +997,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 вот	A1	particle	here
 вот-вот	C1	adv	exactly, just so
 впадать	B2	v	fall
-впервые	b2	adv	for the first time
+впервые	B2	adv	for the first time
 вперед	A2	adv	forward
 впереди	A2	adv	ahead
 впечатление	B2	n	impression
@@ -1007,20 +1006,20 @@ Lemma-orig	cefr_new	POS	Eng Word
 вполне	B2	adv	quite
 вполне	B2	det	quite
 впоследствии	B2	adv	subsequently
-вправду	c2	adv	really
-вправе	c1	adv	be entitled
+вправду	C2	adv	really
+вправе	C1	adv	be entitled
 вправо	A2	adv	to the right
 впредь	C2	adv	in future
 впрочем	C2	adv	however
 впрямь	C2	adv	really
-враг	a2	n	enemy
-вражда	b1	n	enmity
+враг	A2	n	enemy
+вражда	B1	n	enmity
 враждебность	B2	n	hostility
 враждебный	C1	adj	hostile
 вражеский	B2	adj	enemy
-вратарь	b1	n	goalkeeper
+вратарь	B1	n	goalkeeper
 врать	B2	v	lie
-врач	a1	n	doctor
+врач	A1	n	doctor
 вращать	B1	v	rotate
 вращаться	B2	v	revolve
 вращение	B2	n	rotation
@@ -1038,21 +1037,21 @@ Lemma-orig	cefr_new	POS	Eng Word
 вручную	B2	adv	manually
 врываться	B2	v	burst
 вряд ли	B2	mwe	unlikely
-всадник	c2	n	rider
+всадник	C2	n	rider
 все	A1	pron	all
 все в порядке	A2	mwe	all right
-все время	b1	mwe	all the time
+все время	B1	mwe	all the time
 все же	C2	mwe	nevertheless
 все равно	B1	mwe	anyway, it doesn't matter
 всевышний	C2	n	lord in the highes
 всегда	A2	adv	always
-всего	b1	particle	only
+всего	B1	particle	only
 всего лишь	C2	mwe	only
 вселенная	B2	n prop	Universe
 всемирный	B2	adj	worldwide
 всеобщий	B2	adj	universal, general
 всероссийский	B2	adj	all-Russian
-всерьез	c2	adv	seriously
+всерьез	C2	adv	seriously
 всесторонний	B2	adj	comprehensive
 все-таки	B2	particle	nevertheless
 вскакивать	B2	v	jump up
@@ -1062,12 +1061,12 @@ Lemma-orig	cefr_new	POS	Eng Word
 вследствие	B2	adpos	as a result of
 вслух	A2	adv	aloud
 всматриваться	C2	v	scrutinise, observe
-всплеск	c2	n	splash
+всплеск	C2	n	splash
 вспоминать	B1	v	remember
 вспомогательный	B2	adj	supportive, auxiliary
 вспыхивать	B2	v	blaze
 вспышка	B2	n	flash
-вставать	a2	v	stand up, get up
+вставать	A2	v	stand up, get up
 вставка	B2	n	inset
 вставлять	B2	v	insert
 встраивать	B2	v	build in
@@ -1075,7 +1074,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 встречать	A2	v	meet
 встречаться	A2	v	meet
 встречный	B2	adj	counter, oncoming
-встряхивать	b2	v	shake
+встряхивать	B2	v	shake
 вступать	B2	v	join in
 вступать в брак	B2	mwe	marry
 вступительный	B1	adj	entrance, introductory
@@ -1083,10 +1082,10 @@ Lemma-orig	cefr_new	POS	Eng Word
 всухомятку	C2	adv	eating on the run
 всюду	B2	adv	everywhere
 всякий	B2	pron	any, every
-всячески	c2	adv	in every way
+всячески	C2	adv	in every way
 втискивать	C2	v	squeeze into
 вторгаться	C1	v	break into
-вторжение	c1	n	invasion
+вторжение	C1	n	invasion
 вторичный	B2	adj	secondary
 вторник	A1	n prop	tuesday
 второе	A2	n	main course
@@ -1103,7 +1102,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 вцепляться	C2	v	seize
 вчера	A1	n	yesterday
 вчерашний	A2	adj	yesterday
-въезд	a1	n	entrance
+въезд	A1	n	entrance
 въезжать	A2	v	move in, drive into
 вы	A1	pron	you
 выбегать	B1	v	run out
@@ -1125,7 +1124,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 выгодный	B2	adj	beneficial
 выгонять	B2	v	force out
 выдавать	B1	v	give, reveal, hand out
-выдача	b1	n	extradition
+выдача	B1	n	extradition
 выдающийся	B2	adj	outstanding
 выдвигать	C1	v	put forward, pull out
 выдворять	C2	v	banish
@@ -1133,10 +1132,10 @@ Lemma-orig	cefr_new	POS	Eng Word
 выделять	B1	v	discharge, allot
 выделяться	B2	v	stand out
 выдерживать	B2	v	withstand
-выдержка	c1	n	self-control
+выдержка	C1	n	self-control
 выдох	B1	n	exhale
 выдыхать	B1	v	exhale
-выезд	a1	n	departure
+выезд	A1	n	departure
 выезжать	A2	v	leave
 выживание	B2	n	survival
 выживать	B2	v	survive, supplant
@@ -1148,37 +1147,37 @@ Lemma-orig	cefr_new	POS	Eng Word
 выкачивать	C1	v	pump out
 выкидывать	A2	v	throwaway
 выкладывать	C1	v	lay out
-выключатель	a1	n	switch
-выключать	a1	v	turn off
+выключатель	A1	n	switch
+выключать	A1	v	turn off
 выкручивать	B2	v	unscrew, twist
 выкупать	B2	v	buy back
 вылезать	C1	v	come out
-вылет	a2	n	departure
+вылет	A2	n	departure
 вылетать	A2	v	depart, fly out
 выматывающий	B2	adj	exhausting
 вымещать	C2	v	wreak anger
-вынимать	a2	v	take out
+вынимать	A2	v	take out
 выносить	B2	v	bring out, tolerate
 выносливость	B2	n	endurance
 вынуждать	B2	v	force
 вынужденный	C1	adj	forced
-выпадать	b1	v	fall, fall out
+выпадать	B1	v	fall, fall out
 выпечка	B2	n	baked goods
 выпивать	C1	v	drink
-выпивка	b2	n	drinks
+выпивка	B2	n	drinks
 выписка	C1	n	discharge, bank account statement
 выписывать	A2	v	prescribe, discharge, order, copy out
 выплата	B2	n	payment
 выплачивать	C1	v	repay
 выполнение	C1	n	execution, fulfilment, accomplishment
-выполнять	b2	v	perform,execute,fulfil
+выполнять	B2	v	perform,execute,fulfil
 выполняться	B1	v	be performed, be executed, be fulfilled
-выпрямляться	b1	v	straighten
+выпрямляться	B1	v	straighten
 выпуск	B2	n	edition, production
 выпуск новостей	B1	mwe	news broadcast
 выпускать	C1	v	release, issue
 выпускник	B2	n	graduate
-выпускной	c1	adj	school leaving, outlet
+выпускной	C1	adj	school leaving, outlet
 вырабатывать	C1	v	manufacture, generate
 выработка	C1	n	generation
 выражать	B1	v	express
@@ -1192,10 +1191,10 @@ Lemma-orig	cefr_new	POS	Eng Word
 вырезать	C1	v	cut out, slaughter
 выручка	C1	n	revenue, rescue
 вырывать	C1	v	dig up, extract
-вырываться	c2	v	break away, escape
+вырываться	C2	v	break away, escape
 высаживаться	C1	v	get off
 высасывать	B2	v	suck out
-высказывание	b2	n	statement
+высказывание	B2	n	statement
 высказывать	C1	v	express
 высказываться	C1	v	express opinion
 выскакивать	C1	v	jump out, erupt
@@ -1219,11 +1218,11 @@ Lemma-orig	cefr_new	POS	Eng Word
 высшее учебное заведение	B1	mwe	college, university
 высший	B1	adj	high, highest
 высылать	C1	v	send, banish
-вытаскивать	b2	v	take out,pull out,extract
-вытекать	b1	v	follow
+вытаскивать	B2	v	take out,pull out,extract
+вытекать	B1	v	follow
 вытирать	B2	v	wipe
 выть	C1	v	howl
-вытягивать	b1	v	draw out, pull out
+вытягивать	B1	v	draw out, pull out
 выучивать	A1	v	learn, memorise, train
 выхлопная труба	C1	mwe	exhaust
 выход	A1	n	exit
@@ -1232,17 +1231,17 @@ Lemma-orig	cefr_new	POS	Eng Word
 выходка	C2	n	trick; freak
 выходной	A2	n	day off
 выходной день	A1	mwe	day off
-выходные	b1	n	weekend
+выходные	B1	n	weekend
 вычеркивать	B1	v	strike out
 вычет	B2	n	deduction
 вычисление	B2	n	calculation
 вычислять	B2	v	calculate
-выше	a2	adv	higher
+выше	A2	adv	higher
 вышестоящий	C1	adj	superior
 вышеупомянутый	C2	adj	above-mentioned
 вышивать	B2	v	embroider
-выявление	c2	n	detection
-выявлять	c2	v	reveal
+выявление	C2	n	detection
+выявлять	C2	v	reveal
 выяснение	C1	n	clarification
 выяснять	B2	v	find out
 выясняться	C1	v	clarify, find out
@@ -1253,7 +1252,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 гад	C1	n	snake, skunk (swear-word)
 гадость	C1	n	disgusting thing, dirty trick
 газ	A2	n	gas
-газета	a2	n	newspaper
+газета	A2	n	newspaper
 газовый	A2	adj	gas
 газон	B2	n	lawn
 галактика	B2	n	galaxy
@@ -1264,13 +1263,13 @@ Lemma-orig	cefr_new	POS	Eng Word
 гараж	A2	n	garage
 гарантировать	B2	v	ensure, guarantee
 гарантия	B1	n	guarantee
-гардероб	b1	n	wardrobe
+гардероб	B1	n	wardrobe
 гармонировать	B2	v	harmonise, go well together
 гармония	B2	n	harmony
 гарнизон	C1	n	garrison
 гарнир	A2	n	side dish
 гасить	B1	v	extinguish
-гвардия	c1	n	Guards
+гвардия	C1	n	Guards
 гвоздика	C1	n	carnation, cloves
 гвоздь	B2	n	nail
 где	A1	adv	where
@@ -1279,7 +1278,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 где-то	B1	adv	somewhere
 гектар	C2	n	hectare
 гелий	B2	n	helium
-гель	a1	n	gel
+гель	A1	n	gel
 ген	B2	n	gene
 генерал	C1	n	general officer
 генеральный	C1	adj	general
@@ -1301,7 +1300,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 героический	B2	adj	heroic
 герой	B1	n	hero
 герцог	C2	n	duke
-гетеросексуальный	b2	adj	heterosexual
+гетеросексуальный	B2	adj	heterosexual
 гетто	C1	n	ghetto
 гибель	B2	n	death
 гибкий	B2	adj	flexible
@@ -1313,12 +1312,12 @@ Lemma-orig	cefr_new	POS	Eng Word
 гид	B1	n	tour guide
 гимн	B1	n	national anthem
 гимназия	B2	n	grammar school
-гимнастика	a2	n	gymnastics
+гимнастика	A2	n	gymnastics
 гинеколог	C1	n	gynaecologist
 гипертония	B2	n	hypertension
 гипноз	B2	n	hypnosis
 гипотеза	B2	n	hypothesis
-гитара	b1	n	guitar
+гитара	B1	n	guitar
 гитлеровец	C2	n	hitlerite
 глава	B2	n	head
 глава семьи	B1	mwe	head of the family
@@ -1328,11 +1327,11 @@ Lemma-orig	cefr_new	POS	Eng Word
 главный	A2	adj	chief
 главным образом	B2	adv	mainly
 глагол	A1	n	verb
-гладить	a2	v	iron
+гладить	A2	v	iron
 гладкий	B2	adj	smooth
 глаз	A1	n	eye
 глазок	C1	n	peephole
-гласить	c2	v	voice
+гласить	C2	v	voice
 гласность	C1	n	publicity
 гласный	A1	adj	vowel
 глина	B2	n	clay
@@ -1340,7 +1339,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 глобальный	B2	adj	global
 глотать	B2	v	swallow
 глоток	B2	n	sip
-глубина	b1	n	depth
+глубина	B1	n	depth
 глубокий	B1	adj	deep
 глубоко	A2	adv	deeply
 глупо	B1	adv	foolishly
@@ -1348,7 +1347,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 глупый	A2	adj	silly
 глухо	C2	adv	indistinctly
 глухой	B2	adj	deaf
-глядеть	b1	v	look
+глядеть	B1	v	look
 гнать	C2	v	drive
 гнаться	B2	v	chase, seek
 гнев	B2	n	anger
@@ -1364,16 +1363,16 @@ Lemma-orig	cefr_new	POS	Eng Word
 годиться	B2	v	suit
 годовой	B2	adj	annual
 годовщина	B2	n	anniversary
-гол	a2	n	goal
+гол	A2	n	goal
 голландский	A1	adj	dutch
 голова	A1	n	head
 головка	C1	n	head
-головная боль	a1	mwe	headache
+головная боль	A1	mwe	headache
 головной	A1	adj	head
 головокружение	B2	n	dizziness
 головоломка	B2	n	puzzle
 голод	A2	n	hunger
-голодать	b1	v	starve, fast
+голодать	B1	v	starve, fast
 голодный	A1	adj	hungry
 голодовка	B1	n	hunger-strike
 голос	B1	n	voice, vote
@@ -1382,7 +1381,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 голубой	A1	adj	blue
 голубь	C1	n	pigeon
 голый	B2	adj	naked
-гольф	b1	n	golf
+гольф	B1	n	golf
 гомик	C1	n	homo
 гомосексуализм	B2	n	homosexuality
 гомосексуальный	B1	adj	homosexual
@@ -1402,7 +1401,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 горизонтальный	B2	adj	horizontal
 горло	A2	n	throat
 гормон	B2	n	hormone
-горные лыжи	b1	mwe	mountain skis
+горные лыжи	B1	mwe	mountain skis
 горный	B1	adj	mountain
 город	A1	n	city
 городок	B1	n	town
@@ -1410,24 +1409,24 @@ Lemma-orig	cefr_new	POS	Eng Word
 горожанин	C1	n	townsman
 гороскоп	B1	n	horoscope
 горсть	C1	n	handful
-горчица	b1	n	mustard
+горчица	B1	n	mustard
 горшок	C1	n	pot
-горький	b1	adj	bitter
+горький	B1	adj	bitter
 горько	A2	adv	bitter
 горючее	B2	n	fuel
 горячий	A1	adj	hot
-горячо	a2	adv	hot
+горячо	A2	adv	hot
 госдума	B2	n prop	State Duma
 госпиталь	C1	n	hospital
-господин	a1	n	master, honorific for man
+господин	A1	n	master, honorific for man
 господство	C1	n	domination
 господствовать	C1	v	dominate
 господь	C2	n	lord
 господь бог	C2	mwe	Lord thy God
-госпожа	a1	n	honorific for a woman
+госпожа	A1	n	honorific for a woman
 гостеприимный	B1	adj	hospitable
 гостеприимство	B1	n	hospitality
-гостиная	a2	n	living room
+гостиная	A2	n	living room
 гостиница	A2	n	hotel
 гость	A1	n	guest
 государственность	C1	n	statism
@@ -1436,16 +1435,16 @@ Lemma-orig	cefr_new	POS	Eng Word
 государство	A2	n	state
 государь	C2	n	sire
 готовить	A1	v	prepare,train,cook
-готовиться	b1	v	prepare,train
+готовиться	B1	v	prepare,train
 готовность	B2	n	readiness
-готовый	a2	adj	ready
+готовый	A2	adj	ready
 грабеж	B2	n	robbery
 грабить	B2	v	rob
 гравитация	B2	n	gravitation
 град	B1	n	hail
 градус	A2	n	degree
-гражданин	a1	n	citizen
-гражданка	a1	n	citizen (woman)
+гражданин	A1	n	citizen
+гражданка	A1	n	citizen (woman)
 гражданская война	B2	mwe	civil war
 гражданский	B2	adj	civil
 гражданство	B1	n	citizenship
@@ -1460,7 +1459,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 грант	C1	n	grant
 грань	C1	n	edge
 граф	C2	n	earl
-графа	b2	n	column
+графа	B2	n	column
 график	B2	n	schedule
 графика	B2	n	graphics
 графиня	C2	n	countess
@@ -1471,7 +1470,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 греть	B1	v	warm up
 грех	B2	n	sin
 грешить	C1	v	sin, blame sth
-гриб	a2	n	mushroom
+гриб	A2	n	mushroom
 гриль	A2	n	grill
 грипп	A2	n	flu
 гроб	B2	n	coffin
@@ -1486,7 +1485,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 грош	C2	n	half-copeck coin,
 грубо	B2	adv	roughly
 грубый	B2	adj	rough, crude
-груда	c2	n	bulk
+груда	C2	n	bulk
 грудной	C1	adj	breast, chest
 грудной ребенок	B1	mwe	baby
 грудь	B1	n	chest, breast
@@ -1502,8 +1501,8 @@ Lemma-orig	cefr_new	POS	Eng Word
 грустный	A2	adj	sad
 грусть	B2	n	sadness
 груша	A1	n	pear
-грызть	c2	v	gnaw
-грядущий	c2	adj	approaching
+грызть	C2	v	gnaw
+грядущий	C2	adj	approaching
 грязный	A2	adj	dirty
 грязь	A2	n	dirt
 губа	B1	n	lip
@@ -1519,8 +1518,8 @@ Lemma-orig	cefr_new	POS	Eng Word
 гусь	B2	n	goose
 да	A1	excl	yes
 давать	A1	v	give
-давать взаймы	b2	mwe	lend, borrow
-даваться	c2	v	come easily
+давать взаймы	B2	mwe	lend, borrow
+даваться	C2	v	come easily
 давить	B1	v	press
 давление	B2	n	pressure
 давний	C1	adj	old
@@ -1529,23 +1528,23 @@ Lemma-orig	cefr_new	POS	Eng Word
 даже	B1	particle	even
 даже если	B2	mwe	even through
 далее	B2	adv	further
-далекий	a2	adj	distant
+далекий	A2	adj	distant
 далеко	A1	adv	far
 даль	C2	n	distance
 дальнейшее	C1	n	further
 дальнейший	C1	adj	further
 дальний	B1	adj	distant
-дальше	a2	adv	further
+дальше	A2	adv	further
 дама	C1	n	lady
 данные	B2	n	data
 данный	B2	pron	given, particular, present
-дань	c2	n	tribute
+дань	C2	n	tribute
 дар	B2	n	gift
 дарить	A1	v	present
-даром	b2	adv	free
-дата	a1	n	date
+даром	B2	adv	free
+дата	A1	n	date
 дательный	A2	adj	dative
-датировать	b2	v	date
+датировать	B2	v	date
 датчик	B2	n	sensor
 дача	B1	n	summer home, dacha
 два	A1	num	two
@@ -1556,7 +1555,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 двенадцатый	A2	num	twelfth
 двенадцать	A1	num	twelve
 дверца	C1	n	door
-дверь	a1	n	door
+дверь	A1	n	door
 двести	A1	num	two hundred
 двигатель	B2	n	engine
 двигать	B1	v	move
@@ -1564,7 +1563,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 движение	B1	n	movement
 двое	B2	num	two (people)
 двоеточие	B2	n	colon
-двойка	b1	n	figure of two
+двойка	B1	n	figure of two
 двойной	B1	adj	double
 двор	B1	n	yard
 дворец	B1	n	palace
@@ -1574,7 +1573,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 двоюродный	A2	adj	cousin
 двусторонний	C1	adj	double-faced
 двухсотый	A2	num	two-hundredth
-дебаты	c1	n	debate
+дебаты	C1	n	debate
 дебют	C1	n	debut
 дева	C2	n	virgin
 девальвация	C1	n	devaluation
@@ -1595,7 +1594,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 девятый	A2	num	ninth
 девять	A1	num	nine
 девятьсот	A1	num	nine hundred
-дед	b2	n	grandfather
+дед	B2	n	grandfather
 дедушка	A1	n	grandfather
 деепричастие	B2	n	adverbial participle
 дежурить	B1	v	be on duty
@@ -1608,12 +1607,12 @@ Lemma-orig	cefr_new	POS	Eng Word
 действительный	B2	adj	real, valid
 действо	C2	n	pageant
 действовать	B2	v	act
-действующий	b2	adj	existing, active
+действующий	B2	adj	existing, active
 декабрь	A1	n prop	december
-декан	a2	n	dean
-деканат	a2	n	dean's office
+декан	A2	n	dean
+деканат	A2	n	dean's office
 декламировать	C1	v	recite
-декларация	a2	n	declaration
+декларация	A2	n	declaration
 декорация	B2	n	scenery
 декретный отпуск	B2	mwe	maternity leave
 делать	A1	v	do
@@ -1624,14 +1623,14 @@ Lemma-orig	cefr_new	POS	Eng Word
 делаться	B2	v	going on, happen
 делегат	B2	n	delegate
 делегация	B2	n	delegation
-деление	a2	n	division
+деление	A2	n	division
 делить	A2	v	divide,share
-делиться	b2	v	divide,share
-дело	a2	n	business, case
+делиться	B2	v	divide,share
+дело	A2	n	business, case
 деловой	B2	adj	business
 дельфин	B2	n	dolphin
 демографический	B2	adj	demographic
-демократ	b2	n	democrat
+демократ	B2	n	democrat
 демократический	B1	adj	democratic
 демократия	B2	n	democracy
 демон	C2	n	demon
@@ -1642,7 +1641,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 день	A1	n	day
 день недели	A1	mwe	week day
 День Победы	A2	mwe	victory day
-день рождения	a1	n	birthday
+день рождения	A1	n	birthday
 деньги	A1	n	money
 департамент	B2	n	department
 депрессия	B2	n	depression
@@ -1678,16 +1677,16 @@ Lemma-orig	cefr_new	POS	Eng Word
 детство	A2	n	childhood
 дефект	B2	n	defect
 дефицит	B2	n	deficit
-дециметр	a2	n	decimetre
+дециметр	A2	n	decimetre
 дешеветь	B1	v	become cheaper
 дешево	A1	adv	cheap
 дешевый	A1	adj	cheap
-деяние	c2	n	deed
-деятель	c2	n	figure
+деяние	C2	n	deed
+деятель	C2	n	figure
 деятельность	B2	n	activity
 джаз	B2	n	jazz
 джемпер	A2	n	sweater
-джинсы	a1	n	jeans
+джинсы	A1	n	jeans
 джип	B2	n	jeep
 диабет	C1	n	diabetes
 диагноз	B1	n	diagnosis
@@ -1698,7 +1697,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 диалог	A1	n	dialogue
 диаметр	B2	n	diameter
 диапазон	B2	n	range
-диван	a1	n	sofa
+диван	A1	n	sofa
 дивизия	C1	n	division
 дидактический	C1	adj	didactic
 диета	B1	n	diet
@@ -1725,12 +1724,12 @@ Lemma-orig	cefr_new	POS	Eng Word
 диск	A2	n	disc
 дисквалификация	B2	n	disqualification
 дисковод	B2	n	disk drive
-дискомфорт	b2	n	discomfort
+дискомфорт	B2	n	discomfort
 дискотека	A2	n	discotheque
 дискриминация	B2	n	discrimination
 дискуссия	B1	n	discussion
 дискутировать	C1	v	dispute
-дисплей	b2	n	monitor
+дисплей	B2	n	monitor
 диссертация	B2	n	dissertation
 дистанционное управление	B2	mwe	remote control
 дистанция	B2	n	distance
@@ -1749,22 +1748,22 @@ Lemma-orig	cefr_new	POS	Eng Word
 дневной	B1	adj	day
 днк	B2	abbr	DNA
 дно	B1	n	bottom
-до	a2	adpos	before, until, under
+до	A2	adpos	before, until, under
 до свидания	A1	excl	good bye
 до сих пор	B2	mwe	so far, still
 до тех пор	B2	mwe	until
 добавка	B1	n	supplement, addition
-добавление	b2	n	addition
+добавление	B2	n	addition
 добавлять	B1	v	add
 добиваться	B2	v	attain
 добираться	B1	v	reach, get to
-добро	a2	n	good
+добро	A2	n	good
 добро пожаловать	A1	excl	welcome
 доброволец	B2	n	volunteer
 добровольный	B1	adj	voluntary
 добродетель	C2	n	virtue
 добросовестный	B2	adj	scrupulous, conscientious
-доброта	b1	n	kindness
+доброта	B1	n	kindness
 добрый	A2	adj	good,kind
 добрый вечер	A2	excl	good evening
 добрый день	A2	excl	hello
@@ -1775,11 +1774,11 @@ Lemma-orig	cefr_new	POS	Eng Word
 доверять	B2	v	trust
 довод	C1	n	argument
 доводить	B2	v	lead, irritate
-доводиться	c2	v	be related, have an occasion
+доводиться	C2	v	be related, have an occasion
 довольно	B2	adv	enough
 довольный	B2	adj	satisfied
 догадка	B1	n	guess
-догадываться	b2	v	guess
+догадываться	B2	v	guess
 договариваться	B1	v	agree
 договор	B1	n	agreement
 договоренность	C1	n	agreement
@@ -1798,13 +1797,13 @@ Lemma-orig	cefr_new	POS	Eng Word
 докладывать	B1	v	report
 доктор	A1	n	doctor
 доктрина	C1	n	doctrine
-документ	a1	n	document
+документ	A1	n	document
 документальный	B1	adj	documentary
 документация	B2	n	documentation
 документировать	C1	v	document
 долг	B2	n	debt
-долгий	a2	adj	long
-долго	a1	adv	long
+долгий	A2	adj	long
+долго	A1	adv	long
 долгое время	B1	mwe	long time
 долгожданный	B2	adj	long-desired
 долгосрочный	B1	adj	long-term
@@ -1815,7 +1814,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 должность	B2	n	position
 должный	B2	adj	due
 долина	B2	n	valley
-доллар	a1	n	dollar
+доллар	A1	n	dollar
 доля	B2	n	share
 дом	A1	n	home
 дом престарелых	B2	mwe	nursing home
@@ -1853,11 +1852,11 @@ Lemma-orig	cefr_new	POS	Eng Word
 дорожить	C2	v	value
 дорожка	B1	n	road, path
 дорожный	B1	adj	road
-дорожный знак	a2	mwe	traffic sign
+дорожный знак	A2	mwe	traffic sign
 досада	C2	n	annoyance
 доска	A1	n	board
 доска объявлений	B1	mwe	announcement board
-доставать	b1	v	get, pester
+доставать	B1	v	get, pester
 достаться	B2	V	fall to sb's lot
 доставка	B1	n	delivery
 доставлять	B1	v	deliver
@@ -1875,14 +1874,14 @@ Lemma-orig	cefr_new	POS	Eng Word
 достояние	C2	n	property, heritage
 доступ	B1	n	access
 доступность	B2	n	availability
-доступный	b2	adj	accessible
+доступный	B2	adj	accessible
 досуг	B2	n	leisure
 досье	C1	n	dossier
 дотация	B2	n	subsidy
 доход	B2	n	income
 доходить	A2	v	reach
 дочерний	C1	adj	affiliated, daughter
-дочка	b2	n	daughter
+дочка	B2	n	daughter
 дочь	A1	n	daughter
 драгоценность	B2	n	jewel
 драгоценный	B2	adj	precious
@@ -1895,7 +1894,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 древесина	B2	n	wood
 древний	B1	adj	ancient
 древность	B2	n	antiquity
-дробь	b1	n	fraction, slash
+дробь	B1	n	fraction, slash
 дрожать	B2	v	tremble
 дрожь	B2	n	tremble
 друг	A1	n	friend
@@ -1932,7 +1931,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 дуэль	C2	n	duel
 дым	B2	n	smoke
 дымить	C1	v	emit smoke
-дыня	a2	n	melon
+дыня	A2	n	melon
 дыра	B1	n	hole
 дырка	B1	n	hole
 дыхание	B2	n	breath
@@ -1943,13 +1942,13 @@ Lemma-orig	cefr_new	POS	Eng Word
 евангелие	C2	n	gospel
 еврей	B1	n	jew
 еврейский	B2	adj	Jewish
-евро	a1	n	Euro
-европа	a1	n prop	europe
+евро	A1	n	Euro
+европа	A1	n prop	europe
 европарламент	B2	n prop	European Parliament
 европеец	A1	n	european
 европейский	A1	adj	european
 евросоюз	B2	n prop	European Union, EU
-его	a1	pron	his, its
+его	A1	pron	his, its
 егэ	B2	n	unified state examination
 еда	A1	n	food
 едва	B2	adv	hardly, barely
@@ -1962,7 +1961,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 единственный	A2	adj	only
 единство	B2	n	unity
 единый	B1	adj	united
-ее	a1	pron	her, hers
+ее	A1	pron	her, hers
 ежегодный	A2	adj	annual
 ежедневный	A2	adv	daily
 еженедельник	B2	n	weekly magazine, weekly newspaper
@@ -1970,9 +1969,9 @@ Lemma-orig	cefr_new	POS	Eng Word
 ездить	A2	v	ride, travel
 ездить верхом	B2	mwe	ride a horse
 ездить на велосипеде	B1	mwe	ride a bike
-ей	a1	pron	her
+ей	A1	pron	her
 еле	B2	adv	hardly
-елка	a2	n	Christmas tree
+елка	A2	n	Christmas tree
 емкость	B2	n	capacity
 и-мэйл	B1	n	email
 епископ	C2	n	bishop
@@ -1996,27 +1995,27 @@ Lemma-orig	cefr_new	POS	Eng Word
 жакет	C2	n	jacket
 жалеть	B1	v	feel sorry
 жалить	B2	v	sting, bite
-жалкий	c1	adj	pitiful
+жалкий	C1	adj	pitiful
 жалко	A2	adv	pitifully
 жалоба	B1	n	complaint
 жаловаться	B1	v	complain
 жалость	B2	n	pity
-жаль	b1	adv	pity
-жалюзи	a2	n	window blind
+жаль	B1	adv	pity
+жалюзи	A2	n	window blind
 жанр	B2	n	genre
-жар	b2	n	fever
-жара	a2	n	heat
+жар	B2	n	fever
+жара	A2	n	heat
 жареный	A2	adj	roasted, fried
 жарить	A2	v	roast, fry
-жаркий	a2	adj	hot
+жаркий	A2	adj	hot
 жарко	A1	adv	hot
-ждать	a1	v	wait
+ждать	A1	v	wait
 же	B1	particle	indeed
 жевательная резинка	B1	mwe	chewing gum
 жевать	B1	v	chew
 желаемый	B2	adj	desirable
 желание	A2	n	desire
-желанный	c2	adj	cherished
+желанный	C2	adj	cherished
 желательный	B2	adv	desirable
 желать	A2	v	desire
 желающий	B1	n	volunteer, willing person
@@ -2028,7 +2027,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 железо	B2	n	iron
 желтый	A1	adj	yellow
 желудок	B2	n	stomach
-жемчужина	b2	n	pearl
+жемчужина	B2	n	pearl
 жена	A1	n	wife
 женатый	A1	adj	married
 женить	C1	v	wed
@@ -2038,7 +2037,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 женский	A1	adj	female,feminine
 женственный	B2	adj	womanly
 женщина	A1	n	woman
-жеребьевка	b2	n	draw
+жеребьевка	B2	n	draw
 жертва	B2	n	victim
 жертвовать	B2	v	donate, sacrifice
 жест	B1	n	gesture
@@ -2059,35 +2058,35 @@ Lemma-orig	cefr_new	POS	Eng Word
 животное	A2	n	animal
 животный	C2	adj	animal
 жидкий	B1	adj	liquid
-жидкость	b2	n	liquid
+жидкость	B2	n	liquid
 жизненный	B2	adj	vital
 жизнь	A1	n	life
 жила	C2	n	tendon, vein, core
 жилец	B2	n	tenant
 жилище	C1	n	dwelling
-жилищный	b2	adj	housing
+жилищный	B2	adj	housing
 жилой	B2	adj	dwelling
 жилье	B2	n	accommodation
 жир	A2	n	fat
 жирный	A2	adj	fatty
-житель	b1	n	inhabitant
+житель	B1	n	inhabitant
 жительство	A2	n	residence
 жить	A1	v	live
 жкх	C2	n	public utility
-жопа	b2	n	ass
+жопа	B2	n	ass
 жрать	B2	v	devour
 жребий	C2	n	lot, fate
 жрец	C2	n	priest
 жук	B2	n	beetle
 жульничество	C2	n	deception, cheating
-журнал	a2	n	magazine
+журнал	A2	n	magazine
 журналист	B1	n	journalist
 журналистика	B2	n	journalism
 журналистский	B2	adj	journalistic
 жуткий	B2	adj	terrible
 жутко	C2	adv	awfully
 жюри	B2	n	jury
-за	a2	adpos	after, behind, for
+за	A2	adpos	after, behind, for
 за границей	A2	adv	abroad
 за исключением	B2	prep	except
 за рубежом	C1	mwe	abroad
@@ -2110,8 +2109,8 @@ Lemma-orig	cefr_new	POS	Eng Word
 забрасывать	C1	v	throw, pelt, shower, fill, neglect
 забывать	A1	v	forget
 заваливать	C2	v	pile, charge
-заваривать	b2	v	infuse, weld up
-заведение	c2	n	institution
+заваривать	B2	v	infuse, weld up
+заведение	C2	n	institution
 заведовать	B2	v	manage
 заведомо	C2	adv	knowing
 заведующий	B2	n	manager
@@ -2124,10 +2123,10 @@ Lemma-orig	cefr_new	POS	Eng Word
 завидовать	B1	v	envy
 зависать	B2	v	hang, hover
 зависеть	B1	v	depend
-зависимость	b2	n	dependence
-зависимый	b2	adj	dependant
+зависимость	B2	n	dependence
+зависимый	B2	adj	dependant
 зависть	B2	n	envy
-завладевать	c2	v	seize
+завладевать	C2	v	seize
 завод	B2	n	plant
 заводить	B2	v	lead, get
 завоевание	B2	n	conquest, achievement
@@ -2142,7 +2141,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 загадочный	C1	adj	mysterious
 заглавие	A2	n	title
 заглядывать	B2	v	peep
-заговаривать	b1	v	start talking, cast a magic spell
+заговаривать	B1	v	start talking, cast a magic spell
 заговор	C1	n	conspiracy
 заголовок	A2	n	title
 загонять	C2	v	drive, sell
@@ -2161,7 +2160,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 задевать	C1	v	touch
 задержанный	B2	n	detained person
 задерживать	B2	v	detain
-задерживаться	b2	v	be delayed
+задерживаться	B2	v	be delayed
 задержка	B2	n	delay
 задний	A2	adj	back
 задница	B2	n	ass
@@ -2186,8 +2185,8 @@ Lemma-orig	cefr_new	POS	Eng Word
 заказчик	B1	n	customer
 заказывать	A2	v	order
 заканчивать	A2	v	complete
-заканчиваться	b1	v	end
-закат	b1	n	sunset
+заканчиваться	B1	v	end
+закат	B1	n	sunset
 закладывать	B2	v	block, pawn, inform against (slang)
 заклинание	C2	n	spell
 заключать	B2	v	conclude
@@ -2208,7 +2207,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 закреплять	B2	v	fasten
 закрывать	A1	v	close
 закрываться	A2	v	close
-закрытие	b1	n	closing
+закрытие	B1	n	closing
 закрыто	A1	adj	closed
 закрытый	B1	adj	closed
 закупка	B2	n	purchase
@@ -2218,7 +2217,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 залезать	B2	v	climb
 залив	B2	n	bay
 заливать	B2	v	flood
-залог	c1	n	pledge
+залог	C1	n	pledge
 залогиниться	B2	v	log in
 заложник	B1	n	hostage
 залп	C1	n	salvo
@@ -2240,10 +2239,10 @@ Lemma-orig	cefr_new	POS	Eng Word
 замолчать	A2	v	fall silent
 замороженный	A2	adj	frozen
 замуж	A2	adv	marry
-замужем	a1	adv	married (woman)
+замужем	A1	adv	married (woman)
 замысел	C1	n	intention
 занавес	C1	n	stage curtain
-занавеска	a2	n	curtain
+занавеска	A2	n	curtain
 занимать	B2	v	borrow
 заниматься	A1	v	study, learn, engage
 заниматься любовью	B2	mwe	make love
@@ -2254,14 +2253,14 @@ Lemma-orig	cefr_new	POS	Eng Word
 занятость	B2	n	employment
 занятый	B1	adj	busy
 зао	C1	ABBR	LLC
-заодно	c2	adv	at the same time, in concert with someone
-запад	a1	n prop	West
+заодно	C2	adv	at the same time, in concert with someone
+запад	A1	n prop	West
 западный	B1	adj	western
 запаздывать	B2	v	lag
 запас	B2	n	reserve
 запасной	B1	adj	reserve, spare
 запах	A2	n	odour
-запирать	a2	v	lock
+запирать	A2	v	lock
 записка	B1	n	note
 записная книжка	A2	mwe	notebook, address book
 записывать	A2	v	record
@@ -2277,7 +2276,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 запоминать	A1	v	memorise
 запоминаться	B2	v	be memorised
 запор	B2	n	constipation, lock
-запрет	b2	n	prohibition
+запрет	B2	n	prohibition
 запрещать	A2	v	prohibit
 запрещаться	A1	v	prohibit
 запрос	B2	n	request
@@ -2299,7 +2298,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 зародыш	B2	n	embryo
 заросли	C1	n	rank tangle of vegetation and bushes
 зарплата	A2	n	wages
-зарубежный	b2	adj	foreign
+зарубежный	B2	adj	foreign
 заря	C1	n	dawn
 заряд	B2	n	charge
 засада	C1	n	ambush
@@ -2307,24 +2306,24 @@ Lemma-orig	cefr_new	POS	Eng Word
 заслуга	C1	N	merit
 заслуживать	B2	v	deserve
 засмеяться	A2	v	laugh
-засовывать	c1	v	shove
+засовывать	C1	v	shove
 заставать	B2	v	catch
 заставать врасплох	C2	mwe	catch unawares
 заставлять	B2	v	force
 застежка	B1	n	fastener
 застенчивость	B2	n	shyness
 застой	C1	n	stagnation
-застраховать	b1	v	insure
+застраховать	B1	v	insure
 застревать	B2	v	get stuck
 застрелить	B2	v	shoot down
 застройка	C2	n	development
 застывать	B2	v	harden
 засуха	B2	n	drought
-засыпать	a1	v	fall sleep, fill up
+засыпать	A1	v	fall sleep, fill up
 затем	B2	adv	then
 затея	C2	n	enterprise
 зато	C1	con	but on the other hand
-затрагивать	c1	v	affect
+затрагивать	C1	v	affect
 затраты	B2	n	costs
 затрещина	C2	n	clout on the head
 затруднение	B2	n	difficulty
@@ -2338,7 +2337,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 захватчик	C1	n	invader
 захватывать	B2	v	capture
 захватывающий	B2	adj	spectacular
-заход	c1	n	attempt, sunset
+заход	C1	n	attempt, sunset
 заходить	B1	v	come in, drop in
 захотеть	A1	v	wish
 захотеться	B1	v	wish
@@ -2352,12 +2351,12 @@ Lemma-orig	cefr_new	POS	Eng Word
 защитный	B2	adj	protective
 защищать	B2	v	protect
 заявитель	B2	n	applicant
-заявка	b2	n	application
+заявка	B2	n	application
 заявление	B1	n	application, statement
 заявлять	B2	v	claim
 заяц	B1	n	hare, stowaway
 звание	C1	n	title
-звать	b1	v	call
+звать	B1	v	call
 звезда	A2	n	star
 звездный	B1	adj	star
 звено	B2	n	section
@@ -2368,17 +2367,17 @@ Lemma-orig	cefr_new	POS	Eng Word
 звонок	A2	n	bell
 звук	A1	n	sound
 звуковой	B1	adj	audio
-звучание	b2	n	sound
+звучание	B2	n	sound
 звучать	A2	v	sound
 здание	B1	n	building
 здесь	A1	adv	here
 здороваться	A1	v	greet
 здорово	B1	excl	cool
 здоровый	A1	adj	healthy
-здоровье	a2	n	health
+здоровье	A2	n	health
 здравоохранение	B2	n	public health service
-здравствовать	a1	v	be well
-здравый	c2	adj	sensible
+здравствовать	A1	v	be well
+здравый	C2	adj	sensible
 зеленый	A1	adj	green
 зелень	B2	n	greenery, herbs
 земельный	B2	adj	land
@@ -2387,22 +2386,22 @@ Lemma-orig	cefr_new	POS	Eng Word
 земля	A2	n	land
 земляк	A2	n	fellow countryman
 земной	B2	adj	terrestrial
-зеркало	a2	n	mirror
+зеркало	A2	n	mirror
 зерно	B2	n	grain
 зима	A1	n	winter
 зимний	A2	adj	winter
 злить	B2	v	anger
-зло	a2	adv	evil
+зло	A2	adv	evil
 злоба	B2	n	spite
 злобный	C1	adj	spiteful
-зловещий	c2	adj	sinister
+зловещий	C2	adj	sinister
 злодей	C1	n	villain
 злой	B1	adj	angry
 злокачественный	C1	adj	malignant
 злость	B2	n	anger
 злоупотребление	B2	n	misuse
 злоупотреблять	B2	v	misuse
-змея	b1	n	snake
+змея	B1	n	snake
 знак	A1	n	sign
 знак препинания	B1	mwe	punctuation mark
 знакомить	B2	v	introduce
@@ -2412,9 +2411,9 @@ Lemma-orig	cefr_new	POS	Eng Word
 знаменитый	B1	adj	famous
 знамя	C1	n	banner
 знание	B1	n	knowledge
-знаток	c1	n	expert
+знаток	C1	n	expert
 знать	A1	v	know
-значение	b1	n	meaning
+значение	B1	n	meaning
 значимость	C1	n	significance
 значимый	C1	adj	significant
 значительный	B2	adj	significant
@@ -2425,7 +2424,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 золотой	B2	adj	golden
 зона	B2	n	zone
 зонт	A2	n	umbrella
-зоопарк	a2	n	zoo
+зоопарк	A2	n	zoo
 зрелище	B2	n	spectacle
 зрелищный	C1	adj	entertainment, spectacular
 зрелость	C1	n	maturity
@@ -2441,16 +2440,16 @@ Lemma-orig	cefr_new	POS	Eng Word
 зубной	A1	adj	dental
 зубной врач	B1	mwe	dentist
 зубрить	B1	v	learn by rote
-зять	b1	n	son-in-law
+зять	B1	n	son-in-law
 и	A1	con	and
-и ... и	b1	con	both ...  and
+и ... и	B1	con	both ...  and
 и особенно	C1	mwe	especially
 и т.д.	B2	abbr	etc
 и так далее	C1	mwe	and so on
 игла	B2	n	needle
 игнорировать	B2	v	ignore
-игра	a1	n	game
-играть	a1	v	play
+игра	A1	n	game
+играть	A1	v	play
 играть роль	A2	mwe	play a role
 игровой	B1	adj	playing
 игрок	B1	n	player
@@ -2470,9 +2469,9 @@ Lemma-orig	cefr_new	POS	Eng Word
 идол	C2	n	idol
 идти	A1	v	go
 идти на компромисс	B2	mwe	meet halfway
-идти пешком	a2	mwe	walk
+идти пешком	A2	mwe	walk
 иерархия	C1	n	hierarchy
-из	a1	adpos	from, of
+из	A1	adpos	from, of
 изба	C1	n	izba (log house)
 избавлять	C1	v	save, release, rescue
 избавляться	B2	v	get rid
@@ -2481,8 +2480,8 @@ Lemma-orig	cefr_new	POS	Eng Word
 избивать	B2	v	beat up
 избиратель	B1	n	elector
 избирательный	B1	adj	electoral
-избирательный бюллетень	b2	mwe	ballot
-избирательный голос	b2	mwe	voter
+избирательный бюллетень	B2	mwe	ballot
+избирательный голос	B2	mwe	voter
 избирать	B1	v	vote
 избрание	B1	n	election
 избранный	B1	adj	elected, selected
@@ -2496,7 +2495,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 извинение	A2	n	excuse
 извините	A1	v	sorry, excuse me
 извинять	B1	v	forgive, excuse
-извиняться	a2	v	apologise
+извиняться	A2	v	apologise
 извлекать	B2	v	extract, pull out
 извне	C1	adv	from the outside
 изгиб	C1	n	bending
@@ -2530,11 +2529,11 @@ Lemma-orig	cefr_new	POS	Eng Word
 изначальный	C1	adj	original, primordial
 изнашиваться	B2	v	be worn down
 износ	C1	n	wearout
-изнутри	b2	adv	from within
-изо всех сил	c2	mwe	as hard as one can
+изнутри	B2	adv	from within
+изо всех сил	C2	mwe	as hard as one can
 изобилие	C1	n	abundance
 изображать	B2	v	represent
-изображение	b2	n	image
+изображение	B2	n	image
 изобразительный	B2	adj	graphic
 изобретатель	B2	n	inventor
 изобретать	B2	v	invent
@@ -2557,13 +2556,13 @@ Lemma-orig	cefr_new	POS	Eng Word
 икра	B2	n	calf, caviar
 ил	C1	n	silt
 или	A1	con	or
-или ... или	b1	v	either ... or
+или ... или	B1	v	either ... or
 иллюзия	B2	n	illusion
 иллюстрация	B1	n	illustration
 иллюстрировать	B2	v	illustrate
-им	a1	pron	them
-имение	c2	n	landed estate
-именительный	a1	adj	nominative
+им	A1	pron	them
+имение	C2	n	landed estate
+именительный	A1	adj	nominative
 именно	C1	particle	exactly,namely
 именовать	C1	v	name
 иметь	A1	v	have
@@ -2623,10 +2622,10 @@ Lemma-orig	cefr_new	POS	Eng Word
 инстанция	B2	n	authority
 инстинкт	B2	n	instinct
 институт	A1	n	institute
-инструктор	b1	n	instructor
+инструктор	B1	n	instructor
 инструкция	A2	n	instruction, manual, guide
 инструмент	B1	n	tool
-инсулин	c2	n	insulin
+инсулин	C2	n	insulin
 инсульт	B2	n	stroke
 интеграция	B2	n	integration
 интегрировать	C1	v	integrate
@@ -2634,7 +2633,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 интеллектуальный	B2	adj	intelligent
 интеллигент	B2	n	intellectual
 интеллигентный	B2	adj	cultured, educated, refined
-интеллигенция	b2	n	intelligentsia
+интеллигенция	B2	n	intelligentsia
 интенсивность	B2	n	intensity
 интенсивный	B2	adj	intensive
 интерактивный	B2	adj	interactive
@@ -2683,11 +2682,11 @@ Lemma-orig	cefr_new	POS	Eng Word
 искренне	B2	adv	sincerely
 искренний	B2	adj	sincere
 искренность	C1	n	sincerity
-искусственный	b1	adj	artificial
+искусственный	B1	adj	artificial
 искусство	A2	n	art
 искушение	C1	n	temptation
-ислам	b1	n prop	islam
-исламский	b1	adj	islamic
+ислам	B1	n prop	islam
+исламский	B1	adj	islamic
 испанец	A1	n	spaniard
 испанский	A1	adj	spanish
 исповедовать	C1	v	confess
@@ -2696,7 +2695,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 исполнитель	B2	n	performer, executor
 исполнительный	C1	adj	executive
 исполнять	B2	v	perform
-исполняться	b2	v	be fulfilled
+исполняться	B2	v	be fulfilled
 использование	B2	n	use
 использовать	B1	v	use
 использоваться	B2	v	be in use
@@ -2707,7 +2706,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 исправлять	A2	v	correct
 испражнения	C1	n	intestinal discharge
 испуг	B1	n	fright
-испуганно	b2	adv	frightenedly
+испуганно	B2	adv	frightenedly
 испугаться	A2	v	get scared
 испытание	B2	n	test
 испытательный срок	B2	mwe	probation
@@ -2746,14 +2745,14 @@ Lemma-orig	cefr_new	POS	Eng Word
 итальянский	A1	adj	italian
 итог	B2	n	total, result
 итого	B2	adv	total
-иудаизм	b1	n	Judaism
-иудей	b1	n	orthodox Jew
+иудаизм	B1	n	Judaism
+иудей	B1	n	orthodox Jew
 их	A1	pron	their, theirs
 июль	A1	n prop	july
 июнь	A1	n prop	june
-йога	b1	n	yoga
+йога	B1	n	yoga
 йогурт	A1	n	yoghurt
-к	a1	adpos	to
+к	A1	adpos	to
 к примеру	B2	mwe	for example
 к сожалению	B1	adv	unfortunately
 к счастью	B2	adv	fortunately
@@ -2761,8 +2760,8 @@ Lemma-orig	cefr_new	POS	Eng Word
 кабель	B2	n	cable
 кабина	B2	n	crew compartment, cockpit
 кабинет	B1	n	cabinet
-каблук	b1	n	heel
-кавычка	a2	n	quotation mark
+каблук	B1	n	heel
+кавычка	A2	n	quotation mark
 кадр	B1	n	frame
 кадровый	C2	adj	personnel
 кадры	B2	n	personnel
@@ -2825,7 +2824,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 карикатура	B2	n	caricature
 карман	B1	n	pocket
 карманный вор	B2	mwe	pickpocket
-карта	a1	n	map, card
+карта	A1	n	map, card
 карта памяти	B1	mwe	memory card
 картина	A2	n	painting
 картинка	A2	n	picture
@@ -2842,8 +2841,8 @@ Lemma-orig	cefr_new	POS	Eng Word
 каталог	A2	n	catalogue
 катастрофа	B1	n	catastrophe
 катастрофический	B2	adj	catastrophic
-катать	b2	v	roll
-кататься	b1	v	ride,drive
+катать	B2	v	roll
+кататься	B1	v	ride,drive
 категорически	C1	adv	categorically
 категорический	C1	adj	categorical
 категория	B2	n	category
@@ -2863,7 +2862,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 кашель	A2	n	cough
 кашлять	A2	v	cough
 каюта	B2	n	cabin
-квадрат	a2	n	square
+квадрат	A2	n	square
 квадратный	B2	adj	square
 квадратный метр	B2	mwe	square meter
 квалификация	B2	n	qualification
@@ -2896,7 +2895,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 кирпич	B2	n	brick
 кислород	B2	n	oxygen
 кислота	B2	N	acid
-кислый	a2	adj	acid
+кислый	A2	adj	acid
 кисть	B1	n	brush
 кит	B2	n	whale
 китаец	A1	n	chinese
@@ -2935,20 +2934,20 @@ Lemma-orig	cefr_new	POS	Eng Word
 клочок	B2	n	patch, flock
 клуб	A2	n	club
 клубника	A2	n	strawberry
-ключ	a1	n	key
+ключ	A1	n	key
 ключевой	B2	adj	key
 клясться	C1	v	swear
 клятва	B2	n	oath
-км	a1	n	km, kilometre
+км	A1	n	km, kilometre
 книга	A1	n	book
 книжка	A1	n	book
 книжный	A1	adj	book
 книжный магазин	A1	mwe	bookshop
-кнопка	a2	n	button
+кнопка	A2	n	button
 князь	C2	n	prince
 коалиция	C1	n	coalition
 ковер	A2	n	carpet
-когда	a1	con	when
+когда	A1	con	when
 когда-либо	B2	adv	ever
 когда-нибудь	B1	adv	some day
 когда-то	B1	adv	one day
@@ -2960,23 +2959,23 @@ Lemma-orig	cefr_new	POS	Eng Word
 кое-что	C1	pron	something, a little
 кожа	A1	n	skin
 кожаный	B1	adj	leather
-кожура	b2	n	peel
-коза	b1	n	goat, she-goat
-козел	b1	n	he-goat, ass hole (slang)
+кожура	B2	n	peel
+коза	B1	n	goat, she-goat
+козел	B1	n	he-goat, ass hole (slang)
 койка	C2	n	bed
 кокаин	B2	n	cocaine
 кока-кола	A1	n	coca-cola
 коктейль	A2	n	cocktail, shake
 кол	C2	n	stake, the lowest school mark
 колбаса	A1	n	sausage
-колготки	a2	n	tights
+колготки	A2	n	tights
 колдун	B2	n	sorcerer, magician
 колебание	B2	n	fluctuation
 колебаться	B2	v	fluctuate
 колено	B1	n	knee
 колесо	A2	n	wheel
 колея	C2	n	track
-количество	b1	n	quantity
+количество	B1	n	quantity
 коллега	B1	n	colleague
 коллегия	C1	n	board
 колледж	B1	n	college
@@ -3035,7 +3034,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 компетентный	B2	adj	competent
 компетенция	B2	n	competence
 комплекс	B2	n	complex, package
-комплексный	b2	adj	complex, integrated, fixed (meal)
+комплексный	B2	adj	complex, integrated, fixed (meal)
 комплект	B1	n	set
 комплимент	B1	n	compliment
 композитор	B1	n	composer
@@ -3057,7 +3056,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 конгресс	C1	n	congress
 кондиционер	B1	n	conditioner, air conditioner
 конец	A1	n	end
-конечно	a2	adv	certainly
+конечно	A2	adv	certainly
 конечность	C1	n	limb
 конечный	B2	adj	final
 конкретный	B2	adj	specific
@@ -3067,7 +3066,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 конкурентоспособный	B2	adj	competitive
 конкуренция	B2	n	competition
 конкурировать	B2	v	compete
-конкурс	a2	n	competition
+конкурс	A2	n	competition
 консенсус	C2	n	consensus
 консервативный	C1	adj	conservative
 констатировать	C1	v	state
@@ -3076,12 +3075,12 @@ Lemma-orig	cefr_new	POS	Eng Word
 конструктивный	C1	adj	constructive
 конструктор	B2	n	constructor
 конструкция	B2	n	construction
-консул	a1	n	consul
-консульство	a1	n	consulate
+консул	A1	n	consul
+консульство	A1	n	consulate
 консультант	B1	n	consultant
 консультативный	C1	adj	advisory
 консультация	B1	n	consultation
-консультирование	b2	n	consulting
+консультирование	B2	n	consulting
 консультировать	B1	v	consult
 консультироваться	B1	v	be consulted
 контакт	B2	n	contact
@@ -3109,12 +3108,12 @@ Lemma-orig	cefr_new	POS	Eng Word
 концепция	B2	n	concept
 концерн	C1	n	corporate group (business)
 концерт	A2	n	concert
-кончать	b1	v	finish
+кончать	B1	v	finish
 кончать жизнь самоубийством	B2	mwe	commit suicide
 кончаться	A1	v	be finished
 конъюнктура	C1	n	market condition
-конь	b1	n	horse
-коньки	b1	n	skates
+конь	B1	n	horse
+коньки	B1	n	skates
 коньяк	A1	n	cognac
 координатор	C1	n	coordinator
 координаты	B2	n	coordinates
@@ -3131,7 +3130,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 копье	C2	n	lance
 кора	B2	n	crust
 корабль	B1	n	ship
-коран	c1	n	koran
+коран	C1	n	koran
 коренной	C1	adj	native
 корень	B1	n	root
 корзина	B1	n	basket
@@ -3150,13 +3149,13 @@ Lemma-orig	cefr_new	POS	Eng Word
 король	B1	n	king
 корона	B1	n	crown
 короткий	A1	adj	short
-коротко	b2	adv	shortly
+коротко	B2	adv	shortly
 корпоративный	C1	adj	corporate
 корпорация	C1	n	corporation
 корпус	B2	n	body
 коррекция	B2	n	correction, adjustment
 коррелировать	B2	v	correlate
-корреспондент	b2	n	correspondent
+корреспондент	B2	n	correspondent
 корреспонденция	B2	n	mail
 коррупция	B2	n	corruption
 коса	C1	n	plait,scythe
@@ -3168,7 +3167,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 космос	B2	n	space
 костер	B2	n	bonfire
 кость	B1	n	bone
-костюм	a2	n	costume
+костюм	A2	n	costume
 кот	A2	n	cat
 котел	C1	n	boiler
 котенок	A2	n	kitten
@@ -3188,34 +3187,34 @@ Lemma-orig	cefr_new	POS	Eng Word
 кража	B2	n	theft
 край	B2	n	edge
 крайне	C1	adv	extremely
-крайний	c1	adj	extreme, last
+крайний	C1	adj	extreme, last
 крайность	C1	n	extremity
 кран	A2	n	water tap
 красавец	B2	n	handsome
-красиво	a1	adv	beautifully
-красивый	a1	adj	beautiful
+красиво	A1	adv	beautifully
+красивый	A1	adj	beautiful
 красить	B2	v	paint, dye
 краситься	B2	v	make up
 краска	B1	n	paint
-краснеть	b2	v	turn red
+краснеть	B2	v	turn red
 красный	A1	adj	red
-красота	b1	n	beauty
+красота	B1	n	beauty
 красть	B2	v	steal
-краткий	a1	adj	brief
-кратко	b2	adv	shortly
+краткий	A1	adj	brief
+кратко	B2	adv	shortly
 кратковременный	B2	adj	short-term
 краткосрочный	B2	adj	short-term
 крах	C2	n	crash
 кредит	B1	n	credit
-кредитная карта	a1	mwe	credit card
+кредитная карта	A1	mwe	credit card
 кредитный	B1	adj	credit
 кредитование	B2	n	lending, financing
 кредитор	B2	n	creditor
 крейсер	C2	n	cruiser
 крем	A2	n	cream
 кремль	A2	n prop	kremlin
-крепкий	b1	adj	strong
-крепко	b2	adv	strongly
+крепкий	B1	adj	strong
+крепко	B2	adv	strongly
 крепость	B2	n	fortress, hardness, strength
 кресло	A1	n	armchair
 крест	A2	n	cross
@@ -3233,7 +3232,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 критик	B2	n	critic
 критика	B2	n	criticism
 критиковать	B2	v	criticise
-критически	b2	adv	critically
+критически	B2	adv	critically
 критический	B2	adj	critical
 кричать	A2	v	scream
 кровавый	B2	adj	bloody
@@ -3256,7 +3255,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 кружка	A1	n	mug
 кружок	B2	n	circle
 круиз	B2	n	cruise
-крупный	b2	adj	large
+крупный	B2	adj	large
 крутить	B2	v	twist
 крутиться	B2	v	spin
 круто	C1	adv	cool (slang)
@@ -3286,21 +3285,21 @@ Lemma-orig	cefr_new	POS	Eng Word
 культура	A2	n	culture
 культурный	B1	adj	cultural
 кумир	B2	n	idol
-купальник	a2	n	swimming costume, bikini
+купальник	A2	n	swimming costume, bikini
 купаться	A2	v	bathe
 купе	A2	n	compartment, coupe
-купец	c2	n	merchant
+купец	C2	n	merchant
 купить	A1	v	buy
 купля	B2	n	purchase
 купол	B2	n	dome
 купюра	B2	n	banknote
 куратор	C1	n	curator, overseer, tutor
 курение	B1	n	smoking
-курить	a2	v	smoke
+курить	A2	v	smoke
 курица	A1	n	chicken
 курорт	B2	n	resort
 курс	A2	n	rate,course
-курс валют	a2	mwe	exchange rate
+курс валют	A2	mwe	exchange rate
 курсант	C1	n	student of a military school
 куртка	A1	n	jacket
 курьер	B2	n	courier, messenger
@@ -3318,16 +3317,16 @@ Lemma-orig	cefr_new	POS	Eng Word
 лаборатория	B2	n	laboratory
 лагерь	B1	n	camp
 лад	C2	n	favourable turn
-ладно	b2	particle	okay
+ладно	B2	particle	okay
 ладонь	B1	n	palm
 лазер	C2	n	laser
 лак	B2	n	varnish
 лампа	A1	n	lamp
 лампочка	A2	N	bulb
 ландшафт	C1	n	landscape
-ланч	c1	n	lunch
+ланч	C1	n	lunch
 лапа	B2	n	paw
-ларек	b2	n	stall, stand
+ларек	B2	n	stall, stand
 ласка	B2	n	affection
 ласково	B2	adv	affectionately
 ласковый	B2	adj	tender
@@ -3349,15 +3348,15 @@ Lemma-orig	cefr_new	POS	Eng Word
 легкость	B2	n	ease
 лед	A2	n	ice
 ледяной	B1	adj	ice
-лежать	a1	v	lie
+лежать	A1	v	lie
 лезвие	C1	n	blade
 лезть	B2	v	climb
 лейтенант	C1	n	lieutenant
 лекарство	A1	n	medicine
-лексика	a2	n	vocabulary
-лекция	a2	n	lecture
+лексика	A2	n	vocabulary
+лекция	A2	n	lecture
 лен	B2	n	linen
-лениво	b2	adv	lazily
+лениво	B2	adv	lazily
 ленивый	B1	adj	lazy
 лента	B2	n	tape
 лентяй	B2	n	lazy person
@@ -3375,10 +3374,10 @@ Lemma-orig	cefr_new	POS	Eng Word
 летопись	C1	n	chronicle
 летчик	C1	n	pilot
 лечебный	C1	adj	therapeutic
-лечение	b1	n	treatment
+лечение	B1	n	treatment
 лечить	A2	v	treat
-лечиться	b2	v	cure
-лечь	b1	v	lie down
+лечиться	B2	v	cure
+лечь	B1	v	lie down
 лживый	B2	adj	mendacious
 ли	B1	con	whether
 либерал	B2	n	liberal
@@ -3398,11 +3397,11 @@ Lemma-orig	cefr_new	POS	Eng Word
 линейный	C1	adj	linear
 линия	B1	n	line
 лирика	C1	n	lyric
-лирический	b2	adj	lyrical
+лирический	B2	adj	lyrical
 лиса	C1	n	fox
 лист	A2	n	leaf,sheet
 листать	B2	V	turn over  pages
-листва	b2	n	foliage
+листва	B2	n	foliage
 листовка	C1	n	leaflet
 листок	B1	n	leaf, sheet
 литератор	C1	n	writer
@@ -3412,7 +3411,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 лить	B1	v	pour
 литься	B2	v	flow
 лифт	A2	n	elevator
-лифчик	a1	n	bra
+лифчик	A1	n	bra
 лихорадка	B2	n	fever
 лицей	C1	n	secondary school
 лицемерие	B2	n	hypocrisy
@@ -3431,10 +3430,10 @@ Lemma-orig	cefr_new	POS	Eng Word
 лишний вес	B2	mwe	excessive weight
 лишь	B2	particle	only
 лоб	B1	n	forehead
-лобок	c1	n	pubis
+лобок	C1	n	pubis
 ловить	B2	v	catch
 ловкий	B2	adj	dextrous, cunning
-ловко	b2	adv	dextrously, cunningly
+ловко	B2	adv	dextrously, cunningly
 ловкость	C1	n	dexterity
 ловушка	B2	n	trap
 логика	B2	n	logic
@@ -3443,19 +3442,19 @@ Lemma-orig	cefr_new	POS	Eng Word
 логический	B2	adj	logical
 логотип	C1	n	logo
 лодка	B1	n	boat
-ложиться	a2	v	lie down
+ложиться	A2	v	lie down
 ложка	A1	n	spoon
-ложный	b2	adj	false
+ложный	B2	adj	false
 ложь	B2	n	lie
 лозунг	C1	n	slogan
 локализация	C2	n	locating, isolation
 локализовать	B2	v	locate, isolate
 локальный	C1	adj	local
 локоть	B1	n	elbow
-ломать	a1	v	break
+ломать	A1	v	break
 лопата	C1	n	spade
 лотерея	B2	n	lottery
-лошадь	a2	n	horse
+лошадь	A2	n	horse
 лояльность	C2	n	loyalty
 луг	C1	n	meadow
 лужа	B1	n	puddle
@@ -3469,7 +3468,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 лысый	B1	adj	bald
 льгота	C1	n	privilege
 любезный	C1	adj	courteous
-любимец	b2	n	pet, favourite
+любимец	B2	n	pet, favourite
 любимый	A1	adj	favourite
 любитель	B2	n	lover, amateur
 любительский	B2	adj	amateur
@@ -3498,7 +3497,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 май	A1	n prop	may
 майка	A2	n	t-shirt
 майор	C2	n	major
-макароны	a1	n	pasta
+макароны	A1	n	pasta
 макет	B2	n	model
 маклер	C2	n	broker
 максимальный	B2	adj	maximal
@@ -3510,7 +3509,7 @@ Lemma-orig	cefr_new	POS	Eng Word
 малыш	A2	n	baby
 мальчик	A1	n	boy
 мама	A1	n	mum
-мамаша	c2	n	mumsie
+мамаша	C2	n	mumsie
 мандарин	A2	n	mandarin
 мандат	C1	n	mandate
 маневр	C2	n	manoeuvre
@@ -3519,9 +3518,9 @@ Lemma-orig	cefr_new	POS	Eng Word
 манипуляция	B2	n	manipulation
 манифест	C2	n	manifest
 маньяк	B2	n	maniac
-марка	a1	n	stamp, brand
+марка	A1	n	stamp, brand
 маркетинг	C1	n	marketing
-маркиз	c2	n	marquis
+маркиз	C2	n	marquis
 маркировка	B2	n	marking
 марксизм	C1	n	marxism
 C1	B1	n prop	Mars
@@ -3585,10 +3584,10 @@ C1	B1	n prop	Mars
 медсестра	A2	n	nurse
 медь	B2	n	copper
 между	A2	adpos	between
-между тем	c2	mwe	in the meantime
+между тем	C2	mwe	in the meantime
 междугородний	A2	adj	interurban
 международный	B1	adj	international
-мелкий	b1	adj	minor
+мелкий	B1	adj	minor
 мелко	A2	adv	shallowly
 мелодия	B1	n	melody
 мелочь	A2	n	trifle
@@ -3603,13 +3602,13 @@ C1	B1	n prop	Mars
 меньшинство	B1	n	minority
 меню	A2	n	menu
 менять	A2	v	change
-меняться	b2	v	change
-мера	b2	n	measure
+меняться	B2	v	change
+мера	B2	n	measure
 мерзкий	C1	adj	disgusting
 мерзнуть	B1	v	freeze
 мерить	B1	v	measure
 мерка	C1	n	measure
-мероприятие	b1	n	event
+мероприятие	B1	n	event
 мерседес	B2	n prop	Mercedes (car)
 мертвец	B2	n	dead man
 мертвый	B1	adj	dead
@@ -3618,7 +3617,7 @@ C1	B1	n prop	Mars
 место	A1	n	place
 место происшествия	B2	mwe	site of occurrence
 место рождения	A1	mwe	place of birth
-местоимение	a1	n	pronoun
+местоимение	A1	n	pronoun
 местоположение	C1	n	location
 месторождение	B2	n	field
 месть	B2	n	revenge
@@ -3631,7 +3630,7 @@ C1	B1	n prop	Mars
 метод	B2	n	method
 методика	B2	n	methodology
 методология	B2	n	methodology
-метр	a1	n	metre
+метр	A1	n	metre
 метро	A1	n	subway
 мех	B2	n	fur
 механизм	B2	n	mechanism
@@ -3639,37 +3638,37 @@ C1	B1	n prop	Mars
 механика	B2	n	mechanics, mechanism
 механический	B2	adj	mechanical
 меч	C1	n	sword
-мечеть	b1	n	mosque
+мечеть	B1	n	mosque
 мечта	B1	n	dream
 мечтать	A2	v	dream
 мешать	A2	v	stir, bother, block
 мешок	B1	n	bag
-миг	c2	n	moment
+миг	C2	n	moment
 мигать	B2	v	blink
 миграция	B2	n	migration
 мид	B2	n	ministry of foreign affairs
 микрофон	B1	n	microphone
 милиционер	A1	n	militiaman
-милиция	a1	n	militia
+милиция	A1	n	militia
 миллиард	A2	num	billion
 миллиардный	A2	num	billion
 миллиграмм	B2	n	milligram
 миллилитр	B2	n	millilitre
-миллиметр	a2	n	millimetre
+миллиметр	A2	n	millimetre
 миллион	A2	num	million
 миллионный	A2	num	million
 милосердие	B2	n	charity
 милость	C2	n	mercy
 милый	B1	adj	cute
 миля	C1	n	mile
-мимо	b2	adv	past, miss
+мимо	B2	adv	past, miss
 мина	C2	n	mine
 минимальный	B2	adj	minimal
 минимум	B1	n	minimum
 министерство	B2	n	ministry
 министр	B2	n	minister
-миновать	c2	v	pass
-минувший	c1	adj	past
+миновать	C2	v	pass
+минувший	C1	adj	past
 минус	A2	n	minus
 минута	A1	n	minute
 мир	A2	n	world
@@ -3691,11 +3690,11 @@ C1	B1	n prop	Mars
 младенец	B1	n	baby
 младший	A2	adj	junior
 млекопитающее	B2	n	mammal
-млн	a2	abbr	m, million
-мм	a2	abbr	mm
+млн	A2	abbr	m, million
+мм	A2	abbr	mm
 мне	A1	pron	me
 мнение	B2	n	opinion
-многие	b2	pron	many
+многие	B2	pron	many
 много	A1	adv	many
 многое	B2	pron	much; many things
 многократно	B2	adv	repeatedly
@@ -3708,7 +3707,7 @@ C1	B1	n prop	Mars
 множество	B2	n	set, great number
 мобилизация	C1	n	mobilisation
 мобилизовать	C1	v	mobilise
-мобильник	a1	n	celly
+мобильник	A1	n	celly
 мобильный	A1	adj	mobile
 мобильный телефон	A1	mwe	mobile phone
 могила	B2	n	grave
@@ -3735,12 +3734,12 @@ C1	B1	n prop	Mars
 молекула	B2	n	molecule
 молитва	B2	n	prayer
 молиться	B2	v	pray
-молния	b1	n	lightning
+молния	B1	n	lightning
 молодежный	B1	adj	youthful
 молодежь	B1	n	youth
 молодец	A1	excl	well done
 молодой	A1	adj	young
-молодой человек	a1	mwe	young man
+молодой человек	A1	mwe	young man
 молодость	B1	n	youth
 молоко	A1	n	milk
 молоток	B2	n	hammer
@@ -3769,9 +3768,9 @@ C1	B1	n prop	Mars
 морда	B2	n	muzzle
 море	A2	n	sea
 морепродукты	A2	n	seafood
-морковь	a1	n	carrot
+морковь	A1	n	carrot
 мороженое	A1	n	ice-cream
-мороз	a2	n	frost
+мороз	A2	n	frost
 моросить	B2	v	drizzle
 морской	A2	adj	sea
 морщина	B2	n	wrinkle
@@ -3784,7 +3783,7 @@ C1	B1	n prop	Mars
 мотивация	B2	n	motivation
 мотивировать	C2	v	motivate
 мотор	B1	n	engine
-мотоцикл	a1	n	motorcycle
+мотоцикл	A1	n	motorcycle
 моча	B2	n	urine
 мочить	B1	v	soak, kill (slang)
 мочиться	B2	v	urinate
@@ -3806,12 +3805,12 @@ C1	B1	n prop	Mars
 мужественный	B2	adj	courageous
 мужество	B2	n	courage
 мужик	C1	n	muzhik
-мужской	a1	adj	male
+мужской	A1	adj	male
 мужчина	A1	n	man
 музей	A2	n	museum
-музыка	a1	n	music
-музыкальный	a1	adj	musical
-музыкант	a1	n	musician
+музыка	A1	n	music
+музыкальный	A1	adj	musical
+музыкант	A1	n	musician
 мука	A1	n	flour,torment
 мультимедийный	B2	adj	multimedia
 мультфильм	A2	n	cartoon
@@ -3821,8 +3820,8 @@ C1	B1	n prop	Mars
 муравей	B2	n	ant
 мускул	B2	n	muscle
 мусор	A2	n	rubbish
-мусульманин	b1	n	Muslim
-мусульманский	b1	adj	Moslem
+мусульманин	B1	n	Muslim
+мусульманский	B1	adj	Moslem
 мутный	B2	adj	muddy, foggy
 муха	B2	n	fly
 мучение	B2	n	torture
@@ -3842,21 +3841,21 @@ C1	B1	n prop	Mars
 мышление	B2	n	thinking
 мышца	B2	n	muscle
 мышь	B1	n	mouse
-мэйл	b2	n	e-mail
+мэйл	B2	n	e-mail
 мэр	B1	n	mayor
 мэрия	B1	n	municipal government
-мягкий	a1	adj	soft
+мягкий	A1	adj	soft
 мягко	B1	adv	softly
 мясо	A1	n	meat
 мятеж	B2	n	rebellion
 мятежник	C1	n	rebel
 мять	C1	v	brake, mash, rumple
-мяч	a1	n	ball
+мяч	A1	n	ball
 на	A1	adpos	on, onto
 на всякий случай	B2	mwe	just in case
 на днях	B2	adv	other day
 на первый взгляд	C1	mwe	at first sight
-на помощь	a1	mwe	help
+на помощь	A1	mwe	help
 на протяжении	C2	mwe	over a period
 на самом деле	B2	mwe	indeed
 на фоне	B2	mwe	against a background
@@ -3864,7 +3863,7 @@ C1	B1	n prop	Mars
 набережная	B2	n	embankment
 набивать	C2	v	stuff, tamp, wad
 набирать	B2	v	gain, recruit, dial, fill
-набираться	c2	v	gather, gain
+набираться	C2	v	gather, gain
 наблюдатель	B2	n	observer
 наблюдательный	C1	adj	observant
 наблюдать	B2	v	observe
@@ -3872,7 +3871,7 @@ C1	B1	n prop	Mars
 наблюдение	B2	n	observation
 набор	B2	n	set
 наверное	A2	adv	probably
-наверняка	c2	particle	most probably
+наверняка	C2	particle	most probably
 наверх	A2	adv	up
 наверху	A2	adv	upstairs
 навещать	B2	v	visit
@@ -3883,7 +3882,7 @@ C1	B1	n prop	Mars
 навсегда	B2	adv	forever
 навстречу	B1	adv	towards
 навык	B1	n	skill
-навязывать	c2	v	foist, dictate
+навязывать	C2	v	foist, dictate
 наглядно	B2	adv	visually
 награда	B2	n	award
 награждать	B1	v	reward
@@ -3900,8 +3899,8 @@ C1	B1	n prop	Mars
 надо	A1	adv	necessary, must, have to
 надобность	C2	n	need
 надоедать	B1	v	bother, make someone feed bored
-надолго	b2	adv	permanently
-надпись	b1	n	inscription
+надолго	B2	adv	permanently
+надпись	B1	n	inscription
 надрываться	C2	v	be overstrained, tear slightly
 наедаться	B2	v	be full
 наедине	C1	adv	one-to-one
@@ -3917,27 +3916,27 @@ C1	B1	n prop	Mars
 назначение	B2	n	appointment
 называть	A1	v	name
 называться	A1	v	be called
-наиболее	b2	adv	mostly
-наибольший	b1	adj	most
+наиболее	B2	adv	mostly
+наибольший	B1	adj	most
 наивный	B2	adj	naive
 наизусть	A1	adv	by rote
 наилучший	B1	adj	best
 наименование	B1	n	name
-наименьший	b1	adj	least
+наименьший	B1	adj	least
 найтись	B2	v	be found
 наказание	B2	n	punishment
 наказывать	B2	v	punish
-накануне	c2	adv	on the eve
+накануне	C2	adv	on the eve
 накладывать	B2	v	put, fill, apply
 наклоняться	B1	v	bend
-наконец	b1	adv	lastly
+наконец	B1	adv	lastly
 накопление	B2	n	savings, accumulation
 накрывать	B2	v	cover
 налаживать	C1	v	adjust, arrange
 налево	A2	adv	to the left
-налет	c2	n	raid
+налет	C2	n	raid
 наливать	A2	v	pour
-налицо	c2	adv	be present
+налицо	C2	adv	be present
 наличие	B2	n	availability
 наличные	B1	n	cash
 налог	B1	n	tax
@@ -3956,7 +3955,7 @@ C1	B1	n prop	Mars
 наниматель	C1	n	employer, tenant
 нанимать	B2	v	employ
 наносить	B2	v	cause, apply
-наносить ущерб	b2	mwe	damage
+наносить ущерб	B2	mwe	damage
 наоборот	B2	adv	on the contrary, vice versa
 нападать	B2	v	attack
 нападение	B2	n	attack
@@ -3966,10 +3965,10 @@ C1	B1	n prop	Mars
 написание	B1	n	writing, spelling
 написать	A1	v	write
 напиток	A1	n	drink
-напоказ	c2	adv	show off
+напоказ	C2	adv	show off
 наполнять	B2	v	fill
-наполовину	b2	adv	half
-напоминать	b1	v	resemble, remind
+наполовину	B2	adv	half
+напоминать	B1	v	resemble, remind
 напоследок	C2	adv	in the end
 направление	A2	n	direction
 направленность	C1	n	trend
@@ -3984,7 +3983,7 @@ C1	B1	n prop	Mars
 напряжение	B1	n	strain, voltage
 напряженность	C1	n	tension
 напряженный	B2	adj	intensive
-напрямик	c2	adv	straight
+напрямик	C2	adv	straight
 напрямую	B2	adv	directly
 напугать	B1	v	scare
 наравне	C2	adv	equally
@@ -3996,14 +3995,14 @@ C1	B1	n prop	Mars
 наркотический	B2	adj	narcotic
 народ	A1	n	people
 народность	C1	n	ethnic group
-народный	b1	adj	national,public,folk
+народный	B1	adj	national,public,folk
 нарочно	B2	adv	deliberately
 наружный	B1	adj	external
 наружу	A2	adv	out
 нарушать	B1	v	violate
 нарушение	B2	n	violation
 наряд	C1	n	detail,attire
-наряду	c2	adv	along
+наряду	C2	adv	along
 наряжать	B2	v	dress up, decorate
 нас	A1	pron	us
 насекомое	B1	n	insect
@@ -4025,7 +4024,7 @@ C1	B1	n prop	Mars
 насморк	A2	n	cold
 насос	B2	n	pump
 наставать	B1	v	come
-наставник	c2	n	tutor
+наставник	C2	n	tutor
 настаивать	B2	v	insist
 настенный	B2	adj	wall
 настойчиво	B2	adv	persistently
@@ -4036,15 +4035,15 @@ C1	B1	n prop	Mars
 настоящий	A1	adj	present
 настраивать	B2	v	adjust
 настроение	A2	n	mood
-настройка	b2	n	setting
+настройка	B2	n	setting
 наступать	B1	v	step on, come, attack
 наступление	C1	n	offensive
-натура	c2	n	nature
+натура	C2	n	nature
 натуральный	B1	adj	natural
 натыкаться	C1	v	stumple, come across
 натягивать	B2	v	stretch, pull on
-наука	a2	n	science
-наутро	b2	adv	the next morning
+наука	A2	n	science
+наутро	B2	adv	the next morning
 научить	A2	v	teach
 научиться	A2	v	learn
 научный	B1	adj	scientific
@@ -4057,7 +4056,7 @@ C1	B1	n prop	Mars
 нахождение	C1	n	presence
 национализм	B2	n	nationalism
 националистический	C1	adj	nationalistic
-национальность	a1	n	nationality
+национальность	A1	n	nationality
 национальный	B1	adj	national
 нацист	B2	n	nazist
 нацистский	C1	adj	nazi
@@ -4069,29 +4068,29 @@ C1	B1	n prop	Mars
 начинаться	A1	v	begin
 начинающий	A2	adj	beginner
 наш	A1	pron	our, ours
-нашествие	c2	n	irruption
+нашествие	C2	n	irruption
 ндс	B2	n	VAT
 не	A1	adv	not
 не в силах	C1	mwe	unable
 не в состоянии	C1	mwe	unable
 не выносить	C1	v	abhor
-незамужем	a1	ADV	unmarried (woman)
+незамужем	A1	ADV	unmarried (woman)
 не менее	B2	mwe	at least
 не может быть	A2	mwe	cannot be
 не стоит	C1	mwe	do not mention it
 не хватать	B1	v	lack, run short
 небесный	B2	adj	heavenly
-небо	a2	n	sky
+небо	A2	n	sky
 небольшой	A2	adj	small
 небрежно	B2	adv	carelessly
-неважный	b1	adv	poor, unimportant
+неважный	B1	adv	poor, unimportant
 неведомый	C2	adj	unknown
 невежественный	C2	adj	ignorant
 невежество	C2	n	ignorance
 неверность	B2	n	infidelity, adultery
 неверный	A2	adj	wrong
 невероятный	B2	adj	unbelievable
-невеста	b1	n	bride
+невеста	B1	n	bride
 невестка	B1	n	daughter-in-law, sister-in-law
 невзирая	C2	adv	in spite
 невидимый	B2	adj	invisible
@@ -4108,7 +4107,7 @@ C1	B1	n prop	Mars
 негодование	C1	n	indignation
 негодяй	C1	n	villain
 негр	C1	n	negro
-негромко	a2	adv	not loud, softly
+негромко	A2	adv	not loud, softly
 недавний	C1	adj	recent
 недавно	A2	adv	recently
 недалеко	A2	adv	near
@@ -4123,7 +4122,7 @@ C1	B1	n prop	Mars
 недооценивать	B2	v	underestimate
 недоразвитость	C2	n	underdevelopment
 недоразумение	B2	n	confusion
-недосмотр	c2	n	oversight
+недосмотр	C2	n	oversight
 недоставать	C1	v	be short of
 недостаток	B1	n	disadvantage
 недостаточный	B2	adj	insufficient
@@ -4135,7 +4134,7 @@ C1	B1	n prop	Mars
 независимо	B2	adv	independently
 независимость	B1	n	independence
 независимый	B1	adj	independent
-незадолго	b2	adv	shortly
+незадолго	B2	adv	shortly
 незаконный	B1	adj	illegal
 незаметный	B2	adj	unnoticeable
 незнакомец	B2	n	stranger
@@ -4156,9 +4155,9 @@ C1	B1	n prop	Mars
 некуда	B2	adv	nowhere
 нелегкий	A2	adj	difficult
 нелегко	A2	adv	with difficulty
-нелепый	c2	adj	absurd
+нелепый	C2	adj	absurd
 неловкий	C2	adj	awkward, uncomfortable
-неловко	c2	adv	awkwardly
+неловко	C2	adv	awkwardly
 нельзя	A1	adv	impossible
 немало	B2	adv	many
 немалый	B2	adj	considerable
@@ -4180,7 +4179,7 @@ C1	B1	n prop	Mars
 необходимый	B1	adj	necessary
 необыкновенный	B1	adj	unusual
 необычайно	C1	adv	immensely
-необычный	b2	adj	unusual
+необычный	B2	adj	unusual
 неограниченный	B2	adj	unrestricted
 неоднократно	B2	adv	repeatedly
 неожиданно	B1	adv	unexpectedly
@@ -4211,7 +4210,7 @@ C1	B1	n prop	Mars
 неприятно	A2	adv	unpleasantly
 неприятность	B1	n	trouble
 неприятный	A2	adj	unpleasant
-непростой	a1	adj	difficult
+непростой	A1	adj	difficult
 неравенство	B2	n	inequality
 нерв	B2	n	nerve
 нервировать	B2	v	get on nerves
@@ -4222,13 +4221,13 @@ C1	B1	n prop	Mars
 несколько	A2	adv	several
 несмотря	B2	adv	despite
 несовершеннолетний	B1	n	minor
-несовершенный	a2	adj	imperfect
-несогласие	b2	n	disagreement
+несовершенный	A2	adj	imperfect
+несогласие	B2	n	disagreement
 несомненно	C1	adv	certainly
 несомненный	C1	adj	apparent
 несоответствие	B2	n	mismatch
 неспособность	C1	n	inability, incapacity
-неспособный	b2	adj	incapable, untalented
+неспособный	B2	adj	incapable, untalented
 несправедливость	B2	n	unfairness
 несправедливый	B1	adj	unfair
 нестерпимый	C1	adj	unendurable
@@ -4236,9 +4235,9 @@ C1	B1	n prop	Mars
 несуществующий	B2	adj	non-existent
 несчастный	A2	adj	unfortunate
 несчастный случай	B1	mwe	accident
-несчастье	b2	n	misfortune
+несчастье	B2	n	misfortune
 нет	A1	particle	no,not
-нетерпение	b1	n	impatience
+нетерпение	B1	n	impatience
 неторопливо	B2	adv	unhurriedly
 нету	C1	adv	haven't got (colloq.)
 неуверенно	B2	adv	falteringly, diffidently
@@ -4259,7 +4258,7 @@ C1	B1	n prop	Mars
 ни ... ни	B2	con	neither nor
 ни в коем случае	B2	mwe	by no means
 ни к чему	C1	mwe	de trop
-ни разу не	b2	mwe	never
+ни разу не	B2	mwe	never
 нигде	A2	adv	nowhere
 ниже	A2	adj	lower
 нижний	A2	adj	lower, the lowest
@@ -4306,13 +4305,13 @@ C1	B1	n prop	Mars
 номинация	C1	n	nomination
 нора	C1	n	burrow
 норма	B2	n	norm
-нормально	a1	adv	it is normal
+нормально	A1	adv	it is normal
 нормальный	A2	adj	normal
 нос	A1	n	nose
 носитель	B2	n	carrier, digital media, native speaker
 носить	A2	v	wear
 носиться	C1	v	rush
-носок	a1	n	sock
+носок	A1	n	sock
 ностальгия	B2	n	nostalgia
 нота	C1	n	note
 ноутбук	A2	n	laptop
@@ -4333,7 +4332,7 @@ C1	B1	n prop	Mars
 нужный	A1	adj	necessary
 нулевой	A2	adj	zero
 нуль	B2	n	null, zero
-ныне	c2	adv	presently
+ныне	C2	adv	presently
 нынешний	C1	adj	present
 нынче	C2	adv	this
 нырять	B2	v	dive
@@ -4341,7 +4340,7 @@ C1	B1	n prop	Mars
 нюанс	C2	n	nuance
 нюхать	B1	v	smell, sniff
 няня	B1	n	nanny, nurse
-о	a2	adpos	about, regarding
+о	A2	adpos	about, regarding
 оао	C1	n	Plc., public limited company
 об	A2	adpos	about, of
 оба	A2	det	both
@@ -4378,7 +4377,7 @@ C1	B1	n prop	Mars
 облегчать	C1	v	ease
 облегчение	B2	n	relief
 облигация	B2	n	bond
-облик	c2	n	appearance
+облик	C2	n	appearance
 обложка	B1	n	cover
 обломок	C1	n	fragment
 обман	B1	n	deception
@@ -4431,7 +4430,7 @@ C1	B1	n prop	Mars
 обращать	C1	v	turn
 обращать внимание	A2	mwe	pay attention
 обращаться	B1	v	treat
-обращение	a2	n	treatment, appeal
+обращение	A2	n	treatment, appeal
 обрезание	C2	n	circumcision
 обретать	C2	v	acquire
 обрушиваться	C1	v	collapse
@@ -4448,7 +4447,7 @@ C1	B1	n prop	Mars
 обсуждать	B1	v	discuss
 обсуждаться	B1	v	be discussed
 обсуждение	B1	n	discussion
-обувь	a1	n	shoes
+обувь	A1	n	shoes
 обусловливать	C1	v	determine
 обучать	B2	v	train
 обучаться	B1	v	study, be trained
@@ -4458,7 +4457,7 @@ C1	B1	n prop	Mars
 обходиться	B2	v	manage
 обширный	B2	adj	extensive
 общаться	B1	v	communicate
-общежитие	a1	n	hostel
+общежитие	A1	n	hostel
 общение	B1	n	communication
 общественное мнение	B2	mwe	public opinion
 общественность	B2	n	community
@@ -4475,7 +4474,7 @@ C1	B1	n prop	Mars
 объект	B2	n	object
 объектив	B2	n	camera lens
 объективный	C1	adj	objective
-объем	a2	n	volume
+объем	A2	n	volume
 объявление	A1	n	announcement,declaration
 объявлять	B1	v	announce, declare
 объяснение	A2	n	explanation
@@ -4491,22 +4490,22 @@ C1	B1	n prop	Mars
 обычный	A2	adj	usual
 обязанность	B1	n	obligation
 обязательно	A2	adv	obligatory
-обязательный	b2	adj	obligatory
+обязательный	B2	adj	obligatory
 обязательство	B2	n	obligation
 обязывать	C1	v	oblige
 овладевать	C1	v	capture, cope with
 овощ	A1	n	vegetable
-овраг	c2	n	gully
+овраг	C2	n	gully
 овца	B2	n	sheep
 оглядываться	C1	v	look back
 огненный	B2	adj	fiery
 оговорка	C1	n	slip of the tongue, stipulation
 огонек	B2	n	light
-огонь	a2	n	fire
-огород	b2	n	vegetable garden
+огонь	A2	n	fire
+огород	B2	n	vegetable garden
 огорчение	B2	n	minor grief
 ограбление	B2	n	robbery
-ограда	b2	n	fence
+ограда	B2	n	fence
 ограничение	B2	n	restriction
 ограниченный	B2	adj	restricted
 ограничивать	B2	v	restrict
@@ -4514,14 +4513,14 @@ C1	B1	n prop	Mars
 огромный	B1	adj	huge
 огурец	A1	n	cucumber
 одалживать	B1	v	borrow, lend
-одевать	b1	v	dress
+одевать	B1	v	dress
 одеваться	A1	v	dress
-одежда	a1	n	clothing
+одежда	A1	n	clothing
 одеяло	A1	n	blanket
 один	A1	num	one
 один	A1	pron	one
-одинаково	b2	adv	equally
-одинаковый	a2	adj	equal
+одинаково	B2	adv	equally
+одинаковый	A2	adj	equal
 одиннадцатый	A2	num	eleventh
 одиннадцать	A1	num	eleven
 одинокий	B1	adj	lonely
@@ -4554,8 +4553,8 @@ C1	B1	n prop	Mars
 ой	B1	int	oh dear, oops
 оказание	B2	n	offering
 оказывать	B2	v	render
-оказываться	b2	v	turn out
-оканчивать	b2	v	finish
+оказываться	B2	v	turn out
+оканчивать	B2	v	finish
 океан	A2	n	ocean
 оккупация	C1	n	military occupation
 оккупировать	B2	v	occupy
@@ -4578,7 +4577,7 @@ C1	B1	n prop	Mars
 октябрьский	B1	adj	October
 олень	B2	n	deer
 олигарх	B2	n	oligarch
-олимпиада	a1	n	Olympics, olympiad
+олимпиада	A1	n	Olympics, olympiad
 олимпийский	B1	adj	Olympic
 омоним	B2	n	homonym
 он	A1	pron	he
@@ -4620,7 +4619,7 @@ C1	B1	n prop	Mars
 определение	B2	n	definition
 определенно	B2	adv	definitely
 определенный	B2	adj	definite
-определять	b2	v	define
+определять	B2	v	define
 определяться	C1	v	decide
 опровержение	B2	n	retraction, disproof
 опрокидывать	B2	v	turn over
@@ -4695,7 +4694,7 @@ C1	B1	n prop	Mars
 основной	B1	adj	main, fundamental
 основывать	B2	v	base
 основываться	C1	v	settle,rely
-особа	c2	n	person
+особа	C2	n	person
 особенно	B1	adv	especially
 особенность	B2	n	feature
 особенный	B1	adj	special
@@ -4709,20 +4708,20 @@ C1	B1	n prop	Mars
 оставаться	A2	v	remain
 оставлять	B1	v	leave
 остальное	B2	n	rest
-остальной	b1	pron	remaining
-останавливать	b1	v	stop
+остальной	B1	pron	remaining
+останавливать	B1	v	stop
 останавливаться	A2	v	stop
 останки	C1	n	remains
 остановка	A1	n	stop
 остаток	B1	n	rest, remainder
-осторожно	a1	adv	carefully
+осторожно	A1	adv	carefully
 осторожность	B2	n	caution
 осторожный	B1	adj	cautious
 остров	A2	n prop	island
 острота	B2	n	sharpness, joke
 остроумный	B2	adj	witty, ingenious
 острый	B1	adj	sharp, acute
-остужать	b1	v	chill, cool
+остужать	B1	v	chill, cool
 осуждать	B2	v	condemn
 осуждение	B2	n	conviction
 осуществление	B2	n	implementation
@@ -4751,7 +4750,7 @@ C1	B1	n prop	Mars
 отвращение	B2	n	disgust
 отгадывать	A2	v	guess
 отдавать	A2	v	return,give
-отдача	c2	n	effective output, recoil
+отдача	C2	n	effective output, recoil
 отдел	C1	n	department
 отделение	B2	n	branch
 отдельный	B2	adj	separate
@@ -4768,7 +4767,7 @@ C1	B1	n prop	Mars
 отзываться	B2	v	respond, give an opinion
 отказ	B2	n	refusal
 отказывать	B1	v	refuse
-отказываться	b1	v	refuse
+отказываться	B1	v	refuse
 откладывать	B2	v	put aside, postpone
 отклик	C1	n	response
 откликаться	C1	v	respond
@@ -4787,26 +4786,26 @@ C1	B1	n prop	Mars
 откуда	A1	adv	where from
 отличать	A2	V	distinguish
 отличаться	A2	v	differ
-отличие	b1	n	distinction
+отличие	B1	n	distinction
 отлично	A2	adv	excellent
 отличный	A2	adj	excellent
 отмена	B2	n	cancellation
 отменять	B1	v	cancel
-отметка	b1	n	mark
+отметка	B1	n	mark
 отмечать	B1	v	mark, celebrate
 отмечаться	C1	v	register
-отнимать	c1	v	take by force, deduct, take time
+отнимать	C1	v	take by force, deduct, take time
 относительно	C1	adv	relatively, concerning
 относительный	B2	adj	relative
-относить	a2	v	consider as something, carry away
+относить	A2	v	consider as something, carry away
 отнестись	B2	v	relate
 отношение	B1	n	relationship
 отныне	C2	adv	henceforth
 отнюдь	C2	adv	by no means
 отображать	C1	v	display
-отопление	b1	n	heating
+отопление	B1	n	heating
 отпечаток	C1	n	print
-отправитель	a1	n	sender
+отправитель	A1	n	sender
 отправка	B2	n	dispatch, sending
 отправление	B2	n	departure
 отправлять	A2	v	send
@@ -4822,8 +4821,8 @@ C1	B1	n prop	Mars
 отрезать	B2	v	cut
 отрезок	B2	n	segment
 отрицание	B2	n	negation
-отрицательно	b2	adv	negatively
-отрицательный	b1	adj	negative
+отрицательно	B2	adv	negatively
+отрицательный	B1	adj	negative
 отрицать	B2	v	deny
 отрывать	B1	v	tear off, disturb
 отрываться	C1	v	tear off, make merry
@@ -4837,16 +4836,16 @@ C1	B1	n prop	Mars
 отстаивать	C1	v	uphold
 отступать	C1	v	retreat
 отступление	B2	n	retreat
-отсутствие	b1	n	absence
-отсутствовать	b1	v	be absent
-отсутствующий	b1	adj	missing
+отсутствие	B1	n	absence
+отсутствовать	B1	v	be absent
+отсутствующий	B1	adj	missing
 отсюда	A2	adv	from here
 отталкивать	C1	v	push away
 оттенок	B2	n	shade
 оттуда	A2	adv	from there
 оттянуться	C2	v	make merry
 отход	B2	n	departure
-отходить	a2	v	depart, come away, step aside
+отходить	A2	v	depart, come away, step aside
 отходы	B1	n	waste, refuse
 отчасти	B2	adv	partly
 отчаяние	B2	n	despair
@@ -4855,7 +4854,7 @@ C1	B1	n prop	Mars
 отчетливо	B2	adv	distinctly
 отчетность	C1	n	financial reporting
 отчуждение	C2	n	alienation
-отъезд	b1	n	departure
+отъезд	B1	n	departure
 отыскивать	C1	v	retrive
 офис	A2	n	office
 офицер	B2	n	officer
@@ -4875,7 +4874,7 @@ C1	B1	n prop	Mars
 охрипнуть	B2	v	become hoarse
 оценивать	B2	v	evaluate
 оцениваться	B2	v	be evaluated
-оценка	b1	n	evaluation, grade
+оценка	B1	n	evaluation, grade
 очаг	C2	n	hearth,centre
 очарование	B2	n	charm
 очаровательный	B2	adj	charming
@@ -4901,7 +4900,7 @@ C1	B1	n prop	Mars
 ощущаться	C1	v	make itself felt
 ощущение	B1	n	feeling, sensation
 павильон	C1	n	kiosk
-падать	a1	v	fall
+падать	A1	v	fall
 падеж	A1	n	case
 падение	B2	n	fall
 пакет	A2	n	package, plastic bag
@@ -4913,7 +4912,7 @@ C1	B1	n prop	Mars
 палка	B1	n	stick
 палуба	C1	n	deck
 пальма	B2	n	palm tree
-пальто	a1	n	coat
+пальто	A1	n	coat
 памятник	A2	n	monument
 память	B1	n	memory
 панель	B2	n	panel
@@ -4940,9 +4939,9 @@ C1	B1	n prop	Mars
 парк	A2	n	park
 паркинг	A2	n	parking
 парковать	A2	v	park
-парковка	b1	n	parking
+парковка	B1	n	parking
 парламент	B1	n	parliament
-парламентский	b2	adj	parliamentary
+парламентский	B2	adj	parliamentary
 парниковый	B2	adj	greenhouse
 паровоз	C2	n	steam locomotive
 пароль	A2	n	password
@@ -4955,7 +4954,7 @@ C1	B1	n prop	Mars
 партнерство	B2	n	partnership
 парус	C1	n	sail
 паспорт	A1	n	passport
-пассажир	a1	n	passenger
+пассажир	A1	n	passenger
 пассажирский	B2	adj	passenger
 пассивный	B2	adj	passive
 пастух	C2	n	shepherd
@@ -4978,8 +4977,8 @@ C1	B1	n prop	Mars
 пациент	B1	n	patient
 пацифист	B2	n	pacifist
 пачка	A2	n	pack
-певец	a1	n	singer
-певица	a1	n	singer (female)
+певец	A1	n	singer
+певица	A1	n	singer (female)
 педагог	B2	n	teacher
 педагогика	B2	n	pedagogy
 педагогический	B2	adj	pedagogical
@@ -4988,7 +4987,7 @@ C1	B1	n prop	Mars
 пейзаж	B2	n	landscape
 пельмени	A2	n	dumplings
 пена	A2	n	foam
-пенальти	b1	n	penalty kick
+пенальти	B1	n	penalty kick
 пение	B2	n	singing
 пенис	B2	n	penis
 пенсионер	B1	n	pensioner
@@ -5057,13 +5056,13 @@ B1	A1	v	translate,transfer,put
 переть	C2	v	force ones way, pilfer
 переулок	A1	n	alley
 перехватывать	C1	v	intercept
-переход	a1	n	crossing
-переходить	a1	v	pass, change
+переход	A1	n	crossing
+переходить	A1	v	pass, change
 переходный	B2	adj	transitive, awkward (age)
 перец	A1	n	pepper
 перечень	C1	n	list
 перечислять	B2	v	enumerate, transfer money
-период	b1	n	period
+период	B1	n	period
 периодически	B2	adv	periodically
 периодический	B2	adj	periodic, periodical
 периодическое издание	C1	mwe	periodical
@@ -5089,20 +5088,20 @@ B1	A1	v	translate,transfer,put
 печаль	B2	n	sadness
 печальный	B1	adj	sad
 печатать	B1	v	print
-печатный	b2	adj	print
+печатный	B2	adj	print
 печать	B1	n	print
 печень	B2	n	liver
-печка	b1	n	stove
-печь	a1	n	oven
-пешеход	a1	n	pedestrian
-пешеходный	a1	adj	pedestrian
+печка	B1	n	stove
+печь	A1	n	oven
+пешеход	A1	n	pedestrian
+пешеходный	A1	adj	pedestrian
 пешком	A2	adv	on foot
 пещера	B2	n	cave
 пианино	A2	n	piano
 пиво	A1	n	beer
 пиджак	A1	n	suit coat, sports coat
 пижама	A1	n	pyjamas
-пизда	b2	n	cunt
+пизда	B2	n	cunt
 пик	C1	n	peak
 пиксел	B1	N	pixel
 пиктограмма	B2	n	pictogram, icon
@@ -5126,21 +5125,21 @@ B1	A1	v	translate,transfer,put
 письмо	A1	n	letter
 питание	B1	n	food
 питательный	B2	adj	nutritious
-питать	c2	v	feed,feel
+питать	C2	v	feed,feel
 питаться	C1	v	eat
 пить	A1	v	drink
-питьевая вода	a2	mwe	drinking water
+питьевая вода	A2	mwe	drinking water
 пицца	A1	n	pizza
 пища	B2	n	food
 пищевой	B2	adj	food
 пк	B1	n	PC
-плавание	a2	n	swimming
-плавать	a1	v	swim
+плавание	A2	n	swimming
+плавать	A1	v	swim
 плавно	B2	adv	smoothly
 плакат	B1	n	poster
 плакать	A2	v	cry
 пламя	C1	n	flame
-план	a2	n	plan
+план	A2	n	plan
 планета	B1	n	planet
 планирование	B2	n	planning
 планировать	B1	v	plan
@@ -5155,21 +5154,21 @@ B1	A1	v	translate,transfer,put
 платеж	B1	n	payment
 плательщик	B1	n	payer
 платить	A2	v	pay
-платный	b1	adj	paid
-платок	b1	n	shawl
+платный	B1	adj	paid
+платок	B1	n	shawl
 платформа	B1	n	platform
-платье	a1	n	dress
+платье	A1	n	dress
 плач	B2	n	weeping
-плащ	b1	n	raincoat
+плащ	B1	n	raincoat
 плевать	C1	v	spit
 плеер	A2	n	disk or tape portable player
 племя	C1	n	tribe
-племянник	b1	n	nephew
+племянник	B1	n	nephew
 плен	B2	n	captivity
 пленка	B1	n	film
 пленный	B2	n	captive
 плечо	B1	n	shoulder
-плита	a1	n	gas fryer,plate
+плита	A1	n	gas fryer,plate
 плитка	B2	n	tile, electric stove
 плод	B2	n	fruit
 плодотворный	C1	adj	fruitful
@@ -5179,27 +5178,27 @@ B1	A1	v	translate,transfer,put
 плотно	B2	adv	tightly
 плотность	C1	n	density
 плотный	B2	adj	dense
-плоть	c2	n	flesh
+плоть	C2	n	flesh
 плохо	A1	adv	badly
 плохой	A1	adj	bad
-площадка	b1	n	area
+площадка	B1	n	area
 площадь	A1	n	area
-плыть	a2	v	swim
+плыть	A2	v	swim
 плюс	A2	n	plus
 пляж	B1	n	beach
 по	A2	adpos	along
 по крайней мере	B2	mwe	at least
-по мнению	b2	mwe	according to opinion
+по мнению	B2	mwe	according to opinion
 отдельность	B2	mwe	separately
 по сути	C2	mwe	in fact
 по существу	C2	adv	essentially
 по телефону	A1	mwe	by telephone
 побег	B2	n	escape, sprout
-победа	a1	n	victory
+победа	A1	n	victory
 победитель	B1	n	winner
 побеждать	B1	v	win
 побережье	B2	n	coast
-побивать	c2	v	beat
+побивать	C2	v	beat
 поблагодарить	A2	v	thank
 поблизости	B2	adv	nearby
 побочный эффект	B2	mwe	side-effect
@@ -5219,7 +5218,7 @@ B1	A1	v	translate,transfer,put
 повестка дня	B2	mwe	agenda
 повесть	B1	n	story
 по-видимому	C1	adv	apparently
-повиноваться	c2	v	obey
+повиноваться	C2	v	obey
 повисать	C1	v	hang on
 повлиять	B2	v	influence
 повод	B2	n	cause
@@ -5230,14 +5229,14 @@ B1	A1	v	translate,transfer,put
 повреждение	B2	n	damage
 повседневный	B2	adj	routine
 повсюду	C1	adv	overall
-повторение	b1	n	repetition
+повторение	B1	n	repetition
 повторный	B2	adj	repeated
 повторять	A1	v	repeat
 повторяться	B2	v	repeat
-повышать	b1	v	raise
+повышать	B1	v	raise
 повышаться	B1	v	rise
 повышение	B1	n	rise
-повышение цен	b1	mwe	price increase
+повышение цен	B1	mwe	price increase
 повышенный	B2	adj	raised
 повязка	B2	n	bandage
 погибать	B2	v	perish
@@ -5283,9 +5282,9 @@ B1	A1	v	translate,transfer,put
 поддержание	C1	n	maintenance
 поддерживать	B2	v	maintain
 поддержка	B2	n	support
-поделать	c2	v	do
+поделать	C2	v	do
 подземный	A2	adj	underground
-подземный переход	a1	mwe	pedestrian tunnel
+подземный переход	A1	mwe	pedestrian tunnel
 подключать	B2	v	connect, plug in
 подключение	B2	n	connection
 подлежать	B2	v	be subject
@@ -5297,7 +5296,7 @@ B1	A1	v	translate,transfer,put
 подобие	C1	n	similarity
 подобный	B2	adj	similar
 подождать	A2	v	wait
-подозреваемый	b2	n	crime suspect
+подозреваемый	B2	n	crime suspect
 подозревать	B2	v	suspect
 подозрение	B2	n	suspicion
 подозрительный	B2	adj	suspicious
@@ -5306,7 +5305,7 @@ B1	A1	v	translate,transfer,put
 подписание	B2	n	signing
 подписка	C2	n	subscription
 подписывать	A1	v	sign
-подписываться	b2	v	subscribe
+подписываться	B2	v	subscribe
 подпись	A1	n	signature
 подполковник	C2	n	lieutenant colonel
 подпольный	C1	adj	underground
@@ -5348,7 +5347,7 @@ B1	A1	v	translate,transfer,put
 поезд	A2	n	train
 поездка	A2	n	trip
 поесть	A1	v	eat
-поехать	a2	v	go, leave, start going
+поехать	A2	v	go, leave, start going
 пожалеть	B2	v	feel sorry
 пожаловать	C2	v	complain
 пожаловаться	B1	v	complain
@@ -5362,15 +5361,15 @@ B1	A1	v	translate,transfer,put
 пожимать	B1	v	shake (hands)
 пожимать руку	B1	mwe	shake hands
 поза	B2	n	pose
-позавчера	a2	adv	the day before yesterday
+позавчера	A2	adv	the day before yesterday
 позади	B2	adv	behind
-позапрошлый	b1	adj	before last
+позапрошлый	B1	adj	before last
 позволять	B2	v	allow
 позвонить	A1	v	ring, call
 позвоночник	B1	n	backbone
 поздний	B1	adj	late
 поздно	A2	adv	late
-поздравление	a2	n	congratulation, greetings
+поздравление	A2	n	congratulation, greetings
 поздравлять	A1	v	congratulate
 позже	A2	adj	later
 позитивный	B1	adj	positive
@@ -5379,7 +5378,7 @@ B1	A1	v	translate,transfer,put
 познавать	C2	v	learn
 познание	C2	n	cognition
 позор	C1	n	shame
-поиск	b1	n	search
+поиск	B1	n	search
 поисковая система	B2	mwe	Web search engine
 поистине	C2	adv	truly
 поймать	B1	v	catch
@@ -5414,7 +5413,7 @@ B1	A1	v	translate,transfer,put
 полагать	C1	v	believe
 полагаться	C1	v	rely
 полгода	A1	n	half a year
-полдень	a2	n	noon
+полдень	A2	n	noon
 поле	B2	n	field
 полевой	C1	adj	field
 полезность	B1	n	utility
@@ -5428,7 +5427,7 @@ B1	A1	v	translate,transfer,put
 политика	B1	n	politics
 политический	B1	adj	political
 полицейский	A1	adj	police
-полиция	a1	n	police
+полиция	A1	n	police
 полк	C1	n	regiment
 полка	A1	n	shelf
 полкило	A1	n	half a kilo
@@ -5439,7 +5438,7 @@ B1	A1	v	translate,transfer,put
 полностью	B2	adv	completely
 полнота	B2	n	plenitude, corpulence
 полноценный	C1	adj	full
-полночь	a2	n	midnight
+полночь	A2	n	midnight
 полный	A2	adj	full
 половина	A2	n	half
 половое сношение	C1	mwe	sexual intercourse
@@ -5472,7 +5471,7 @@ B1	A1	v	translate,transfer,put
 полярный	B2	adj	polar
 поменять	B1	v	change
 помеха	B2	n	obstacle
-помечать	b2	v	mark
+помечать	B2	v	mark
 помещать	B2	v	place
 помещение	B2	n	room
 помещик	C2	n	lord of manor
@@ -5490,8 +5489,8 @@ B1	A1	v	translate,transfer,put
 понедельник	A1	n prop	monday
 понемногу	B2	adv	gradually
 понести	C2	v	incur
-понижение	b1	n	decrease
-понимание	b2	n	understanding
+понижение	B1	n	decrease
+понимание	B2	n	understanding
 понимать	A1	v	understand
 понос	A2	n	diarrhoea
 понравиться	A1	v	like
@@ -5501,7 +5500,7 @@ B1	A1	v	translate,transfer,put
 поощрять	C1	v	encourage
 поп	C1	n	priest
 попадание	C1	n	hit, ingress
-попадать	b2	v	get,fall
+попадать	B2	v	get,fall
 попадаться	C2	v	be caught
 поперек	B1	adpos	across
 попкорн	A2	n	popcorn
@@ -5525,7 +5524,7 @@ B1	A1	v	translate,transfer,put
 порнографический	B2	adj	pornographic
 порог	B2	n	threshold
 порода	B2	n	breed
-породистый	b2	adj	pedigree
+породистый	B2	adj	pedigree
 порождать	C1	v	engender
 порой	C2	adv	occasionally
 порок	C1	n	vice
@@ -5567,14 +5566,14 @@ B1	A1	v	translate,transfer,put
 последствие	B2	n	consequence
 последующий	B2	adj	subsequent
 послезавтра	A2	adv	the day after tomorrow
-пословица	b1	n	saying
+пословица	B1	n	saying
 послушный	B1	adj	obedient
 послышаться	C1	v	be heard
 посмотреть	A2	v	watch
 пособие	B2	N	aid, benefit
-посол	a1	n	ambassador
+посол	A1	n	ambassador
 посольство	A2	n	embassy
-поспешно	c2	adv	hastily
+поспешно	C2	adv	hastily
 посредник	B2	n	mediator
 посредничество	C1	n	mediation, brokerage
 пост	C1	n	post
@@ -5586,13 +5585,13 @@ B1	A1	v	translate,transfer,put
 постановление	C1	n	resolution
 по-старому	B2	adv	as before
 постель	A2	n	bed
-постепенно	b1	adv	gradually
-постепенный	b2	adj	gradual
+постепенно	B1	adv	gradually
+постепенный	B2	adj	gradual
 поститься	C1	v	fast
-посторонний	a1	adj	foreign, outside
+посторонний	A1	adj	foreign, outside
 постоянно	B1	adv	constantly
 постоянный	B1	adj	permanent
-постоять	c2	v	stand up for
+постоять	C2	v	stand up for
 пострадавший	B2	n	injured person
 пострадать	B2	v	suffer
 построение	C1	n	construction, alignment, plotting
@@ -5603,7 +5602,7 @@ B1	A1	v	translate,transfer,put
 постучать	A2	v	knock
 посуда	A1	n	tableware
 посылать	A2	v	send
-посылка	a2	n	parcel
+посылка	A2	n	parcel
 посыльный	C2	n	messenger
 пот	A2	n	sweat
 потенциал	C1	n	potential
@@ -5612,7 +5611,7 @@ B1	A1	v	translate,transfer,put
 потеря	B2	n	loss
 потерять	A2	v	lose
 потерять работу	B1	mwe	lose job
-потеть	b1	v	sweat
+потеть	B1	v	sweat
 потихоньку	C2	adv	slowly
 потный	B2	adj	sweaty
 поток	B2	n	stream
@@ -5633,7 +5632,7 @@ B1	A1	v	translate,transfer,put
 похвала	B2	n	praise
 похищение	B2	n	theft, kidnapping
 поход	B1	n	hike
-походить	c2	v	resemble
+походить	C2	v	resemble
 походка	B2	n	gait
 похоже	C1	adv	similarly
 похожий	A2	adj	alike
@@ -5653,7 +5652,7 @@ B1	A1	v	translate,transfer,put
 почти	A2	adv	almost
 почтовая марка	A2	mwe	postage stamp
 почтовое отделение	B2	mwe	post office
-почтовое отправление	b2	mwe	mailing unit
+почтовое отправление	B2	mwe	mailing unit
 почтовый	A2	adj	postal
 почтовый индекс	A1	mwe	postcode, zip-code
 почтовый ящик	A2	mwe	mailbox
@@ -5696,7 +5695,7 @@ B1	A1	v	translate,transfer,put
 празднование	B1	n	celebration
 праздновать	B1	v	celebrate
 практика	B1	n	practice
-практиковать	c1	v	practise
+практиковать	C1	v	practise
 практиковаться	B1	v	practise
 практически	C1	adv	practically
 практический	B2	adj	practical
@@ -5704,7 +5703,7 @@ B1	A1	v	translate,transfer,put
 прапорщик	C2	n	warrant officer
 прах	C2	n	ashes
 прачечная	B1	n	laundry
-пребывание	b2	n	residence
+пребывание	B2	n	residence
 пребывать	C2	v	be, stay
 превосходить	B2	v	exceed
 превосходный	B2	adj	excellent
@@ -5734,8 +5733,8 @@ B1	A1	v	translate,transfer,put
 предложение	A1	n	offer,sentence
 предложный	A2	adj	prepositional
 предмет	A2	n	item, subject
-предназначать	c1	v	intend, destine
-предназначение	c2	n	destiny
+предназначать	C1	v	intend, destine
+предназначение	C2	n	destiny
 предок	B2	n	ancestor
 предопределять	C2	v	predestine
 предоставление	C1	n	provision
@@ -5797,7 +5796,7 @@ B1	A1	v	translate,transfer,put
 президентский	B2	adj	presidential
 президиум	C1	n	presidium
 презрение	B2	n	contempt
-преимущественно	c2	adv	advantageously
+преимущественно	C2	adv	advantageously
 преимущество	B2	n	advantage
 прекрасно	A1	adv	fine
 прекрасный	A2	adj	fine
@@ -5806,9 +5805,9 @@ B1	A1	v	translate,transfer,put
 прекращение	C1	n	termination, stopping
 прелесть	B1	n	charm
 премия	B2	n	prize, premium
-премьер	b2	n	premier
+премьер	B2	n	premier
 премьера	B2	n	premiere
-премьер-министр	a2	n	prime minister
+премьер-министр	A2	n	prime minister
 пренебрегать	C1	v	neglect, disregard
 преобладание	B2	n	domination
 преобладать	C1	v	prevail
@@ -5851,7 +5850,7 @@ B1	A1	v	translate,transfer,put
 преуспевать	B2	v	prosper
 префект	B2	n	prefect
 префектура	B2	n	prefecture
-прецедент	c2	n	precedent
+прецедент	C2	n	precedent
 при	A2	adpos	by, when
 при условии	B2	mwe	provided
 прибавлять	B2	v	add
@@ -5868,8 +5867,8 @@ B1	A1	v	translate,transfer,put
 приватизировать	C1	v	privatise
 привести	A2	v	cite
 привет	A1	excl	hello
-приветствие	b1	n	greeting
-приветствовать	b1	v	greet
+приветствие	B1	n	greeting
+приветствовать	B1	v	greet
 прививка	B2	n	vaccination
 привидение	B2	n	ghost
 привилегия	C1	n	privilege
@@ -5896,7 +5895,7 @@ B1	A1	v	translate,transfer,put
 приготовление	B1	n	cooking, preparation
 придавать	C1	v	attach
 придерживаться	B2	v	adhere
-придираться	c2	v	nag
+придираться	C2	v	nag
 придумывать	B1	v	create
 придурок	C2	n	nitwit
 приезд	B1	n	arrival
@@ -5926,7 +5925,7 @@ B1	A1	v	translate,transfer,put
 прикосновение	B2	n	touch
 прикреплять	B1	v	attach
 прикрывать	C1	v	cover
-прикрытие	c2	n	cover
+прикрытие	C2	n	cover
 прилавок	B1	n	counter
 прилагательное	A2	n	adjective
 прилагать	B2	v	apply, attach a document
@@ -5934,7 +5933,7 @@ B1	A1	v	translate,transfer,put
 прилив	B2	n	rise of sea levels
 прилично	B2	adv	decently, quite
 приличный	B2	adj	decent
-приложение	b2	n	enclosure, application
+приложение	B2	n	enclosure, application
 применение	B2	n	application,use
 применительно	C1	adv	concerning
 применять	B1	v	apply, use
@@ -5970,7 +5969,7 @@ B1	A1	v	translate,transfer,put
 припоминать	C2	v	remember
 приправа	B1	n	spice
 природа	A2	n	nature
-природный	b1	adj	natural
+природный	B1	adj	natural
 прирост	B2	n	increase
 присаживаться	C1	v	sot down
 присваивать	B2	v	misappropriate, confer
@@ -5980,7 +5979,7 @@ B1	A1	v	translate,transfer,put
 присоединяться	B2	v	join, be joined
 приспосабливать	B2	v	adapt
 приспособление	B2	n	facility, adjustment
-приставка	a2	n	prefix, attachment
+приставка	A2	n	prefix, attachment
 пристально	B2	adv	fixedly
 пристальный	B2	adj	fixed, intent
 пристрастие	C1	n	predilection, third degree (interrogation)
@@ -6003,12 +6002,12 @@ B1	A1	v	translate,transfer,put
 приучать	C1	v	train
 приход	C1	n	arrival, coming, rush (slang)
 приходить	A1	v	come
-приходить в себя	c2	mwe	come to consciousness
+приходить в себя	C2	mwe	come to consciousness
 приходить к выводу	B2	mwe	come to a conclusion
 приходиться	B2	v	have to, have an occasion, fall to sb's lot
-прихожая	a2	n	hallway
+прихожая	A2	n	hallway
 прицел	C1	n	sight (device)
-причастие	a2	n	participle, Eucharist
+причастие	A2	n	participle, Eucharist
 прическа	B1	n	hairstyle
 причина	B1	n	cause
 причинять	B2	v	cause
@@ -6016,7 +6015,7 @@ B1	A1	v	translate,transfer,put
 прищемлять	C2	v	pinch
 приют	C1	n	shelter
 приятель	B1	n	buddy
-приятно	a1	adv	glad
+приятно	A1	adv	glad
 приятный	A2	adj	pleasant
 проанализировать	B2	v	analyse
 проба	B2	n	sample
@@ -6024,11 +6023,11 @@ B1	A1	v	translate,transfer,put
 пробел	B2	n	gap, space
 пробивать	C1	v	break through
 пробка	B2	n	cork
-проблема	a1	n	problem
+проблема	A1	n	problem
 проблематика	B2	n	range of problems
 проблематичный	C1	adj	problematic
-пробовать	a2	v	try
-пробуждать	c2	v	awaken
+пробовать	A2	v	try
+пробуждать	C2	v	awaken
 пробуждение	B2	n	awakening, waking up
 провайдер	B1	n	provider
 провал	C1	N	failure
@@ -6055,8 +6054,8 @@ B1	A1	v	translate,transfer,put
 проговорить	B2	v	utter, spend time talking
 прогонять	B2	v	banish
 программа	B1	n	programme
-программирование	b1	n	programming
-программировать	b1	v	program
+программирование	B1	n	programming
+программировать	B1	v	program
 программист	B1	n	programmer
 программное обеспечение	B2	mwe	software
 программный	B2	adj	software
@@ -6065,10 +6064,10 @@ B1	A1	v	translate,transfer,put
 прогуливаться	C1	v	take a walk
 прогулка	B1	n	walk
 продавать	A2	v	sell
-продаваться	b2	v	be on sale
-продавец	a1	n	seller
-продавщица	a1	n	saleswoman
-продажа	b2	n	sale
+продаваться	B2	v	be on sale
+продавец	A1	n	seller
+продавщица	A1	n	saleswoman
+продажа	B2	n	sale
 продвигать	C1	v	forward
 продвигаться	B2	v	move forward
 продвижение	C1	n	moving forward, promotion
@@ -6078,7 +6077,7 @@ B1	A1	v	translate,transfer,put
 продлевать	B1	v	prolong
 продление	B1	n	extension
 продовольствие	C1	n	ration, food products
-продолжать	a2	v	continue
+продолжать	A2	v	continue
 продолжаться	B1	v	continue
 продолжение	A2	n	continuation
 продолжительность	B2	n	duration
@@ -6091,15 +6090,15 @@ B1	A1	v	translate,transfer,put
 продумывать	B2	V	think over
 продюсер	B2	n	producer
 проезд	A2	n	passage
-проездом	c2	n	when passing through
+проездом	C2	n	when passing through
 проект	B2	n	project, draft
 проектирование	B2	n	projecting
 проем	C1	n	aperture of door, window
 проехать	A2	v	drive
 прожектор	C1	n	searchlight
-проживание	b1	n	residence
+проживание	B1	n	residence
 проживать	B1	v	reside
-проживающий	b1	adj	resident
+проживающий	B1	adj	resident
 проза	B2	n	prose
 прозвище	B2	n	nickname
 прозрачность	C1	n	transparency
@@ -6117,12 +6116,12 @@ B1	A1	v	translate,transfer,put
 произвольно	C1	adv	randomly
 произвольный	B2	adj	random
 произносить	A1	v	pronounce, say
-произношение	b1	n	pronunciation, accent
+произношение	B1	n	pronunciation, accent
 происходить	A2	V	take place, originate
 происхождение	B2	n	origin
 происшествие	B1	n	incident
 прокат	B2	n	hire
-прокладка	a1	n	gasket, sanitary pad
+прокладка	A1	n	gasket, sanitary pad
 проклятие	C1	n	curse
 проклятый	C1	adj	damn
 прокуратура	C1	n	prosecutor's office
@@ -6146,13 +6145,13 @@ B1	A1	v	translate,transfer,put
 пропорция	B2	n	proportion
 пропуск	B1	n	admission, absence
 пропускать	B2	v	skip
-проработать	b1	v	work through
+проработать	B1	v	work through
 пророк	C1	n	prophet
 пророчество	C2	n	prophecy
 прорыв	C1	n	breakthrough
 прорываться	C1	v	break through
 просвещение	C1	n	education,enlightenment
-просить	a1	v	ask
+просить	A1	v	ask
 прославиться	B2	v	become famous
 прослушивание	C1	n	audition, call interception
 просматривать	C1	v	browse, overlook
@@ -6165,7 +6164,7 @@ B1	A1	v	translate,transfer,put
 простой	A1	adj	simple
 простор	C1	n	spaciousness
 просторный	B2	adj	spacious
-простота	b2	n	simplicity
+простота	B2	n	simplicity
 пространство	B1	N	space
 простуда	B1	n	cold
 простудиться	B1	v	catch cold
@@ -6206,7 +6205,7 @@ B1	A1	v	translate,transfer,put
 профсоюз	B2	n	labour union
 профсоюзный	C1	adj	trade union
 прохладный	B1	adj	cool
-проход	a1	n	passage
+проход	A1	n	passage
 проходимость	C2	n	off-road capability
 проходить	A2	v	pass, be over
 прохождение	C1	n	passing
@@ -6217,21 +6216,21 @@ B1	A1	v	translate,transfer,put
 процесс	B2	n	process
 процессор	B2	n	processor
 процессуальный	C1	adj	procedural
-прочесть	a2	v	read
+прочесть	A2	v	read
 прочий	C1	pron	other, the rest
 прочитать	A1	v	read
 прочность	B2	n	durability
 прочный	B1	adj	firm
 прочтение	C1	n	act of reading
-прочь	c2	adv	away
-прошедшее время	a1	mwe	past tense
-прошедший	a1	adj	past
+прочь	C2	adv	away
+прошедшее время	A1	mwe	past tense
+прошедший	A1	adj	past
 прошлогодний	B1	adj	last year's
-прошлое	a1	n	past
+прошлое	A1	n	past
 прошлый	A1	adj	last
 прощание	A2	n	farewell
-прощать	b1	v	forgive
-прощаться	a2	v	say goodbye
+прощать	B1	v	forgive
+прощаться	A2	v	say goodbye
 прощение	A2	n	forgiveness
 проявление	C1	n	display
 проявлять	B2	v	show
@@ -6260,7 +6259,7 @@ B1	A1	v	translate,transfer,put
 публиковать	B2	v	publish
 публичный	C1	adj	public
 пугать	B2	v	scare
-пуговица	b1	n	button
+пуговица	B1	n	button
 пузырь	C1	n	bubble
 пулемет	C2	n	machine gun
 пульс	B2	n	pulse
@@ -6268,14 +6267,14 @@ B1	A1	v	translate,transfer,put
 пуля	B2	n	bullet
 пункт	B1	N	paragraph
 пунктуальный	B2	adj	punctual
-пуск	b2	n	launch
+пуск	B2	n	launch
 пускай	C1	particle	let
 пускать	B2	v	let
 пусто	B2	adv	it's empty, there's nobody
 пустой	B1	adj	empty
-пустота	b2	n	emptiness
+пустота	B2	n	emptiness
 пустыня	B2	n	desert
-пусть	b2	particle	let
+пусть	B2	particle	let
 пустяк	C1	n	trifle
 путать	B2	v	confuse
 путешественник	A2	n	traveller
@@ -6321,8 +6320,8 @@ B1	A1	v	translate,transfer,put
 рабство	C1	n	slavery
 раввин	C1	n	rabbi
 равенство	B2	n	equality
-равнина	b2	n	flat
-равно	b1	adj	equally, make
+равнина	B2	n	flat
+равно	B1	adj	equally, make
 равновесие	B2	n	balance
 равнодушие	B2	n	indifference
 равнодушно	B2	adv	indifferently
@@ -6348,14 +6347,14 @@ B1	A1	v	translate,transfer,put
 разбирательство	C2	n	court examination
 разбирать	B2	v	make out, dismantle
 разбираться	B2	v	sort out, be collapsible
-разбойник	c2	n	robber
+разбойник	C2	n	robber
 разбор	C1	n	analysis
 разборка	C1	n	disassembling, criminal showdown
 разбрасывать	C1	v	scatter
 разбудить	A2	v	wake
 развал	C1	n	disintegration
 разве	A2	particle	really
-разведенный	a1	adj	divorced
+разведенный	A1	adj	divorced
 разведка	C1	N	intelligence, exploration
 разведчик	C1	n	scout
 развешивать	B1	v	hang, weigh out
@@ -6368,8 +6367,8 @@ B1	A1	v	translate,transfer,put
 развлекательный	B2	adj	entertaining
 развлекать	B2	v	amuse
 развлечение	B1	n	entertainment
-развод	b1	n	divorce
-развести	c2	v	take,dilute
+развод	B1	n	divorce
+развести	C2	v	take,dilute
 разводиться	A2	v	get divorced, grow in number
 разворачивать	B1	v	unwrap, turn back a vehicle
 разворачиваться	B2	v	turn around, unroll
@@ -6382,7 +6381,7 @@ B1	A1	v	translate,transfer,put
 разговорный	B1	adj	colloquial
 разгром	C1	n	rout, havoc
 раздавать	B1	v	distribute
-раздаваться	c2	v	be heard
+раздаваться	C2	v	be heard
 раздача	C1	n	distribution
 раздевалка	B2	n	changing room
 раздеваться	A1	v	undress
@@ -6397,10 +6396,10 @@ B1	A1	v	translate,transfer,put
 различать	A2	v	distinguish
 различаться	A2	v	differ
 различие	B1	n	difference
-различный	b2	adj	different
+различный	B2	adj	different
 разлука	B2	n	parting
 разлучаться	C2	v	part
-размах	c2	n	span,  large scale
+размах	C2	n	span,  large scale
 разменивать	B1	v	change money
 размер	A2	n	size
 размешивать	B1	v	stir
@@ -6416,7 +6415,7 @@ B1	A1	v	translate,transfer,put
 разнообразный	B1	adj	various
 разноцветный	B1	adj	multicoloured
 разный	A2	adj	different
-разойтись	c2	v	part,differ
+разойтись	C2	v	part,differ
 разом	C2	adv	at once
 разоружение	B2	n	disarmament
 разочарование	B1	n	disappointment
@@ -6434,7 +6433,7 @@ B1	A1	v	translate,transfer,put
 разрывать	B2	v	disconnect, tear
 разряд	B2	n	category
 разум	B2	n	intelligence
-разумеется	c2	adv	of course
+разумеется	C2	adv	of course
 разумный	B2	adj	reasonable
 разъединять	B2	v	disconnect, separate
 разъяснение	B2	n	explanation
@@ -6450,7 +6449,7 @@ B1	A1	v	translate,transfer,put
 рама	C1	n	frame
 рамка	B2	n	frame
 РАН	C1	n	russian academy of sciences, ras
-рана	b1	n	wound
+рана	B1	n	wound
 ранг	B2	n	rank
 ранее	B2	adv	earlier
 ранение	C1	n	wound
@@ -6469,7 +6468,7 @@ B1	A1	v	translate,transfer,put
 раскачиваться	B2	v	rock
 раскладывать	C1	v	lay out
 раскол	C2	n	split
-раскрывать	b2	v	open, disclose
+раскрывать	B2	v	open, disclose
 раскрытие	C1	n	opening, disclosure
 расовый	B2	adj	racial
 распад	C1	n	decay, desintegration
@@ -6518,7 +6517,7 @@ B1	A1	v	translate,transfer,put
 рассыпаться	B2	v	get scattered
 растаможить	C1	v	cement mortar
 раствор	B2	n	solution
-растворять	b2	v	dissolve, open
+растворять	B2	v	dissolve, open
 растение	B1	n	plant
 растерянно	C1	adv	in confusion
 растерянность	C1	n	confusion
@@ -6565,14 +6564,14 @@ B1	A1	v	translate,transfer,put
 рев	C1	n	roar
 реветь	C1	v	roar, cry
 ревновать	B1	v	be jealous
-ревность	b1	n	jealousy
+ревность	B1	n	jealousy
 револьвер	C1	n	revolver pistol
 революционер	B2	n	revolutionary
 революционный	C1	adj	revolutionary
 революция	B2	n	revolution
 регион	C1	n	region
 региональный	B2	adj	regional
-регистрация	a1	n	registration
+регистрация	A1	n	registration
 регистрировать	B2	v	register
 регулирование	B2	V	regulation
 регулировать	B2	v	regulate
@@ -6592,7 +6591,7 @@ B1	A1	v	translate,transfer,put
 резерв	C1	n	reserve
 резервировать	A2	v	book
 резкий	B2	adj	sharp
-резко	b2	adv	sharply
+резко	B2	adv	sharply
 резня	C1	n	massacre
 резолюция	C1	n	resolution
 результат	B1	n	result
@@ -6645,7 +6644,7 @@ B1	A1	v	translate,transfer,put
 рецепт	B1	n	recipe
 речевой	B2	adj	verbal
 речка	B2	n	small river
-речь	a2	n	speech
+речь	A2	n	speech
 решать	B1	V	decide, solve
 решаться	B2	v	decide,be resolved
 решающий	C1	adj	decisive
@@ -6660,7 +6659,7 @@ B1	A1	v	translate,transfer,put
 рисковать	B2	v	risk
 рисовать	B1	v	draw
 рисунок	A1	N	drawing
-ритм	b1	n	rhythm
+ритм	B1	n	rhythm
 риторика	C2	n	rhetoric
 риторический	C2	adj	rhetorical
 ритуал	C2	n	ritual
@@ -6675,15 +6674,15 @@ B1	A1	v	translate,transfer,put
 роддом	C1	n	maternity clinic
 родина	A1	n	homeland
 родинка	B2	n	mole
-родитель	a1	n	parent
+родитель	A1	n	parent
 родительный	A2	adj	genitive
 родительский	B1	adj	parental
 родиться	A1	v	be born
-родной	b1	adj	own, native
+родной	B1	adj	own, native
 родные	B1	adj	family
 родня	C1	n	family
-родственник	b1	n	relative
-родство	c1	n	kinship
+родственник	B1	n	relative
+родство	C1	n	kinship
 роды	B2	n	childbirth
 рожа	C2	n	mug
 рожать	B1	v	give birth
@@ -6691,7 +6690,7 @@ B1	A1	v	translate,transfer,put
 рождение	A1	n	birth
 рождество	A2	n prop	christmas
 рождество христово	A2	mwe	christmas
-роза	a2	n	rose
+роза	A2	n	rose
 розетка	A2	n	socket, jam dish
 розничный	B2	adj	retail
 розовый	A1	adj	pink
@@ -6714,9 +6713,9 @@ B1	A1	v	translate,transfer,put
 рот	A1	n	mouth
 рота	C2	n	company
 роща	C1	n	grove
-рояль	b2	n	grand piano
+рояль	B2	n	grand piano
 рсфср	C1	n	RSFSR , Russian Soviet Federative Socialist Republic
-рубаха	c2	n	shirt
+рубаха	C2	n	shirt
 рубашка	A1	n	shirt
 рубеж	B2	n	frontier
 рубить	B2	v	chop, hack
@@ -6731,11 +6730,11 @@ B1	A1	v	translate,transfer,put
 рукав	B1	n	sleeve
 руководитель	B2	n	head, tutor
 руководить	B2	v	direct
-руководство	b2	n	guidance, management, leadership
+руководство	B2	n	guidance, management, leadership
 руководство пользователя	B2	mwe	manual
 руководствоваться	C1	v	follow
 рукопись	C1	n	manuscript
-рулить	b2	v	steer the wheel
+рулить	B2	v	steer the wheel
 руль	B2	n	steering wheel
 русло	C1	n	riverbed
 русский	A1	adj	russian
@@ -6754,7 +6753,7 @@ B1	A1	v	translate,transfer,put
 рывок	C1	n	jerk
 рыдать	B2	v	cry badly
 рыжий	B1	adj	ginger
-рынок	a1	n	market
+рынок	A1	n	market
 рыночный	B2	adj	market
 рыть	C1	v	dig
 рыться	C2	v	dig, grub
@@ -6791,7 +6790,7 @@ B1	A1	v	translate,transfer,put
 самолет	A1	n	aircraft
 самолюбие	B2	n	ambition
 самообразование	B2	n	self-teaching
-самосознание	c2	n	self-consciousness
+самосознание	C2	n	self-consciousness
 самостоятельно	B1	adv	independently
 самостоятельность	B1	n	independence
 самостоятельный	B2	adj	independent
@@ -6801,12 +6800,12 @@ B1	A1	v	translate,transfer,put
 самочувствие	B1	n	general feeling of being well/unwell
 самый	A2	pron	most, the very
 санаторий	C1	n	health resort
-сандалии	a2	n	sandals
+сандалии	A2	n	sandals
 санитар	C2	n	male medical staff of the lowest grade
 санитарный	C1	adj	sanitary
 санкционировать	C1	v	authorise
 санкция	C1	n	sanction
-сантиметр	a1	n	centimetre
+сантиметр	A1	n	centimetre
 сапог	A1	n	high boot
 сарай	C1	n	barn
 сатана	C1	n	Satan
@@ -6823,10 +6822,10 @@ B1	A1	v	translate,transfer,put
 сборная	B1	n	national team
 сборник	B2	n	collection
 сборный	C1	ADJ	self-assembly, collecting
-сбрасывать	c2	v	throw down
+сбрасывать	C2	v	throw down
 сбыт	C1	n	distribution
 свадебный	B2	adj	wedding
-свадьба	b1	n	wedding
+свадьба	B1	n	wedding
 сваливать	C1	v	dump, get outta here
 сваливаться	C1	v	tumble
 свалка	C1	n	junkyard
@@ -6834,13 +6833,13 @@ B1	A1	v	translate,transfer,put
 сведение	C1	n	information
 сведения	B2	n	information
 свежий	A2	adj	fresh
-свекла	a2	n	beetroot
-свекр	b1	n	father-in-law
-свекровь	b1	n	mother-in-law
+свекла	A2	n	beetroot
+свекр	B1	n	father-in-law
+свекровь	B1	n	mother-in-law
 сверкать	B2	v	flash
 сверстник	B2	n	person of the same age
 сверток	C1	n	things wrapped together
-сверх	b2	adpos	above, more
+сверх	B2	adpos	above, more
 сверху	A2	adv	above
 сверхурочный	C1	adj	overtime
 сверхъестественный	B2	adj	supernatural
@@ -6874,7 +6873,7 @@ B1	A1	v	translate,transfer,put
 свой	A2	pron	one's
 свойственный	B2	adj	appropriate
 свойство	B2	n	feature
-сволочь	c2	n	scum
+сволочь	C2	n	scum
 сворачивать	B2	v	turn, roll
 связанный	B2	adj	concerned with, roped
 связка	C1	n	bunch
@@ -6882,11 +6881,11 @@ B1	A1	v	translate,transfer,put
 связывать	B2	v	connect, tie together
 связываться	C1	v	get involved, contact
 связь	B1	n	connection
-святилище	c2	n	sanctuary
+святилище	C2	n	sanctuary
 святой	B2	n	saint
-святыня	c2	n	sacred object
-священник	b2	n	priest
-священный	c2	adj	sacred
+святыня	C2	n	sacred object
+священник	B2	n	priest
+священный	C2	adj	sacred
 сгибать	B1	v	bend
 сгореть	B2	v	burn
 сдавать	B2	v	return, betray (slang)
@@ -6902,14 +6901,14 @@ B1	A1	v	translate,transfer,put
 сдерживать	B2	v	hold
 сдохнуть	C1	v	die (animal), croak
 сеанс	B1	n	session
-себе	a1	pron	-self
+себе	A1	pron	-self
 себестоимость	B2	n	prime cost
-себя	a1	pron	oneself
-север	a1	n	North
+себя	A1	pron	oneself
+север	A1	n	North
 северный	B1	adj	northern
 сегмент	C1	n	segment
 сегодня	A1	adv	today
-сегодняшний	b1	adj	today's
+сегодняшний	B1	adj	today's
 седло	C1	n	saddle
 седой	B1	adj	grey
 седьмой	A2	num	seventh
@@ -6925,7 +6924,7 @@ B1	A1	v	translate,transfer,put
 сексуальный	B1	adj	sexual
 секта	B2	n	sect
 сектор	B2	n	sector
-секунда	a1	n	second
+секунда	A1	n	second
 секция	B2	n	section
 селение	C2	n	village
 село	B2	n	village
@@ -6956,7 +6955,7 @@ B1	A1	v	translate,transfer,put
 сервер	B2	n	server
 сервис	B1	n	service
 сердечный	B2	adj	heart, cordial
-сердито	b2	adv	angrily
+сердито	B2	adv	angrily
 сердиться	B1	v	be angry
 сердце	A1	n	heart
 серебро	B2	n	silver
@@ -6991,7 +6990,7 @@ B1	A1	v	translate,transfer,put
 сила	A2	n	strength,force
 силуэт	C1	n	silhouette
 сильно	A2	adv	strongly
-сильный	a2	adj	strong
+сильный	A2	adj	strong
 символ	B2	n	symbol
 символический	C1	adj	symbolic
 симпатичный	B1	adj	attractive
@@ -7052,8 +7051,8 @@ B1	A1	v	translate,transfer,put
 скорбь	C1	n	feeling of bereavement
 скорее	B1	adv	quicker
 скоро	A1	adv	soon
-скорость	a2	n	speed
-скорый	b1	adj	quick
+скорость	A2	n	speed
+скорый	B1	adj	quick
 скот	C1	n	livestock
 скотина	C1	n	cattle, beast
 скрип	B2	n	squeak
@@ -7062,20 +7061,20 @@ B1	A1	v	translate,transfer,put
 скрывать	C1	v	hide
 скрываться	C1	v	hide
 скрытый	C1	adj	hidden
-скудный	c2	adj	scanty
+скудный	C2	adj	scanty
 скука	B2	n	boredom
 скульптура	B1	n	sculpture
 скучать	A2	v	miss, be bored
 скучный	B1	adj	boring
-слабо	b1	adv	weakly
+слабо	B1	adv	weakly
 слабость	B2	n	weakness
-слабый	a2	adj	weak
+слабый	A2	adj	weak
 слава	B2	n	glory
 славный	C1	adj	glorious
 славянин	B2	n	Slavonian
 славянский	B2	adj	Slavic, Slavonic
 сладкий	A1	adj	sweet
-сладко	b1	adv	sweet
+сладко	B1	adv	sweet
 слева	A2	adv	left
 слегка	B2	adv	slightly
 след	B2	n	trace
@@ -7095,14 +7094,14 @@ B1	A1	v	translate,transfer,put
 сливки	A1	n	cream
 сливочный	A2	adj	creamy
 слизистая	B2	n	mucous membrane
-слишком	b2	adv	too
+слишком	B2	adv	too
 слияние	C1	n	confluence, merger
 словарный запас	B1	mwe	word stock
 словарь	A1	n	dictionary
 словесный	C1	adj	verbal
 словно	C1	particle	as if,like
 слово	A1	n	word
-словом	c2	adv	briefly
+словом	C2	adv	briefly
 словосочетание	A2	n	word combination
 слог	A1	n	syllable
 сложно	A1	adv	difficult
@@ -7121,7 +7120,7 @@ B1	A1	v	translate,transfer,put
 служить	C1	v	serve
 слух	B1	n	hearing
 случай	A2	n	case
-случайно	b2	adv	accidentally
+случайно	B2	adv	accidentally
 случайность	B2	n	chance
 случайный	B2	adj	random
 случаться	A2	v	happen
@@ -7134,7 +7133,7 @@ B1	A1	v	translate,transfer,put
 слышаться	C1	v	be heard
 слышно	A2	adv	audibly
 слюна	B2	n	saliva
-см	a2	abbr	cm, centimetre
+см	A2	abbr	cm, centimetre
 смайлик	B1	n	smiley
 смелость	B1	n	courage
 смелый	B1	adj	brave
@@ -7143,11 +7142,11 @@ B1	A1	v	translate,transfer,put
 сменяться	C1	v	take turns
 смертельный	B2	adj	deadly
 смертная казнь	B2	mwe	death penalty
-смертный	c2	adj	deadly, death
+смертный	C2	adj	deadly, death
 смерть	B1	n	death
 смесь	B1	n	mixture
 сметана	A1	n	sour cream
-сметь	c2	v	dare
+сметь	C2	v	dare
 смех	A2	n	laugh
 смешанный	C1	adj	mixed
 смешивать	B1	v	mix
@@ -7163,7 +7162,7 @@ B1	A1	v	translate,transfer,put
 смутный	C2	adj	vague
 смущать	B2	v	embarrass
 смущение	B2	n	embarrassment
-смысл	b2	n	meaning
+смысл	B2	n	meaning
 смягчать	C2	v	soften, ease
 снабжение	C1	n	supply
 снаружи	A2	adv	outside
@@ -7176,18 +7175,18 @@ B1	A1	v	translate,transfer,put
 снижать	B2	v	reduce
 снижаться	B2	v	decline
 снижение	B2	n	reduction
-снизу	a2	adv	below
-снимать	a1	v	rent, remove, take off, withdraw
+снизу	A2	adv	below
+снимать	A1	v	rent, remove, take off, withdraw
 сниматься	C1	v	be remove,be taken off,be withdrawn,be shot
 снимок	B2	n	picture
-сниться	b2	v	dream
-снова	b2	adv	again
+сниться	B2	v	dream
+снова	B2	adv	again
 сновидение	B1	n	dream
 сносить	B2	v	demolish
 сноска	B2	n	footnote
 сноуборд	B1	n	snowboard
 снятие	B2	n	withdrawal, removal
-со	a1	adpos	with, from, since
+со	A1	adpos	with, from, since
 со временем	C1	mwe	with the lapse of time
 собака	A1	n	dog
 собачий	B1	adj	dog
@@ -7195,7 +7194,7 @@ B1	A1	v	translate,transfer,put
 собеседование	B2	n	interview
 собирать	B1	v	collect
 собирать урожай	B2	mwe	harvest
-собираться	b2	v	prepare,going to
+собираться	B2	v	prepare,going to
 соблазн	C2	n	temptation
 соблюдать	B1	v	comply
 соблюдение	B1	n	compliance
@@ -7212,9 +7211,9 @@ B1	A1	v	translate,transfer,put
 совершаться	B2	v	be effected
 совершение	C1	N	accomplishment
 совершенно	B2	adv	quite
-совершенный	a2	adj	perfect
-совершенство	c2	n	perfection
-совершенствование	c2	n	improvement
+совершенный	A2	adj	perfect
+совершенство	C2	n	perfection
+совершенствование	C2	n	improvement
 совершенствовать	C1	v	perfect, improve
 совесть	B2	n	conscience
 совет	A2	n	council,advice
@@ -7235,12 +7234,12 @@ B1	A1	v	translate,transfer,put
 современность	B2	n	present, modernity
 современный	A2	adj	modern
 совсем	A2	adv	quite
-согласие	b1	n	consent
+согласие	B1	n	consent
 согласно	C1	adv	according to, in harmony
 согласный	A1	adj	consonant
 согласование	C1	n	agreement
 согласовывать	C1	v	coordinate, reconcile
-соглашаться	b1	v	agree
+соглашаться	B1	v	agree
 соглашение	B2	n	agreement
 содействие	C1	n	assistance
 содействовать	B2	v	facilitate
@@ -7263,10 +7262,10 @@ B1	A1	v	translate,transfer,put
 сознательный	B2	adj	conscious
 созревать	C1	v	ripen, mature
 соискатель	B2	n	applicant
-сойтись	c2	v	agree
+сойтись	C2	v	agree
 сок	A1	n	juice
 сокращать	B1	v	reduce
-сокращение	b1	n	reduction
+сокращение	B1	n	reduction
 сокровище	C1	n	treasure
 сокурсник	B2	n	college mate
 солдат	B1	n	soldier
@@ -7321,7 +7320,7 @@ B1	A1	v	translate,transfer,put
 сосок	B2	n	nipple
 сосредоточивать	C1	v	concentrate, fix
 сосредоточиваться	B2	v	concentrate
-состав	b2	n	composition
+состав	B2	n	composition
 составитель	C1	n	compiler
 составление	C1	n	composing
 составлять	C1	v	compose
@@ -7332,7 +7331,7 @@ B1	A1	v	translate,transfer,put
 состояться	B1	v	take place
 сострадание	B2	n	compassion
 состязание	B2	n	competition
-сосуд	b2	n	vessel
+сосуд	B2	n	vessel
 сосуществовать	C1	v	coexist
 сотворять	C1	v	create
 сотка	C2	n	one hundred square metres
@@ -7414,7 +7413,7 @@ B1	A1	v	translate,transfer,put
 спонтанный	C1	adj	spontaneous
 спор	B1	n	dispute
 спорить	B2	v	dispute
-спорный	c2	adj	controversial
+спорный	C2	adj	controversial
 спорт	A1	n	sport
 спортзал	A2	n	gym
 спортивная площадка	A2	mwe	athletic field
@@ -7431,7 +7430,7 @@ B1	A1	v	translate,transfer,put
 справедливый	B1	adj	fair
 справка	A2	n	certificate,reference
 справляться	B2	v	cope
-справочник	b1	n	directory
+справочник	B1	n	directory
 спрашивать	A1	v	ask
 спрос	B2	n	demand
 спс	C1	n	sps, Union of Right Forces
@@ -7447,10 +7446,10 @@ B1	A1	v	translate,transfer,put
 сравнительно	C1	adv	comparatively
 сражаться	C1	v	fight
 сражение	B2	n	battle
-сразу	a2	adv	at once
+сразу	A2	adv	at once
 срать	C1	v	shit
 среда	A1	n prop	wednesday
-среди	b1	adpos	among
+среди	B1	adpos	among
 средневековый	B2	adj	medieval
 средневековье	C1	n	Middle Ages
 среднее	B1	n	average
@@ -7463,8 +7462,8 @@ B1	A1	v	translate,transfer,put
 срок действия	A2	mwe	expiration date
 срочный	A2	adj	urgent
 срывать	C1	v	tear away, upset (plans)
-срываться	c2	v	fall, lose one's temper
-ссора	b1	n	quarrel
+срываться	C2	v	fall, lose one's temper
+ссора	B1	n	quarrel
 ссориться	B2	v	quarrel
 ссср	B2	n prop	USSR
 ссуда	C1	n	loan
@@ -7499,14 +7498,14 @@ B1	A1	v	translate,transfer,put
 стараться	B1	v	try
 стареть	B2	v	age
 старец	C2	n	elder
-старик	b1	n	old man
+старик	B1	n	old man
 старина	C1	n	old times, antiquity, old chap
 старинный	B2	adj	ancient
 старость	B1	n	old age
 старт	B1	n	start
 стартовать	B2	v	start
-старуха	b1	n	old woman
-старушка	b2	n	old woman
+старуха	B1	n	old woman
+старушка	B2	n	old woman
 старший	A2	adj	senior
 старшина	C2	n	master sergeant
 старый	A1	adj	old
@@ -7536,13 +7535,13 @@ B1	A1	v	translate,transfer,put
 стиральная машина	A2	mwe	washing machine
 стиральный порошок	A2	mwe	washing powder
 стирать	A2	v	wash
-стирка	b1	n	washing
+стирка	B1	n	washing
 стих	B1	n	verse
 стихи	A2	n	poetry
 стихийный	C1	adj	spontaneous
 стихия	C2	n	element
 стихотворение	B1	n	poem
-сто	a1	num	hundred
+сто	A1	num	hundred
 стоимость	B1	n	cost
 стоить	A1	v	cost
 стойка	C1	n	bar, rack
@@ -7554,7 +7553,7 @@ B1	A1	v	translate,transfer,put
 столица	A1	n	capital
 столичный	B1	adj	metropolitan
 столкновение	B2	n	collision
-столовая	a1	n	canteen
+столовая	A1	n	canteen
 столько	A1	adv	so much, so many
 столяр	B2	n	joiner
 стон	C1	n	groan
@@ -7565,10 +7564,10 @@ B1	A1	v	translate,transfer,put
 сторона	A2	n	side
 сторонник	C1	n	supporter
 стоянка	B1	n	parking
-стоять	a1	v	stand
+стоять	A1	v	stand
 страдание	B2	n	suffering
 страдать	B1	v	suffer
-стража	c2	n	guard, custody
+стража	C2	n	guard, custody
 страна	A1	n	country
 страница	A1	n	page
 странно	A2	adv	strangely
@@ -7578,8 +7577,8 @@ B1	A1	v	translate,transfer,put
 стратегический	C1	adj	strategic
 стратегия	C2	n	strategy
 страх	B1	n	fear
-страхование	b2	n	insurance
-страховать	b1	v	insure
+страхование	B2	n	insurance
+страховать	B1	v	insure
 страховка	A2	n	insurance
 страховой	B2	adj	insurance
 страшный	B1	adj	scary
@@ -7606,7 +7605,7 @@ B1	A1	v	translate,transfer,put
 строиться	C1	v	be built
 строй	B2	n	system
 стройка	B2	n	construction site
-стройный	a2	adj	slim
+стройный	A2	adj	slim
 строка	A2	n	line
 строчка	A2	n	line
 структура	B2	n	structure
@@ -7619,7 +7618,7 @@ B1	A1	v	translate,transfer,put
 студия	B1	n	studio
 стук	B1	n	knock
 стул	A1	n	chair
-ступать	c2	v	step
+ступать	C2	v	step
 ступень	B2	n	stage
 ступенька	A2	n	step
 ступня	B2	n	foot
@@ -7654,7 +7653,7 @@ B1	A1	v	translate,transfer,put
 суждено	C2	adv	fated
 суицид	B2	n	suicide
 сука	C1	n	bitch
-султан	c2	n	sultan
+султан	C2	n	sultan
 сумасшедший	B2	adj	crazy
 суматоха	C2	n	bustle
 сумерки	B2	n	twilight
@@ -7666,7 +7665,7 @@ B1	A1	v	translate,transfer,put
 суп	A1	n	soup
 супер	B2	adj	super, great
 супермаркет	A1	n	supermarket
-супруг	b2	n	spouse
+супруг	B2	n	spouse
 супруга	B2	n	spouse (female)
 супружеский	B2	adj	married, conjugal
 суровый	B2	adj	severe
@@ -7703,10 +7702,10 @@ B1	A1	v	translate,transfer,put
 счастливый	A2	adj	happy
 счастье	A2	n	happiness
 счесть	B2	v	consider
-счет	a1	n	account
+счет	A1	n	account
 счетчик	B2	n	counter
 считать	A2	v	count
-считаться	c1	v	consider
+считаться	C1	v	consider
 сша	A1	n prop	usa
 съезд	B2	n	congress
 съездить	B1	v	visit
@@ -7716,7 +7715,7 @@ B1	A1	v	translate,transfer,put
 съесть	A2	v	eat up
 сыворотка	B2	n	serum
 сын	A1	n	son
-сынок	b2	n	son (diminutive)
+сынок	B2	n	son (diminutive)
 сыпать	B2	v	strew
 сыпь	C1	n	rash
 сыр	A1	n	cheese
@@ -7728,7 +7727,7 @@ B1	A1	v	translate,transfer,put
 сюрприз	B2	n	surprise
 т.е.	B2	abbr	ie
 та	A1	pron	that
-табак	b1	n	tobacco
+табак	B1	n	tobacco
 таблетка	A2	n	tablet
 таблица	B1	n	table
 табу	B2	n	taboo
@@ -7762,12 +7761,12 @@ B1	A1	v	translate,transfer,put
 танец	B1	n	dance
 танк	C1	n	tank
 танковый	C2	adj	tank
-танцевать	a1	v	dance
-тапочки	a2	n	slippers, flip-flops
+танцевать	A1	v	dance
+тапочки	A2	n	slippers, flip-flops
 таракан	B2	n	cockroach
 тарелка	A1	n	plate
 тариф	B2	n	rate
-таскать	c2	v	carry, steal in small amount (slang)
+таскать	C2	v	carry, steal in small amount (slang)
 татуировка	B2	n	tattoo
 тачка	C1	n	barrow, car (slang)
 таять	B2	v	melt
@@ -7778,12 +7777,12 @@ B1	A1	v	translate,transfer,put
 твердый	A1	adj	hard, firm
 твой	A1	pron	your, yours
 творение	C1	n	creation
-творец	c2	n	creator
+творец	C2	n	creator
 творительный	A2	adj	instrumental
 творить	C1	v	create
-твориться	c2	v	happen
-творог	b1	n	quark (cheese)
-творческий	b1	adj	creative
+твориться	C2	v	happen
+творог	B1	n	quark (cheese)
+творческий	B1	adj	creative
 творчество	B1	n	creation
 те	A1	pron	those
 театр	A2	n	theatre
@@ -7792,7 +7791,7 @@ B1	A1	v	translate,transfer,put
 тезис	B2	n	thesis
 текст	A1	n	text
 текущий	B2	adj	current
-телевидение	b1	n	television
+телевидение	B1	n	television
 телевизионный	A2	adj	television
 телевизор	A1	n	television
 телевикторина	B1	n	TV quiz
@@ -7804,7 +7803,7 @@ B1	A1	v	translate,transfer,put
 телесный	B2	adj	bodily, physical, flesh-coloured
 телефон	A1	n	phone
 телефонный	A2	adj	telephone
-тело	b1	n	body
+тело	B1	n	body
 тем	A2	pron	the (the more the better)
 тем временем	C1	mwe	meanwhile
 тем не менее	B2	adv	nevertheless
@@ -7819,7 +7818,7 @@ B1	A1	v	translate,transfer,put
 тенденция	C1	n	trend
 теннис	A1	n	tennis
 тень	B1	n	shadow
-теологический	c2	adj	theological
+теологический	C2	adj	theological
 теоретик	B2	n	theorist
 теоретически	B2	adv	theoretically
 теоретический	B2	adj	theoretical
@@ -7834,11 +7833,11 @@ B1	A1	v	translate,transfer,put
 тереть	B2	v	rub
 термин	B2	n	term
 терминал	B2	n	terminal
-терминология	b2	n	terminology
+терминология	B2	n	terminology
 терпеливо	B2	adv	patiently
-терпеливый	b1	adj	patient
-терпение	b1	n	patience
-терпеть	b1	V	endure, tolerate
+терпеливый	B1	adj	patient
+терпение	B1	n	patience
+терпеть	B1	V	endure, tolerate
 терпимость	C1	n	tolerance
 территориальный	B2	adj	territorial
 территория	B2	n	territory
@@ -7847,17 +7846,17 @@ B1	A1	v	translate,transfer,put
 террорист	B1	n	terrorist
 террористический	B1	adj	terrorist
 терять	A2	v	lose
-теряться	b1	v	be lost
+теряться	B1	v	be lost
 тесно	B1	adv	closely
 тесный	B1	adj	narrow, tight
 тест	A1	n	test
 тестирование	A2	n	testing
-тестировать	b2	v	test
-тесто	b1	n	dough
-тесть	b1	n	father-in-law
+тестировать	B2	v	test
+тесто	B1	n	dough
+тесть	B1	n	father-in-law
 тетка	B1	n	aunt
 тетрадь	A1	n	notebook, exercise book
-тетя	a2	n	aunt
+тетя	A2	n	aunt
 техник	B2	n	technician
 техника	A2	n	technique
 технически	B1	adv	technically
@@ -7867,7 +7866,7 @@ B1	A1	v	translate,transfer,put
 технология	B2	n	technology
 течение	B1	n	course, stream
 течь	A2	v	leak
-теща	b1	n	mother-in-law
+теща	B1	n	mother-in-law
 тигр	B1	n	tiger
 тип	B1	n	type
 типичный	B2	adj	typical
@@ -7877,7 +7876,7 @@ B1	A1	v	translate,transfer,put
 титул	C1	n	title
 тихий	A2	adj	quiet
 тихо	A1	adv	quietly
-тихонько	c2	adv	quietly
+тихонько	C2	adv	quietly
 тишина	A2	n	silence
 ткань	B2	n	cloth
 то	A1	particle	that
@@ -7889,9 +7888,9 @@ B1	A1	v	translate,transfer,put
 товарищ	B1	n	comrade
 товарный	B1	adj	marketable, sales, trade
 тогда	A2	adv	then
-тогдашний	c2	adj	belonging to describing period
+тогдашний	C2	adj	belonging to describing period
 тоже	A2	particle	too
-ток	b2	n	current
+ток	B2	n	current
 токсичный	B2	adj	toxic
 ток-шоу	A2	n	talk show
 толк	C2	n	knowledge, interest
@@ -7906,11 +7905,11 @@ B1	A1	v	translate,transfer,put
 толщина	B1	n	thickness
 только	A1	particle	only
 только что	B1	mwe	just
-том	b2	n	volume
+том	B2	n	volume
 тон	B2	n	tone
 тонкий	A2	adj	thin
-тонко	b2	adv	thinly
-тонкость	c2	n	subtlety
+тонко	B2	adv	thinly
+тонкость	C2	n	subtlety
 тонна	B2	n	ton
 тоннель	B2	n	tunnel
 тонуть	B2	v	sink, drown
@@ -7921,7 +7920,7 @@ B1	A1	v	translate,transfer,put
 топтать	C1	v	tread down
 тора	C1	n	Torah
 торговать	B1	v	trade
-торговец	b2	n	trader
+торговец	B2	n	trader
 торговля	B1	n	trade
 торговый	B1	adj	trading
 торжественный	B1	adj	ceremonial
@@ -7953,15 +7952,15 @@ B1	A1	v	translate,transfer,put
 трагедия	B2	n	tragedy
 трагический	B2	adj	tragic
 традиционно	B2	adv	traditionally
-традиционный	b2	adj	traditional
-традиция	b1	n	tradition
+традиционный	B2	adj	traditional
+традиция	B1	n	tradition
 траектория	B2	n	trajectory
 трактат	C2	n	treatise
 трактовка	C2	n	interpretation
 трактор	C1	n	tractor
 трамвай	A1	n	tram
 транзит	B1	n	transit
-транс	c1	n	trance
+транс	C1	n	trance
 транскрипция	A1	n	transcription
 транслировать	B2	v	transmit
 транспорт	A1	n	transport
@@ -8021,7 +8020,7 @@ B1	A1	v	translate,transfer,put
 трудолюбивый	B1	adj	hard-working
 трудящийся	C1	n	worker, working person
 труп	B2	n	corpse
-трусы	a1	n	panties, boxers, briefs, trunks
+трусы	A1	n	panties, boxers, briefs, trunks
 трюк	B2	n	trick, stunt
 тряпка	B1	n	rag
 трясти	B2	v	shake
@@ -8034,18 +8033,18 @@ B1	A1	v	translate,transfer,put
 туман	B1	n	fog
 тумбочка	A2	n	bedside table
 тупик	A2	n	cul-de-sac
-тупо	c2	adv	dully
+тупо	C2	adv	dully
 тупой	B1	adj	stupid
 тур	B1	n	tour
 туризм	A2	n	tourism
 турист	A1	n	tourist
-туристический	b1	adj	tourist
+туристический	B1	adj	tourist
 турникет	A2	n	ticket-gate
 турнир	B2	n	tournament
 тусклый	B2	adj	dull, dim
 тусовка	B2	n	party, hangout
 тут	A1	adv	here
-туфли	a1	n	shoes
+туфли	A1	n	shoes
 тухлый	B2	adj	rotten, bad
 туча	B1	n	cloud
 тушить	B2	v	stew, extinguish
@@ -8057,7 +8056,7 @@ B1	A1	v	translate,transfer,put
 тысяча	A1	num	thousand
 тысячелетие	B1	n	millennium
 тысячный	A2	num	thousandth
-тьма	c2	n	dark
+тьма	C2	n	dark
 тюбик	B1	n	tube
 тюремное заключение	B2	mwe	imprisonment
 тюремный	B2	adj	prison
@@ -8066,7 +8065,7 @@ B1	A1	v	translate,transfer,put
 тяжело	A1	adv	hard
 тяжелый	A1	adj	heavy
 тяжесть	B2	n	weight
-тяжкий	c2	adj	heavy
+тяжкий	C2	adj	heavy
 тянуть	A2	v	pull
 тянуться	B2	v	stretch
 у	A1	adpos	by, at
@@ -8082,7 +8081,7 @@ B1	A1	v	translate,transfer,put
 убийца	B2	n	killer
 убирать	A2	v	remove
 убитый	B2	adj	killed
-убогий	c2	adj	miserable
+убогий	C2	adj	miserable
 уборка	B1	n	cleaning
 убыток	B2	n	loss
 уважаемый	A2	adj	respected
@@ -8096,14 +8095,14 @@ B1	A1	v	translate,transfer,put
 уверенно	B1	adv	confidently
 уверенность	B1	n	confidence
 уверенный	B1	adj	confident
-уверять	c2	v	assure
-увести	b1	v	withdraw
+уверять	C2	v	assure
+увести	B1	v	withdraw
 увидеть	A2	v	see
 увлекательный	B2	adj	fascinating
 увлекать	B2	v	fascinate
 увлекаться	B1	v	be enthusiastic
 увлечение	B1	n	passion
-увольнение	b2	n	resignation
+увольнение	B2	n	resignation
 увольнять	B1	v	discharge
 увольняться	B2	v	quit
 угадывать	B1	v	guess
@@ -8129,7 +8128,7 @@ B1	A1	v	translate,transfer,put
 удача	B1	n	luck
 удачный	B2	adj	successful
 удваивать	B2	v	double
-уделять	c2	v	give
+уделять	C2	v	give
 удерживать	B2	v	keep
 удерживаться	B2	v	keep from
 удивительный	B1	adj	amazing
@@ -8143,14 +8142,14 @@ B1	A1	v	translate,transfer,put
 удовлетворительный	B1	adj	satisfactory
 удовлетворять	B2	v	satisfy
 удовольствие	B1	n	pleasure
-удостаивать	c2	v	grace, award
+удостаивать	C2	v	grace, award
 удостоверение	B1	n	certificate
 удостоверение личности	B2	mwe	ID card
 удостоверять	B2	v	certify
 удочерять	B1	v	adopt a girl
 уезд	C2	n	administrative subdivision of zarist Russia
 уехать	A1	v	leave
-уж	c2	adv	already, certainly
+уж	C2	adv	already, certainly
 ужас	B2	n	horror
 ужасно	B1	adv	terribly
 ужасный	B1	adj	terrible
@@ -8167,11 +8166,11 @@ B1	A1	v	translate,transfer,put
 указ	C1	n	decree
 указание	B2	n	instruction, indication
 указанный	B2	adj	indicated
-указатель	b1	n	road sign, sign mark
+указатель	B1	n	road sign, sign mark
 указательный	B1	adj	index, demonstrative
-указывать	b1	v	indicate
-указываться	c1	v	be pointed out
-укладывать	b2	v	lay
+указывать	B1	v	indicate
+указываться	C1	v	be pointed out
+укладывать	B2	v	lay
 укол	B1	n	injection
 укорачивать	B2	v	shorten
 украина	A1	n prop	ukraine
@@ -8192,18 +8191,18 @@ B1	A1	v	translate,transfer,put
 улучшать	B1	v	improve
 улучшение	B1	n	improvement
 улыбаться	A2	v	smile
-улыбка	a2	n	smile
+улыбка	A2	n	smile
 ум	A2	n	mind
 умело	B2	adv	skilful
-умение	b1	n	ability
+умение	B1	n	ability
 уменьшать	A2	v	reduce
 уменьшаться	A2	v	decrease
 уменьшение	B1	n	decrease
 умеренный	B1	adj	moderate
 уместный	C1	adj	appropriate
 уметь	A1	v	be able, can
-умирать	a1	v	die
-умножать	a2	v	multiply
+умирать	A1	v	die
+умножать	A2	v	multiply
 умный	A1	adj	clever
 умолчание	C1	n	concealment, default
 умолять	B2	v	beg
@@ -8224,9 +8223,9 @@ B1	A1	v	translate,transfer,put
 упадок	C1	n	decline
 упаковка	B2	n	packing
 упаковывать	A2	v	pack
-упасть	a2	v	fall
+упасть	A2	v	fall
 упираться	C1	v	set against, insist on
-уплата	c2	n	payment
+уплата	C2	n	payment
 уплотнение	C1	n	consolidating, sealing, lump
 уполномоченный	C2	adj	authorised
 упоминание	C1	n	mention
@@ -8259,7 +8258,7 @@ B1	A1	v	translate,transfer,put
 урок	A1	n	lesson
 урон	C2	n	losses
 ус	B1	n	moustache
-усадьба	c2	n	manor
+усадьба	C2	n	manor
 усаживаться	B2	v	sit down
 усваивать	B2	v	assimilate (idea, nutrients)
 усердный	B2	adj	diligent
@@ -8287,9 +8286,9 @@ B1	A1	v	translate,transfer,put
 устав	C1	n	charter
 уставать	A2	v	get tired
 уставиться	C1	v	stare
-устало	b2	adv	wearily
+устало	B2	adv	wearily
 усталость	B1	n	tiredness
-усталый	a1	adj	tired
+усталый	A1	adj	tired
 устанавливать	B1	v	install, establish
 устанавливаться	B1	v	be installed, be established
 установка	B2	n	installation
@@ -8305,9 +8304,9 @@ B1	A1	v	translate,transfer,put
 устройство	C1	n	device
 уступать	B2	v	let
 уступка	B2	n	concession
-усыпать	b2	v	fall asleep, strew
+усыпать	B2	v	fall asleep, strew
 утверждать	C1	v	assert
-утверждение	b2	n	approval,assertion
+утверждение	B2	n	approval,assertion
 утешать	B2	v	console
 утешение	B2	n	consolation
 утка	B2	n	duck, bedpan, fake news
@@ -8334,10 +8333,10 @@ B1	A1	v	translate,transfer,put
 учащийся	B1	n	student
 учеба	B1	n	studies
 учебник	A1	n	textbook
-учебный	a2	adj	educational, training
+учебный	A2	adj	educational, training
 учение	B2	n	teaching
 ученик	A1	n	pupil
-ученый	a2	adj	academic, scientific
+ученый	A2	adj	academic, scientific
 учет	B2	n	accounting
 училище	B2	n	training school
 училка	C2	n	female teacher (slang)
@@ -8355,7 +8354,7 @@ B1	A1	v	translate,transfer,put
 фаворит	C2	n	favourite
 фаза	B2	n	phase
 файл	B1	n	file
-файлообменник	b2	n	file hosting service
+файлообменник	B2	n	file hosting service
 факс	B1	n	fax
 факт	B2	n	fact
 фактически	B2	adv	actually
@@ -8397,7 +8396,7 @@ B1	A1	v	translate,transfer,put
 философ	B2	n	philosopher
 философия	B2	n	philosophy
 философский	B2	adj	philosophical
-фильм	a1	n	film, movie
+фильм	A1	n	film, movie
 фильтр	B2	n	filter
 финал	B1	n	final
 финансирование	B2	n	financing
@@ -8423,7 +8422,7 @@ B1	A1	v	translate,transfer,put
 фонд	B2	n	fund
 фондовый	B2	adj	stock, fund
 фонтан	B2	n	fountain
-форма	a2	n	form
+форма	A2	n	form
 формально	B2	adv	formally
 формальный	B2	adj	formal
 формат	B2	n	format
@@ -8435,15 +8434,15 @@ B1	A1	v	translate,transfer,put
 формулировка	B2	n	wording
 форум	B1	n	forum
 фотка	C1	n	pic (photo)
-фото	a1	n	photo
+фото	A1	n	photo
 фотоаппарат	A2	n	camera
 фотограф	B1	n	photographer
 фотографировать	A2	v	take a picture
-фотография	a1	n	photo
+фотография	A1	n	photo
 фрагмент	B2	n	fragment
 фраза	A2	n	phrase
 фракция	C1	n	parliamentary group, fraction
-франк	c1	n	franc
+франк	C1	n	franc
 франция	A1	n prop	france
 француз	A1	n	frenchman
 французский	A1	adj	french
@@ -8459,11 +8458,11 @@ B1	A1	v	translate,transfer,put
 фунт	A2	n	pound
 фуражка	C2	n	peaked cap
 футбол	A1	n	football
-футболист	a2	n	football player
+футболист	A2	n	football player
 футболка	A2	n	t-shirt
 футбольный	B1	adj	football
 хакер	B1	n	hacker
-халат	a2	n	bathrobe
+халат	A2	n	bathrobe
 хаос	C1	n	chaos
 характер	A2	n	character
 характеризовать	C1	v	characterize
@@ -8480,7 +8479,7 @@ B1	A1	v	translate,transfer,put
 химик	B2	n	chemist
 химический	B2	adj	chemical
 химия	B1	n	chemistry
-химчистка	a2	n	dry cleaning
+химчистка	A2	n	dry cleaning
 хирург	C1	n	surgeon
 хирургия	B2	n	surgery
 хит	B2	n	hit (song)
@@ -8491,7 +8490,7 @@ B1	A1	v	translate,transfer,put
 хлеб	A1	n	bread
 хлопать	B2	v	clap
 хлопок	A2	n	cotton
-хлопоты	c2	n	troubles, cares, efforts
+хлопоты	C2	n	troubles, cares, efforts
 хобби	A2	n	hobby
 ход	B2	n	movement, motion
 ход мыслей	C1	mwe	train of thought
@@ -8505,7 +8504,7 @@ B1	A1	v	translate,transfer,put
 хоккей	A1	n	hockey
 холдинг	C1	n	holding company
 холестерин	B2	n	cholesterol
-холл	a2	n	hall
+холл	A2	n	hall
 холм	B2	n	hill
 холод	A1	n	cold
 холодильник	A1	n	refrigerator
@@ -8530,23 +8529,23 @@ B1	A1	v	translate,transfer,put
 храниться	B1	v	be stored
 храпеть	B2	v	snore
 хребет	C2	n	backbone
-хрен	b1	n	horseradish, dick
+хрен	B1	n	horseradish, dick
 хриплый	B2	adj	hoarse
-христианин	b1	n	Christian
-христианский	b1	adj	Christian
-христианство	b1	n	christianity
-христос	b1	n prop	christ
+христианин	B1	n	Christian
+христианский	B1	adj	Christian
+христианство	B1	n	christianity
+христос	B1	n prop	christ
 хроника	B2	n	chronicle
 хронический	B2	adj	chronic, permanent
 хрупкий	B2	adj	fragile
 хрусталь	B2	n	crystal glass, crystal ware
 худеть	B2	v	grow thin, lose weight
-художественный	b1	adj	art
+художественный	B1	adj	art
 художник	B1	n	artist
 худой	A2	adj	thin
 худший	A2	adj	worst
 хуже	A2	adj	worse
-хуй	b2	n	dick
+хуй	B2	n	dick
 хулиган	B2	n	hooligan
 царить	C1	v	reign
 царица	B2	n	tsarina, queen
@@ -8565,7 +8564,7 @@ B1	A1	v	translate,transfer,put
 целиком	B2	adv	entirely
 целиться	C1	v	aim
 целовать	A2	v	kiss
-целоваться	b1	V	kiss
+целоваться	B1	V	kiss
 целое	B2	n	whole
 целостность	C1	N	entirety
 целостный	B2	adj	holistic
@@ -8598,11 +8597,11 @@ B1	A1	v	translate,transfer,put
 цитата	B2	n	quote
 цитировать	B2	v	quote
 цифра	A2	n	figure
-цифровой	b1	adj	digital
+цифровой	B1	adj	digital
 цк	C2	n	сentral сommittee
 цыган	C1	n	Gipsy
-цыпленок	b1	n	chicken
-чаевые	a2	n	tip
+цыпленок	B1	n	chicken
+чаевые	A2	n	tip
 чай	A1	n	tea,tip
 чайка	C1	n	gull
 чайник	A1	N	kettle, teapot, dummy
@@ -8644,7 +8643,7 @@ B1	A1	v	translate,transfer,put
 чередование	B2	n	alternation
 через	A2	adpos	across, after
 череп	B2	n	skull
-чересчур	c2	adv	too
+чересчур	C2	adv	too
 черешня	B1	n	sweet cherry
 черновик	B1	n	draft
 черный	A1	adj	black
@@ -8657,7 +8656,7 @@ B1	A1	v	translate,transfer,put
 чесать	B2	v	scratch
 чеснок	A1	n	garlic
 чествование	C2	n	tribute
-честно	a2	adv	honestly
+честно	A2	adv	honestly
 честность	B2	n	honesty
 честный	A2	adj	honest
 честолюбивый	B2	adj	ambitious
@@ -8684,13 +8683,13 @@ B1	A1	v	translate,transfer,put
 числительное	A2	n	numeral
 число	A1	n	number
 чистить	A2	v	clean
-чистка	b2	n	cleaning
+чистка	B2	n	cleaning
 чисто	A2	adv	clean
 чистота	B1	n	cleanness, purity
 чистый	A2	adj	clean,pure
 читатель	A2	n	reader
 читать	A1	v	read
-читаться	b1	v	be pronounced, be readable
+читаться	B1	v	be pronounced, be readable
 член	A2	n	member
 член семьи	A2	mwe	family member
 членство	B2	n	membership
@@ -8745,7 +8744,7 @@ B1	A1	v	translate,transfer,put
 шепот	B2	n	whisper
 шепотом	B2	adv	whispering
 шептать	B2	v	whisper
-шерсть	a2	n	wool
+шерсть	A2	n	wool
 шествие	C1	n	procession
 шестерка	B1	n	figure of six
 шестеро	A2	num	six (people)
@@ -8780,7 +8779,7 @@ B1	A1	v	translate,transfer,put
 шокировать	B2	v	shock
 шоколад	A1	n	chocolate
 шоппинг	A2	n	shopping
-шорты	a2	n	shorts
+шорты	A2	n	shorts
 шоссе	B1	n	highway
 шоу	B1	n	show
 шофер	A2	n	driver
@@ -8800,11 +8799,11 @@ B1	A1	v	translate,transfer,put
 штурман	C1	n	navigator
 штурмовик	C2	n	storm-trooper, around-attack aircraft
 штык	C1	n	bayonet
-шуба	b2	n	fur coat
+шуба	B2	n	fur coat
 шум	B1	n	noise
 шуметь	B1	v	make noise
 шумный	B1	adj	noisy
-шутить	a2	v	joke
+шутить	A2	v	joke
 шутка	A1	n	joke
 щедрый	B2	adj	generous
 щека	B1	n	cheek
@@ -8864,7 +8863,7 @@ B1	A1	v	translate,transfer,put
 электроника	B2	n	electronics
 электронная почта	A2	mwe	electronic mail
 электронный	A2	adj	electronic
-электростанция	b2	n	power station
+электростанция	B2	n	power station
 электроэнергия	B1	n	electric power
 элемент	B2	n	element
 элементарный	B2	adj	elementary
@@ -8889,7 +8888,7 @@ B1	A1	v	translate,transfer,put
 эротический	B2	adj	erotic
 эскадра	C2	n	squadron
 эскадрилья	C2	n	squadron
-эскалатор	a1	n	escalator
+эскалатор	A1	n	escalator
 эстетика	C1	n	aesthetics
 эстетический	B2	adj	aesthetic
 эстрада	B2	n	pop music
@@ -8909,12 +8908,12 @@ B1	A1	v	translate,transfer,put
 эффективность	B2	n	efficiency
 эффективный	B1	adj	effective
 эхо	B2	n	echo
-эшелон	c2	n	echelon
+эшелон	C2	n	echelon
 юбилей	B1	n	anniversary
-юбка	a1	n	skirt
-юг	a1	n	South
+юбка	A1	n	skirt
+юг	A1	n	South
 южный	B1	adj	southern
-юзер	b1	n	pc-user
+юзер	B1	n	pc-user
 юмор	A2	n	humour
 юность	B2	n	youth
 юноша	C1	n	young male person

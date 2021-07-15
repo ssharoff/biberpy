@@ -8,9 +8,45 @@
 # The lemmas can come either from the text as a json file, which is output by UDPIPE and processed with , or from a frequency list which maps forms to lemmas
 # it outputs a matrix for the categories plus the UNK field
 
-import sys, re
+import sys, os, time
+from collections import defaultdict
 import argparse
 import json
+
+def lemmaAt(w):
+    if isinstance(w,str):
+        try:
+            out=taglist[w][lemma1]
+        except:
+            out=w.lower()
+    elif isinstance(w,list):
+        out=w[1]
+    return out
+def posAt(w):
+    if isinstance(w,str):
+        try:
+            out=taglist[w][pos2]
+        except:
+            out='PROPN'
+    elif isinstance(w,list):
+        out=w[2]
+    return out
+
+def countwords(d,v):
+    dic=defaultdict(int)
+    for w in d:
+        if not(posAt(w)=='PUNCT'):
+            lemma=lemmaAt(w)
+            if lemma in wordlists:
+                band=wordlists[lemma]
+                dic[band]+=1
+            else:
+                dic['UNK']+=1
+
+    normalise=len(d)+0.000001
+    for band in dic:
+        dic[band]=dic[band]/normalise
+    return dic
 
 def readlist(f):
     vocab={'UNK' : 'UNK'}
@@ -42,25 +78,26 @@ parser.add_argument('-i', '--infile', nargs='?', type=argparse.FileType('r'), de
 parser.add_argument('-o', '--outfile', nargs='?', type=argparse.FileType('w'), default=sys.stdout, help='output file')
 
 args = parser.parse_args()
-ut.verbosity=args.verbosity
 
 language=args.language
 dirname=os.path.dirname(os.path.realpath(__file__))
 assert args.format in ['ol','json'], 'Wrong format, either ol or json is accepted. Requested: '+args.format
 
 wordlists = readlist(open(dirname+'/'+language+'_levels.lex', encoding="utf8"))
+dimnames=sorted(set(wordlists.values()))
+
 if args.format=='ol':
     taglist= readnumlist(open(dirname+'/'+language+'.tag.num', encoding="utf8"))
     if args.verbosity>0:
         print('Loaded %d words from %s' % (len(taglist), language+'.tag.num'), file=sys.stderr)
 
-if args.embeddings:
-    embeddings,w2i=ut.read_embeddings(args.embeddings)
-
-if not args.suppressheader:
-    print('\t'.join([d+'.'+dimnames[d] for d in sorted(dimnames)]),file=args.outfile)
-if args.verbosity>1:
+if args.verbosity>0:
+    print(f'Verbosity: {args.verbosity}',file=sys.stderr)
     print('total %d dims in output' % len(dimnames),file=sys.stderr)
+    if args.verbosity>1:
+        print(dimnames,file=sys.stderr)
+if not args.suppressheader:
+    print('\t'.join(dimnames),file=args.outfile)
 
 starttime=time.time()
 for i,line in enumerate(args.infile):
@@ -69,7 +106,8 @@ for i,line in enumerate(args.infile):
         doc=docstring.split()
     elif args.format=='json':
         doc=json.loads(line)
-    print('\t'.join(['%.5f' % dims[d] for d in sorted(dimnames)]),file=args.outfile)
+    listcount=countwords(doc, wordlists)
+    print('\t'.join(['%.5f' % listcount[d] for d in dimnames]),file=args.outfile)
 if args.verbosity>0:
     print('Processed %d files in %d sec' % (i+1, time.time()-starttime),file=sys.stderr)
 

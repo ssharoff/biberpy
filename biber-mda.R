@@ -18,9 +18,9 @@ textclass=rep('unk',d[1])
 colourcat=NULL;
 if (length(args)>1) {
     print(paste('Loading the annotation table',args[2]));
-    desc=read.table(args[2],header=1,row.names=3); 
+    desc=read.table(args[2],header=1,row.names=1); 
     flabels=row.names(desc);
-    textclass=desc[,1];
+    textclass=desc[,'Top'];
     colourcat='Top';
     if (length(args)>2) {
         colourcat=args[3];

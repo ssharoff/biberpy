@@ -31,7 +31,7 @@ print(a.out)
 #dev4=summary(a.out$Deviance)[5]
                                         #print(subset(a.out,a.out$Deviance>dev4))
 print(head(a.out[order(-a.out$Deviance),],12));
-x=glmLR$coefficients[rownames(head(a.out[order(-a.out$Deviance),],12),)]
+x=glmLR$coefficients[rownames(head(a.out[order(-a.out$Deviance),],20),)]
 print(x)
 write.table(x,file=paste(labelname,'tsv',sep='.'))
 #pA1=glm.out$coefficients[,4]  # p.values

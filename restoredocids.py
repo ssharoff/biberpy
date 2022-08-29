@@ -28,7 +28,7 @@ for l in f:
     if w.startswith(idptn): # 1	__id__LABEL	__id__LABEL	X__...
       recount=True
       count=0
-      print('# newdoc id = '+w)
+      print('\n# newdoc id = '+w)
       p=curtext.find(w)
       if p>0:
         curtext=curtext[p+len(w):]

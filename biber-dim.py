@@ -149,6 +149,16 @@ def simplePartsOfSpeech(doc, pos, finepos='', getloc=False):
                 out.append(i)
     return count, out
 
+def simpleLemma(doc, lemma, getloc=False):
+    count=0
+    out=[]
+    for i,w in enumerate(doc):
+        if lemmaAt(w)==lemma:
+            count+=1
+            if getloc:
+                out.append(i)
+    return count, out
+
 def isDemonstrativePronoun(doc, l):
     try:
         nextPos = posAt(doc[l+1])
@@ -302,17 +312,21 @@ def BYpassives(doc): # very simple at the moment, only the next word counts
             nextWord = lemmaAt(doc[loc+1])
             if (language=='en' and nextWord=='by') or  (language=='es' and nextWord=='por')  or  (language=='fr' and nextWord=='par'):
                 passCount+=1
-            elif (language=='ru'): # the instrumental case in a window of 2 words
+            elif (language=='ru') and (fineposAt(doc[loc]).find('VerbForm=Part')>=0):
                 found=False
-                for locIns in range(loc-2,loc+2):
-                    finepos=fineposAt(doc[locIns])
-                    if finepos.find('Case=Ins')>=0:
-                        found=True
-                        break
+                for locIns in range(loc-3,loc+3): # the instrumental case in a window of 3 words
+                    if not locIns==loc:
+                        if wordAt(doc[locIns]) in ['тем', 'с', 'между', 'образом', 'размером']: # the common constructions irrelevant to BYpassives
+                            break
+                        elif fineposAt(doc[locIns]).find('Case=Ins')>=0:
+                            found=True
+                            # s = ' '.join([wordAt(doc[i]) for i in range(max(loc-4,0),min(loc+5, len(doc)))])
+                            # print(f'{wordAt(doc[loc])} by {wordAt(doc[locIns])}: {s}', file=sys.stderr)
+                            break
                 if found:
                     passCount+=1
-        except: # do nothing
-            passCount+=1
+        except: # do nothing, usually at the end of the sentence
+            found=False
     return passCount
 
 def syntheticNegation(doc):
@@ -407,88 +421,92 @@ def getbiberdims(doc):
     processes each document as a list of tokenised words
     '''
     dimlist={}
-    normalise=len(doc)+0.000001
-    dimlist['A01']=simplePartsOfSpeech(doc, "VERB", "Tense=Past")[0]/normalise
+    token_count=len(doc)+0.000001
+    sentence_count=simpleLemma(doc,'.')[0] + 1
+    if args.test: # we want to test a function
+        exec('dimlist[args.test]='+args.test+'(doc)')
+        return dimlist
+    dimlist['A01']=simplePartsOfSpeech(doc, "VERB", "Tense=Past")[0]/sentence_count
     #dimlist['A02']=(0 # ["perfect aspect verbs", \&perfectAspect, "s"],
-    dimlist['A03']=simplePartsOfSpeech(doc,"VERB","Tense=Pres")[0]/normalise
+    dimlist['A03']=simplePartsOfSpeech(doc,"VERB","Tense=Pres")[0]/sentence_count
     
-    dimlist['B04']=posWithLemmaFilter(doc,'', "placeAdverbials")/normalise
-    dimlist['B05']=posWithLemmaFilter(doc,'','timeAdverbials')/normalise
+    dimlist['B04']=posWithLemmaFilter(doc,'', "placeAdverbials")/token_count
+    dimlist['B05']=posWithLemmaFilter(doc,'','timeAdverbials')/token_count
     
-    dimlist['C06']=posWithLemmaFilter(doc,'','firstPersonPronouns')/normalise
-    dimlist['C07']=posWithLemmaFilter(doc,'PRON','secondPersonPronouns')/normalise
-    dimlist['C08']=posWithLemmaFilter(doc,'','thirdPersonPronouns')/normalise
-    dimlist['C09']=posWithLemmaFilter(doc,'',"itWord")/normalise # impersonal
-    dimlist['C10']=demonstrativePronouns(doc)/normalise
-    dimlist['C11']=posWithLemmaFilter(doc,'','indefinitePronouns')/normalise
-    dimlist['C12']=doAsProVerb(doc)/normalise
+    dimlist['C06']=posWithLemmaFilter(doc,'','firstPersonPronouns')/token_count
+    dimlist['C07']=posWithLemmaFilter(doc,'PRON','secondPersonPronouns')/token_count
+    dimlist['C08']=posWithLemmaFilter(doc,'','thirdPersonPronouns')/token_count
+    dimlist['C09']=posWithLemmaFilter(doc,'',"itWord")/token_count # impersonal
+    dimlist['C10']=demonstrativePronouns(doc)/token_count
+    dimlist['C11']=posWithLemmaFilter(doc,'','indefinitePronouns')/token_count
+    dimlist['C12']=doAsProVerb(doc)/token_count
     
-    dimlist['D13']=posWithLemmaFilter(doc,'','whQuestions')/normalise
-    dimlist['E14']=nominalizations(doc)/normalise
+    dimlist['D13']=posWithLemmaFilter(doc,'','whQuestions')/token_count
+    dimlist['E14']=nominalizations(doc)/token_count
     #gerund list missing
-    dimlist['E16']=(simplePartsOfSpeech(doc, "NOUN")[0]/normalise)-dimlist['E14'] # we substract nominalizations
+    dimlist['E16']=(simplePartsOfSpeech(doc, "NOUN")[0]/token_count)-dimlist['E14'] # we substract nominalizations
     
     #dimlist['F17']=0 # ["agentless passives", \&dummyFunction, "s"],
-    dimlist['F18']= BYpassives(doc)/normalise # to debug
+    dimlist['F18']= BYpassives(doc)/sentence_count 
 
-    dimlist['G19']=beAsMainVerb(doc)/normalise
+    dimlist['G19']=beAsMainVerb(doc)/sentence_count
     #dimlist['G20']= 0 # ["existential THERE", \&simplePartsOfSpeech, "w", "EX"],
     
     #dimlist['H21']=that verb complements
     #dimlist['H22']= 0 # ["THAT clauses as adjective complements", \&dummyFunction, "s"], # I'm glad that you like it
-    dimlist['H23']= posWithLemmaFilter(doc,'','whMarkers')/normalise
-    #dimlist['H24']=infinitives(doc)/normalise #simplePartsOfSpeech(doc,"VERB","VerbForm=Inf")[0]/normalise # + to
-    dimlist['H25']=presentParticipialClauses(doc)/normalise
+    dimlist['H23']= posWithLemmaFilter(doc,'','whMarkers')/token_count
+    #dimlist['H24']=infinitives(doc)/token_count #simplePartsOfSpeech(doc,"VERB","VerbForm=Inf")[0]/token_count # + to
+    dimlist['H25']=presentParticipialClauses(doc)/sentence_count
     #dimlist['H26']= 0 # ["past participial clauses", \&dummyFunction, "s"],
     #dimlist['H27']=0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
     #dimlist['H28']=0 # ["present participial WHIZ deletions", \&dummyFunction, "s"],
     #dimlist['H30']= 0 # ["THAT relative clauses on object positions", \&dummyFunction, "s"],
     #dimlist['H31']= 0 # ["WH relative clauses on subject positions", \&dummyFunction, "s"],
     #dimlist['H32']= 0 # ["WH relative clauses on object positions", \&dummyFunction, "s"],
-    dimlist['H33']= piedPiping(doc)/normalise # the manner in which he was told
-    dimlist['H34']=posWithLemmaFilter(doc,'',"sentenceRelatives")/normalise # Bob likes fried mangoes, which is the most disgusting
-    dimlist['H35']=posWithLemmaFilter(doc,'',"becauseWord")/normalise
-    dimlist['H36']=posWithLemmaFilter(doc,'','concessives')/normalise
-    dimlist['H37']=posWithLemmaFilter(doc,'','conditionalSubordination')/normalise
-    dimlist['H38']= osubordinators(doc)/normalise
+    dimlist['H33']= piedPiping(doc)/sentence_count # the manner in which he was told
+    dimlist['H34']=posWithLemmaFilter(doc,'',"sentenceRelatives")/sentence_count # Bob likes fried mangoes, which is the most disgusting
+    dimlist['H35']=posWithLemmaFilter(doc,'',"becauseWord")/sentence_count
+    dimlist['H36']=posWithLemmaFilter(doc,'','concessives')/sentence_count
+    dimlist['H37']=posWithLemmaFilter(doc,'','conditionalSubordination')/sentence_count
+    dimlist['H38']= osubordinators(doc)/token_count
     
-    dimlist['I39']=simplePartsOfSpeech(doc, "ADP")[0]/normalise
-    dimlist['I41']=predicativeAdjectives(doc)/normalise
-    dimlist['I40']=(simplePartsOfSpeech(doc, "ADJ")[0]/normalise)-dimlist['I41']
-    dimlist['I42']=simplePartsOfSpeech(doc,"ADV")[0]/normalise
+    dimlist['I39']=simplePartsOfSpeech(doc, "ADP")[0]/token_count
+    dimlist['I41']=predicativeAdjectives(doc)/token_count
+    dimlist['I40']=(simplePartsOfSpeech(doc, "ADJ")[0]/token_count)-dimlist['I41']
+    dimlist['I42']=simplePartsOfSpeech(doc,"ADV")[0]/token_count
     
     dimlist['J43']=typeTokenRatio(doc)
     dimlist['J44']=wordLength(doc)
 
-    dimlist['K45']=conjuncts(doc)/normalise
-    dimlist['K46']=posWithLemmaFilter(doc,'','downtopers')/normalise
-    dimlist['K47']=posWithLemmaFilter(doc,'','generalHedges')/normalise
-    dimlist['K48']=posWithLemmaFilter(doc,'','amplifiers')/normalise
-    dimlist['K49']=posWithLemmaFilter(doc,'','generalEmphatics')/normalise
-    dimlist['K50']=discourseParticles(doc)/normalise
+    dimlist['K45']=conjuncts(doc)/token_count
+    dimlist['K46']=posWithLemmaFilter(doc,'','downtopers')/token_count
+    dimlist['K47']=posWithLemmaFilter(doc,'','generalHedges')/token_count
+    dimlist['K48']=posWithLemmaFilter(doc,'','amplifiers')/token_count
+    dimlist['K49']=posWithLemmaFilter(doc,'','generalEmphatics')/token_count
+    dimlist['K50']=discourseParticles(doc)/token_count
     #dimlist['K51']= demonstratives /that/this/these/those/ excluding pronouns
 
-    dimlist['L52']=posWithLemmaFilter(doc,'','possibilityModals')/normalise
-    dimlist['L53']=posWithLemmaFilter(doc,'','necessityModals')/normalise
-    dimlist['L54']=posWithLemmaFilter(doc,'','predictionModals')/normalise
+    dimlist['L52']=posWithLemmaFilter(doc,'','possibilityModals')/sentence_count
+    dimlist['L53']=posWithLemmaFilter(doc,'','necessityModals')/sentence_count
+    dimlist['L54']=posWithLemmaFilter(doc,'','predictionModals')/sentence_count
 
-    dimlist['K55']=posWithLemmaFilter(doc,'VERB','publicVerbs')/normalise
-    dimlist['K56']=posWithLemmaFilter(doc,'VERB','privateVerbs')/normalise
-    dimlist['K57']=posWithLemmaFilter(doc,'','suasiveVerbs')/normalise
-    dimlist['K58']=posWithLemmaFilter(doc,'','seemappear')/normalise
+    dimlist['K55']=posWithLemmaFilter(doc,'VERB','publicVerbs')/sentence_count
+    dimlist['K56']=posWithLemmaFilter(doc,'VERB','privateVerbs')/sentence_count
+    dimlist['K57']=posWithLemmaFilter(doc,'','suasiveVerbs')/sentence_count
+    dimlist['K58']=posWithLemmaFilter(doc,'','seemappear')/sentence_count
     
-    dimlist['N59']=contractions(doc)/normalise
-    dimlist['N60']=thatDeletion(doc)/normalise
+    dimlist['N59']=contractions(doc)/sentence_count
+    dimlist['N60']=thatDeletion(doc)/sentence_count
 
-    dimlist['N61']=strandedPrepositions(doc)/normalise
+    dimlist['N61']=strandedPrepositions(doc)/sentence_count
     #dimlist['N62']= 0 # ["split infinitives", \&dummyFunction, "s"],
     #dimlist['N63']= 0 # ["split auxiliaries", \&dummyFunction, "s"],
     
     #dimlist['O64']=0 # ["phrasal coordination", \&dummyFunction, "s"],
     #dimlist['O65']=0 # ["independent clause coordination", \&dummyFunction, "s"],
 
-    dimlist['P66']=syntheticNegation(doc)/normalise
-    dimlist['P67']=posWithLemmaFilter(doc,'', "notWord")/normalise
+    dimlist['P66']=syntheticNegation(doc)/sentence_count
+    dimlist['P67']=posWithLemmaFilter(doc,'', "notWord")/sentence_count
 
     return dimlist
 
@@ -545,6 +563,7 @@ parser.add_argument('-s', '--suppressheader', action='store_true', help='suppres
 parser.add_argument('-v', '--verbosity', type=int, default=1)
 parser.add_argument('-i', '--infile', nargs='?', type=argparse.FileType('r'), default=sys.stdin, help='one-doc-per-line corpus, plain or json')
 parser.add_argument('-o', '--outfile', nargs='?', type=argparse.FileType('w'), default=sys.stdout, help='output file')
+parser.add_argument('-t', '--test', type=str, default='', help='Test only this function')
 
 args = parser.parse_args()
 ut.verbosity=args.verbosity
@@ -574,6 +593,9 @@ for i,line in enumerate(args.infile):
     elif args.format=='json':
         doc=json.loads(line)
     dims=getbiberdims(doc)
-    print('\t'.join(['%.5f' % dims[d] for d in sorted(dimnames)]),file=args.outfile)
+    if args.test:
+        print(dims,file=args.outfile)
+    else:
+        print('\t'.join(['%.5f' % dims[d] for d in sorted(dimnames)]),file=args.outfile)
 if args.verbosity>0:
     print('Processed %d files in %d sec' % (i+1, time.time()-starttime),file=sys.stderr)

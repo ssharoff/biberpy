@@ -422,13 +422,13 @@ def getbiberdims(doc):
     '''
     dimlist={}
     token_count=len(doc)+0.000001
-    sentence_count=simpleLemma(doc,'.')[0] + 1
+    clause_count=simplePartsOfSpeech(doc,"VERB")[0] + 1 # a very rough approximation
     if args.test: # we want to test a function
         exec('dimlist[args.test]='+args.test+'(doc)')
         return dimlist
-    dimlist['A01']=simplePartsOfSpeech(doc, "VERB", "Tense=Past")[0]/sentence_count
+    dimlist['A01']=simplePartsOfSpeech(doc, "VERB", "Tense=Past")[0]/clause_count
     #dimlist['A02']=(0 # ["perfect aspect verbs", \&perfectAspect, "s"],
-    dimlist['A03']=simplePartsOfSpeech(doc,"VERB","Tense=Pres")[0]/sentence_count
+    dimlist['A03']=simplePartsOfSpeech(doc,"VERB","Tense=Pres")[0]/clause_count
     
     dimlist['B04']=posWithLemmaFilter(doc,'', "placeAdverbials")/token_count
     dimlist['B05']=posWithLemmaFilter(doc,'','timeAdverbials')/token_count
@@ -447,27 +447,27 @@ def getbiberdims(doc):
     dimlist['E16']=(simplePartsOfSpeech(doc, "NOUN")[0]/token_count)-dimlist['E14'] # we substract nominalizations
     
     #dimlist['F17']=0 # ["agentless passives", \&dummyFunction, "s"],
-    dimlist['F18']= BYpassives(doc)/sentence_count 
+    dimlist['F18']= BYpassives(doc)/clause_count 
 
-    dimlist['G19']=beAsMainVerb(doc)/sentence_count
+    dimlist['G19']=beAsMainVerb(doc)/clause_count
     #dimlist['G20']= 0 # ["existential THERE", \&simplePartsOfSpeech, "w", "EX"],
     
     #dimlist['H21']=that verb complements
     #dimlist['H22']= 0 # ["THAT clauses as adjective complements", \&dummyFunction, "s"], # I'm glad that you like it
     dimlist['H23']= posWithLemmaFilter(doc,'','whMarkers')/token_count
     #dimlist['H24']=infinitives(doc)/token_count #simplePartsOfSpeech(doc,"VERB","VerbForm=Inf")[0]/token_count # + to
-    dimlist['H25']=presentParticipialClauses(doc)/sentence_count
+    dimlist['H25']=presentParticipialClauses(doc)/clause_count
     #dimlist['H26']= 0 # ["past participial clauses", \&dummyFunction, "s"],
     #dimlist['H27']=0 # ["past participial WHIZ deletions", \&dummyFunction, "s"],
     #dimlist['H28']=0 # ["present participial WHIZ deletions", \&dummyFunction, "s"],
     #dimlist['H30']= 0 # ["THAT relative clauses on object positions", \&dummyFunction, "s"],
     #dimlist['H31']= 0 # ["WH relative clauses on subject positions", \&dummyFunction, "s"],
     #dimlist['H32']= 0 # ["WH relative clauses on object positions", \&dummyFunction, "s"],
-    dimlist['H33']= piedPiping(doc)/sentence_count # the manner in which he was told
-    dimlist['H34']=posWithLemmaFilter(doc,'',"sentenceRelatives")/sentence_count # Bob likes fried mangoes, which is the most disgusting
-    dimlist['H35']=posWithLemmaFilter(doc,'',"becauseWord")/sentence_count
-    dimlist['H36']=posWithLemmaFilter(doc,'','concessives')/sentence_count
-    dimlist['H37']=posWithLemmaFilter(doc,'','conditionalSubordination')/sentence_count
+    dimlist['H33']= piedPiping(doc)/clause_count # the manner in which he was told
+    dimlist['H34']=posWithLemmaFilter(doc,'',"sentenceRelatives")/clause_count # Bob likes fried mangoes, which is the most disgusting
+    dimlist['H35']=posWithLemmaFilter(doc,'',"becauseWord")/clause_count
+    dimlist['H36']=posWithLemmaFilter(doc,'','concessives')/clause_count
+    dimlist['H37']=posWithLemmaFilter(doc,'','conditionalSubordination')/clause_count
     dimlist['H38']= osubordinators(doc)/token_count
     
     dimlist['I39']=simplePartsOfSpeech(doc, "ADP")[0]/token_count
@@ -486,27 +486,27 @@ def getbiberdims(doc):
     dimlist['K50']=discourseParticles(doc)/token_count
     #dimlist['K51']= demonstratives /that/this/these/those/ excluding pronouns
 
-    dimlist['L52']=posWithLemmaFilter(doc,'','possibilityModals')/sentence_count
-    dimlist['L53']=posWithLemmaFilter(doc,'','necessityModals')/sentence_count
-    dimlist['L54']=posWithLemmaFilter(doc,'','predictionModals')/sentence_count
+    dimlist['L52']=posWithLemmaFilter(doc,'','possibilityModals')/clause_count
+    dimlist['L53']=posWithLemmaFilter(doc,'','necessityModals')/clause_count
+    dimlist['L54']=posWithLemmaFilter(doc,'','predictionModals')/clause_count
 
-    dimlist['K55']=posWithLemmaFilter(doc,'VERB','publicVerbs')/sentence_count
-    dimlist['K56']=posWithLemmaFilter(doc,'VERB','privateVerbs')/sentence_count
-    dimlist['K57']=posWithLemmaFilter(doc,'','suasiveVerbs')/sentence_count
-    dimlist['K58']=posWithLemmaFilter(doc,'','seemappear')/sentence_count
+    dimlist['K55']=posWithLemmaFilter(doc,'VERB','publicVerbs')/clause_count
+    dimlist['K56']=posWithLemmaFilter(doc,'VERB','privateVerbs')/clause_count
+    dimlist['K57']=posWithLemmaFilter(doc,'','suasiveVerbs')/clause_count
+    dimlist['K58']=posWithLemmaFilter(doc,'','seemappear')/clause_count
     
-    dimlist['N59']=contractions(doc)/sentence_count
-    dimlist['N60']=thatDeletion(doc)/sentence_count
+    dimlist['N59']=contractions(doc)/clause_count
+    dimlist['N60']=thatDeletion(doc)/clause_count
 
-    dimlist['N61']=strandedPrepositions(doc)/sentence_count
+    dimlist['N61']=strandedPrepositions(doc)/clause_count
     #dimlist['N62']= 0 # ["split infinitives", \&dummyFunction, "s"],
     #dimlist['N63']= 0 # ["split auxiliaries", \&dummyFunction, "s"],
     
     #dimlist['O64']=0 # ["phrasal coordination", \&dummyFunction, "s"],
     #dimlist['O65']=0 # ["independent clause coordination", \&dummyFunction, "s"],
 
-    dimlist['P66']=syntheticNegation(doc)/sentence_count
-    dimlist['P67']=posWithLemmaFilter(doc,'', "notWord")/sentence_count
+    dimlist['P66']=syntheticNegation(doc)/clause_count
+    dimlist['P67']=posWithLemmaFilter(doc,'', "notWord")/clause_count
 
     return dimlist
 

@@ -11,7 +11,7 @@ ID-3    0.62500 1.04167 A1
 
 It outputs:
  1. to STDOUT: Genre, Biber-dim, mean and median for the Genre
- 2. to STDERR: ranges for each Biber-dim over the genres and the ratio of its median range to its median (how much it varies across the genres)
+ 2. to STDERR: the min-max ranges for each Biber-dim over the genres and the ratio of its median range to its median (how much it varies across the genres)
 """
 
 import sys
@@ -23,7 +23,7 @@ import pandas as pd
 def range(l):
     return np.max(l)-np.min(l)
 def split_genres(df1,catset):
-    """Create a labeled scatter plot of a dataframe."""
+    """Create a subset of labelled data from a dataframe."""
     subsets={}
     for cat in catset:
         subsets[cat] = df1[(df1["Cat"] == cat)]
@@ -39,6 +39,7 @@ catlist ='A1 A4 A7 A8 A9  A11 A12 A14 A16 A17'.split()
 
 subsets = split_genres(df1,catlist)
 
+print('col\t mean\t median\t range_mean\t range_median\t range_rate', file=sys.stderr)
 for col in df1.columns.tolist()[:-1]:
     mean_values=[]
     median_values=[]
@@ -48,5 +49,5 @@ for col in df1.columns.tolist()[:-1]:
         mean_values.append(means)
         medians = np.median(curvalues)
         median_values.append(medians)
-        print(f'{cat[1:]}\t{col}\t{means*100:.6f}\t{medians*100:.6f}')
-    print(col,range(mean_values),range(median_values),range(median_values)/(np.median(median_values)+1e-10),file=sys.stderr)
+        print(f'{cat[1:]}\t{col}\t{means*100:.4f}\t{medians*100:.4f}')
+    print(f'{col}\t{np.mean(df1[col])*100:.4f}\t{np.median(df1[col])*100:.4f}\t{range(mean_values)*100:.4f}\t{range(median_values)*100:.4f}\t{range(median_values)/(np.median(median_values)+1e-10):.4f}', file=sys.stderr)

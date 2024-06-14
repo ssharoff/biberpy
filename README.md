@@ -1,22 +1,25 @@
 # Multilingual Python version for Biber's Multi-Dimensional Analysis (MDA)
 
-This is a Python version of Biber's tagger for English, French, Russian and Spanish as well as R scripts for Multi-Dimensional Analysis.
+This is a Python script for extracting Biber-like features for English, French, Russian and Spanish as well as R scripts for Multi-Dimensional Analysis.
 
-Back in 1988 Doug Biber developed an approach to analysing the composition of a corpus by using a set of extractable features and factor analysis, see his first book on the topic:
+Back in 1988 Douglas Biber developed an approach to analysing the composition of a corpus by using a set of extractable features followed by factor analysis, see his first book on the topic:
 [https://books.google.co.uk/books?id=CVTPaSSYEroC]
 
 An article-length description is available from [http://www.aclweb.org/anthology/J93-2001]
 
-While this approach is more than 30-years old by now, his attention to designing extractable features is still important for understanding how linguistic features vary in texts of different kinds.  See a way of linking the features to predictions of a neural classifier:
+While this approach is more than 30-years old by now, his attention to designing extractable features is still important for understanding how linguistic features vary in texts of different kinds, so that that we can explain the behaviour of Large Language Models.  See a way of linking the features to predictions of a neural classifier:
 ```
-@Article{sharoff21rs,
+@Article{sharoff2021registerstudies,
   author = {Sharoff, Serge},
   title =  {Genre Annotation for the Web: text-external and text-internal perspectives},
   journal = {Register studies},
   year =   2021,
-  volume = {(in press)}}
+  volume = 3,
+  issue = 1,
+  doi = {https://doi.org/10.1075/rs.19015.sha}
 ```
-[http://corpus.leeds.ac.uk/serge/publications/2021-register.pdf]
+[https://ssharoff.github.io/publications/2021-register.pdf]
+
 
 The features proposed by Biber and implemented in my tagger include:
 
@@ -31,7 +34,7 @@ The features proposed by Biber and implemented in my tagger include:
 * Syntactic features, such as:
   * *be* as the main verb
   * *that* deletions
-  * pied piping (as in *Which house did she buy ...?* where *house* moved from its expected position after *buy*)
+  * pied piping (as in *Which house did she buy?* where *house* moved from its expected position after *buy*)
 * Text-level features, such as:
   * Average word length
   * Average sentence length
@@ -57,10 +60,12 @@ The arguments for the script are self-explanatory (run `python3 biber-dim.py -h`
 
 `python3 biber-dim.py -l en <brown.ol >brown.dat`
 
-The default format for the corpus file is one line per document.  Another possibility is to use a Jason file, which can be produced from a CONLL file with existing tagging data:
+The default format for the corpus file is one line per document with lemmas and POS tags coming from a dictionary.  It is also possible to achieve better accuracy by using a JSON file with the output of a POS tagger. For example, it can be produced from UDPipe output as:
 
-`udpipe --tokenize --tag english-ewt.udpipe <brown.ol | ./restoredocids.py | conll2json.py >brown.json`
+`udpipe --tokenize --tag english-ewt.udpipe <brown.ol | restoredocids.py | conll2json.py >brown.json`
 `python3 biber-dim.py -f json -l en <brown.json >brown-json.dat`
+
+See `brown.ol` and `brown.json` files in this repository, as produced from the Brown corpus. See also  `brown-names.txt` for the descriptions of each individual file in the Brown corpus.
 
 The script assumes that the current folder contains a file with language-specific properties with the name LANGUAGE.properties and a frequency list with the name LANGUAGE.tag.num.  The format of the lists of properties is as follows:
 ```
@@ -69,16 +74,16 @@ privateVerbs = anticipate,assume,believe,conclude,decide,demonstrate
 
 The property ids are fixed (the label `privateVerbs` is used for all languages), while the word lists are language-specific.
 
-If the source file format is not Json, the POS tags and lemmas are coming from a frequency list:
+If the source file format is not JSON, the POS tags and lemmas are coming from a frequency list:
 
 num | word | lemma | pos | UD morph
 ----|------|-------|-----|------
 1625260 | years | year | NOUN | Number=Plur
 399401  | went  | go   | VERB | Tense=Past
 
-This can be obtained, for example, from an available CONLLU file with the annotations in the format of the [Universal Dependencies](http://universaldependencies.org) by
+This can be obtained, for example, from a large available corpus with the annotations in the format of the [Universal Dependencies](http://universaldependencies.org) by
 
-`cut -f 2-4,6 -s CONLLU.file | sort | uniq -c | sort -nsr >CONLLU.num`
+`cut -f 2-4,6 -s CORPUS.conll | sort | uniq -c | sort -nsr >CONLLU.num`
 
 My `biber-dim.py` script produces a tab-separated table with values for each dimension.  This can be taken to R for factor analysis and plot making:
 

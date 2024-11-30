@@ -60,8 +60,11 @@ The arguments for the script are self-explanatory (run `python3 biber-dim.py -h`
 
 `python3 biber-dim.py -l en <brown.ol >brown.dat`
 
-The default format for the corpus file is one line per document with lemmas and POS tags coming from a dictionary.  It is also possible to achieve better accuracy by using a JSON file with the output of a POS tagger. For example, it can be produced from UDPipe output as:
+The default format for the corpus file is one line per document with lemmas and POS tags coming from a dictionary.  It is also possible to achieve better accuracy by using a JSON file with the output of a POS tagger. For example, the JSON file can be produced by using a model from Spacy:
+`./spacy2json.py brown.ol en_core_web_lg >brown.json`
+`python3 biber-dim.py -f json -l en <brown.json >brown-json.dat`
 
+or in a bit more complicated way from UDPipe (by converting CONLL to JSON):
 `udpipe --tokenize --tag english-ewt.udpipe <brown.ol | restoredocids.py | conll2json.py >brown.json`
 `python3 biber-dim.py -f json -l en <brown.json >brown-json.dat`
 

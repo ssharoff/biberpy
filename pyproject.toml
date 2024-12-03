@@ -1,0 +1,29 @@
+[project]
+name = "biberpy"
+version = "0.1.0"
+authors = [
+  { name="Serge Sharoff", email="serge.sharoff@gmail.com" },
+]
+description = "BiberPy: a multilingual model for counting the Biber features"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    'License :: OSI Approved :: GPL 3',
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "ahocorasick"
+]
+
+[tool.setuptools]
+packages = ["biberpy"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/ssharoff/biberpy"
+Issues = "https://github.com/ssharoff/biberpy/issues"

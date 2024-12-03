@@ -9,7 +9,7 @@ A  library for computing Biber-like features from one-line text collections.
 Expanded from experiments in Intellitext
 '''
 
-import sys
+import sys, re
 import ahocorasick # to apply MWEs to a string
 docstring='' # a global variable for ahocorasick string search
 import requests # in case we read the lists from the Web
@@ -204,7 +204,13 @@ def simplePartsOfSpeech(doc, pos, finepos='', getloc=False):
     out=[]
     for i,w in enumerate(doc):
         mainposTrue=not pos or posAt(w)==pos
-        fineposTrue=not finepos or (fineposAt(w).find(finepos)>=0)
+        if finepos:
+            if finepos.find('|'): # the only condition we want to process by RE
+                fineposTrue=re.search(finepos,fineposAt(w))
+            else:
+                fineposTrue=(fineposAt(w).find(finepos)>=0)
+        else:
+            fineposTrue=True
         if mainposTrue and fineposTrue:
             count+=1
             if getloc:
@@ -367,8 +373,12 @@ def conjuncts(doc):
     return singleWords+MWEs+pCount
 
 def BYpassives(doc): # very simple at the moment, only the next word counts
-    vCount, vPositions = simplePartsOfSpeech(doc, "", "Voice=Pass", True)
+    if language=='ru':
+        posMatch="Voice=Pass"
+    else:
+        posMatch="Tense=Past" # since Spacy does not mark Past participles as Voice=Pass
     passCount=0
+    vCount, vPositions = simplePartsOfSpeech(doc, "", posMatch, True)
     for loc in vPositions:
         try:
             nextWord = lemmaAt(doc[loc+1])
@@ -378,7 +388,7 @@ def BYpassives(doc): # very simple at the moment, only the next word counts
                 found=False
                 for locIns in range(loc-3,loc+3): # the instrumental case in a window of 3 words
                     if not locIns==loc:
-                        if wordAt(doc[locIns]) in ['тем', 'с', 'между', 'образом', 'размером']: # the common constructions irrelevant to BYpassives
+                        if wordAt(doc[locIns]) in ['тем', 'с', 'между', 'образом', 'размером']: # common constructions irrelevant to BYpassives
                             break
                         elif fineposAt(doc[locIns]).find('Case=Ins')>=0:
                             found=True
@@ -421,7 +431,10 @@ def discourseParticles(doc):
     return dCount;
 
 def presentParticipialClauses(doc):
-    ppQuery="VerbForm=Con" if language=='ru' else "VerbForm=Ger"
+    if language=='ru':
+        ppQuery="VerbForm=Con"
+    else:
+        ppQuery="VerbForm=Ger|Aspect=Prog" # the first in udpipe, the last in spacy
     ppCount, ppPositions = simplePartsOfSpeech(doc, "VERB", ppQuery, True)
     for l in ppPositions:
         try:

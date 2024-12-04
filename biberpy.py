@@ -288,7 +288,12 @@ def demonstrativePronouns(doc):
         if not isDemonstrativePronoun(doc,l):
             count+=-1
     return count
-
+def pastVerbs(doc)
+    vCount, vPositions = simplePartsOfSpeech(doc, "VERB", "Tense=Past", True)
+    for vPos in vPositions:
+        if not fineposAt(doc[vPos]).find('VerbForm=Fin')>=0):
+            vCount+=-1
+    return vCount
 def doAsProVerb(doc):
     # As usual we operate using BFI. First check if there are any DOs in the
     # sentence.
@@ -503,7 +508,7 @@ def getbiberdims(doc,testfn=''):
     if testfn: # we want to test only one function
         exec('dimlist[testfn]='+testfn+'(doc)')
         return dimlist
-    dimlist['A01']=simplePartsOfSpeech(doc, "VERB", "Tense=Past")[0]/clause_count
+    dimlist['A01']=pastVerbs(doc)/clause_count # in many cases the majority of Tense=Past|Form=Part
     #dimlist['A02']=(0 # ["perfect aspect verbs", \&perfectAspect, "s"],
     dimlist['A03']=simplePartsOfSpeech(doc,"VERB","Tense=Pres")[0]/clause_count
     

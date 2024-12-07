@@ -288,7 +288,7 @@ def demonstrativePronouns(doc):
         if not isDemonstrativePronoun(doc,l):
             count+=-1
     return count
-def pastVerbs(doc)
+def pastVerbs(doc):
     vCount, vPositions = simplePartsOfSpeech(doc, "VERB", "Tense=Past", True)
     for vPos in vPositions:
         if not fineposAt(doc[vPos]).find('VerbForm=Fin')>=0:

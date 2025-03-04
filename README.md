@@ -20,7 +20,7 @@ While this approach is more than 30-years old by now, his attention to designing
 ```
 [https://ssharoff.github.io/publications/2021-register.pdf]
 
-
+## Biber features
 The features proposed by Biber and implemented in my tagger include:
 
 * Lexical features, such as:
@@ -70,14 +70,17 @@ or in a bit more complicated way from UDPipe (by converting CONLL to JSON):
 
 See `brown.ol` and `brown.json` files in this repository, as produced from the Brown corpus. See also  `brown-names.txt` for the descriptions of each individual file in the Brown corpus.
 
-The script assumes that the current folder contains a file with language-specific properties with the name LANGUAGE.properties and a frequency list with the name LANGUAGE.tag.num.  The format of the lists of properties is as follows:
+The script assumes that its folder contains a file with language-specific properties with the name LANGUAGE.properties. The format of the lists of properties is as follows:
 ```
-privateVerbs = anticipate,assume,believe,conclude,decide,demonstrate
+privateVerbs = anticipate,assume,believe,conclude,decide,demonstrate...
 ```
 
-The property ids are fixed (the label `privateVerbs` is used for all languages), while the word lists are language-specific.
+The property ids are fixed (the label `privateVerbs` is used for all languages), while the word lists are language-specific, for example, for French:
+```
+privateVerbs = anticiper, assumer, croire, conclure, décider, démontrer...
+```
 
-If the source file format is not JSON, the POS tags and lemmas are coming from a frequency list:
+If the script is used without automatic taggers (stored as JSON), just from plain text file, it also needs a frequency list with the name LANGUAGE.tag.num, which contains the following columns:
 
 num | word | lemma | pos | UD morph
 ----|------|-------|-----|------
@@ -86,9 +89,11 @@ num | word | lemma | pos | UD morph
 
 This can be obtained, for example, from a large available corpus with the annotations in the format of the [Universal Dependencies](http://universaldependencies.org) by
 
-`cut -f 2-4,6 -s CORPUS.conll | sort | uniq -c | sort -nsr >CONLLU.num`
+`cut -f 2-4,6 -s CORPUS.conll | sort | uniq -c | sort -nsr >CONLLU.tag.num`
 
-My `biber-dim.py` script produces a tab-separated table with values for each dimension.  This can be taken to R for factor analysis and plot making:
+## Multidimensional analysis
+
+My `biber-dim.py` script produces a tab-separated table with values for each Biber feature.  They are mostly rates (the number of instances divided by the text length in words).  This file can be processed in R for factor analysis and plot making:
 
 `Rscript biber-mda.R brown-biber.dat brown-annot.dat`
 

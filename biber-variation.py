@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*- 
-"""Studying Biber exploration with respect to genres
+"""Studying Biber exploration with respect to categories (typically labelled genres)
 
 It takes one parameter: 
- 1. a file with Biber-like dimensions (with a header, IDs and the Cat column in the end 
-paste l24.dat l24.cats | numlines | sed 's/^/ID-/'
+ 1. a file with Biber-like dimensions (with added IDs and the Cat column in the end): 
+paste l24.dat l24.cats | nl | sed -r 's/^\s+/ID-/'
 ID-1    A01.pastVerbs   A03.presVerbs  Cat
 ID-2    0.33333	0.75000 A1
 ID-3    0.62500 1.04167 A1
 
 It outputs:
- 1. to STDOUT: Genre, Biber-dim, mean and median for the Genre
- 2. to STDERR: the min-max ranges for each Biber-dim over the genres and the ratio of its median range to its median (how much it varies across the genres)
+ 1. to STDOUT: Genre, Biber-dim, mean and median for each category
+ 2. to STDERR: the min-max ranges for each Biber-dim over the categories and the ratio of its median range to its median (how much it varies across the categoriesgenre)
 """
 
 import sys
@@ -35,11 +35,12 @@ fname=sys.argv[1]
 df1 = pd.read_csv(open(fname), sep='\t', index_col='ID-1')
 print(f'Read {fname} {len(df1)} rows', file=sys.stderr)
 
-catlist ='A1 A4 A7 A8 A9  A11 A12 A14 A16 A17'.split()
+catlist = df1['Cat'].unique().tolist() # 'A1 A4 A7 A8 A9  A11 A12 A14 A16 A17'.split()
 
 subsets = split_genres(df1,catlist)
 
 print('col\t mean\t median\t range_mean\t range_median\t range_rate', file=sys.stderr)
+print('cat\tcol\tmeans(*100)\tmedians(*100)')
 for col in df1.columns.tolist()[:-1]:
     mean_values=[]
     median_values=[]
@@ -49,5 +50,5 @@ for col in df1.columns.tolist()[:-1]:
         mean_values.append(means)
         medians = np.median(curvalues)
         median_values.append(medians)
-        print(f'{cat[1:]}\t{col}\t{means*100:.4f}\t{medians*100:.4f}')
+        print(f'{cat}\t{col}\t{means*100:.4f}\t{medians*100:.4f}')
     print(f'{col}\t{np.mean(df1[col])*100:.4f}\t{np.median(df1[col])*100:.4f}\t{range(mean_values)*100:.4f}\t{range(median_values)*100:.4f}\t{range(median_values)/(np.median(median_values)+1e-10):.4f}', file=sys.stderr)

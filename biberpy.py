@@ -156,6 +156,8 @@ def lemmaAt(w):
             out=w
     elif isinstance(w,list):
         out=w[1]
+    if out=='': # in case of no lemmatisation, as in Chinese
+        out=wordAt(w)
     return out
 def posAt(w):
     if isinstance(w,str):
@@ -561,7 +563,7 @@ def getbiberdims(doc,testfn=''):
     dimlist['J44']=wordLength(doc)
 
     dimlist['K45']=conjuncts(doc)/token_count
-    dimlist['K46']=posWithLemmaFilter(doc,'','downtopers')/token_count
+    dimlist['K46']=posWithLemmaFilter(doc,'','downtoners')/token_count
     dimlist['K47']=posWithLemmaFilter(doc,'','generalHedges')/token_count
     dimlist['K48']=posWithLemmaFilter(doc,'','amplifiers')/token_count
     dimlist['K49']=posWithLemmaFilter(doc,'','generalEmphatics')/token_count
